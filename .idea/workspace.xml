@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_shared.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LuminaFrame/_utils.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/fakeLoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tilesServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/variants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/GT America Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/GT America Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/aktualnosci.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/indexOLD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Sass File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27ZWI40U6Hp8moKuaaiQuOduKpk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/src/pages&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/LuminaFrame" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="" />
+      <created>1649528004413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649528004413</updated>
+      <workItem from="1649528005740" duration="6806000" />
+      <workItem from="1649591385798" duration="22943000" />
+      <workItem from="1649681887848" duration="819000" />
+      <workItem from="1649749321951" duration="1185000" />
+      <workItem from="1649762393264" duration="26946000" />
+      <workItem from="1649835835984" duration="12687000" />
+      <workItem from="1649872599246" duration="13449000" />
+      <workItem from="1649919736466" duration="1069000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/form.js</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

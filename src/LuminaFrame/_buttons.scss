@@ -1,0 +1,42 @@
+.btn {
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-btn);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: fit-content;
+  //transform: scaleX(1.00);
+
+
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+
+  //&:focus {
+  //  outline: none;
+  //}
+
+  &:active {
+    transform: translateY(4px) translateX(2px);
+  }
+
+  &--dark {
+    background-color: var(--color-contrast-darker);
+    color: var(--color-white);
+    border: none;
+    &:hover{
+      box-shadow: var(--shadow-lg);
+      //color: var(--color-secondary);
+      opacity: .96;
+    }
+  }
+  &--xs{
+    padding: .5rem 1rem;
+  }
+
+
+}

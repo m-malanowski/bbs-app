@@ -1,0 +1,279 @@
+@use 'breakpoints' as *;
+
+:root {
+  --heading-line-height: 1.2;
+  --body-line-height: 1.6;
+
+  // font family
+  --font-primary: system-ui, sans-serif;
+
+  // font size
+  --text-base-size: 1rem; // body font-size
+  --text-scale-ratio: 1.4; // multiplier used to generate the type scale values 👇
+
+  // capital letters - used in combo with the lhCrop mixin
+  --font-primary-capital-letter: 1;
+
+  // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
+  --text-unit: var(--text-base-size); // if Em units → --text-unit: 1em;
+
+}
+
+:root, * {
+  // type scale
+  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+}
+
+
+body {
+  font-size: var(--text-base-size, 1rem);
+  font-family: var(--font-primary, sans-serif);
+  color: var(--color-contrast-darker);
+  font-weight: var(--body-font-weight, normal);
+  line-height: var(--body-line-height, 1.4rem);
+}
+
+h1, h2, h3, h4 {
+  //color: var(--color-contrast-higher, hsl(204, 28%, 7%));
+  line-height: var(--heading-line-height, 1.2);
+  font-weight: var(--heading-font-weight, 500);
+
+  margin-top: 0;
+  //margin-bottom: 0;
+}
+
+h1 {
+  font-size: var(--text-xxl, 2rem);
+}
+
+h2 {
+  font-size: var(--text-xl, 1.75rem);
+  //font-size: calc(22px + (var(--text-xl) - 22) * ((100vw - 320px) / (1900 - 320)));
+}
+
+h3 {
+  font-size: var(--text-lg, 1.375rem);
+}
+
+h4 {
+  font-size: var(--text-md, 1.125rem);
+}
+
+small {
+  font-size: var(--text-sm, 0.75rem);
+}
+
+p span {
+  color: var(--color-secondary);
+}
+
+.heading{
+  //font-size: var(--text-xxl);
+  font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1900 - 320)));
+
+  span {
+    color: var(--color-secondary);
+  }
+  &--gray{
+    font-size: var(--text-xxxl);
+    color: var(--color-contrast-lighter);
+  }
+}
+.paragraph-larger{
+  font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1900 - 320)));
+}
+
+::-moz-selection {
+  background: var(--color-secondary);
+  color: var(--color-contrast);
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-contrast);
+}
+
+
+
+// --------------------------------
+
+// Inline Text
+
+// --------------------------------
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &, btn {
+    text-decoration: none;
+  }
+}
+
+.link {
+  position: relative;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    //background-color: var(--color-contrast);
+    background-color: var(--color-secondary);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s var(--ease-out-back);
+    display: inline-block;
+  }
+
+  &:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
+}
+
+// --------------------------------
+
+// Text Component - Class used to stylize text blocks
+
+// --------------------------------
+
+.text-component {
+  h1, h2, h3, h4 {
+    line-height: calc(var(--heading-line-height) * var(--line-height-multiplier, 1));
+    margin-bottom: calc(var(--space-unit) * 0.3125 * var(--text-space-y-multiplier, 1));
+  }
+
+  h2, h3, h4 {
+    margin-top: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
+  }
+
+  p, blockquote, ul li, ol li {
+    line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
+  }
+
+  ul, ol, p, blockquote, .text-component__block {
+    margin-bottom: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
+  }
+
+  ul, ol {
+    list-style-position: inside;
+
+    ul, ol {
+      padding-left: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: calc(var(--space-unit) * 0.5);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  hr {
+    margin-top: calc(var(--space-unit) * 1.875 * var(--text-space-y-multiplier, 1));
+    margin-bottom: calc(var(--space-unit) * 1.875 * var(--text-space-y-multiplier, 1));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// text block container
+.text-component__block--full-width {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+@include breakpoint(sm) {
+  .text-component__block--left,
+  .text-component__block--right {
+    width: 45%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-component__block--left {
+    float: left;
+    margin-right: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
+  }
+
+  .text-component__block--right {
+    float: right;
+    margin-left: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
+  }
+}
+
+// outset content
+@include breakpoint(xl) {
+  .text-component__block--outset {
+    width: calc(100% + 10.5 * var(--space-unit));
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-component__block--outset:not(.text-component__block--right) {
+    margin-left: calc(-5.25 * var(--space-unit));
+  }
+
+  .text-component__block--left, .text-component__block--right {
+    width: 50%;
+  }
+
+  .text-component__block--right.text-component__block--outset {
+    margin-right: calc(-5.25 * var(--space-unit));
+  }
+}
