@@ -29,12 +29,10 @@ const Hero = ({reversed}) => {
                         initial={{
                             width: 0,
                             right: 0,
-                            transformOrigin: 'bottom'
                         }}
                         animate={{
                             width: "100%",
                             transition: {delay: 3.8, ...transition},
-                            transformOrigin: 'bottom'
                         }}
                         exit={{
                             width: 0,

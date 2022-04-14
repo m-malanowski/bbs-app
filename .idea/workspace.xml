@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/hero8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_spacing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fakeLoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fakeLoder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/heroReversed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/variants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/variants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/aktualnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/aktualnosci.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +77,7 @@
       <workItem from="1649835835984" duration="12687000" />
       <workItem from="1649872599246" duration="13449000" />
       <workItem from="1649919736466" duration="26158000" />
-      <workItem from="1649972376755" duration="1650000" />
+      <workItem from="1649972376755" duration="2522000" />
     </task>
     <servers />
   </component>
