@@ -31,16 +31,16 @@ const Form = () => {
                     </label>
                 </div>
 
-                <div>
-                    <input
-                        type="text"
-                        name="telefon"
-                        autoComplete="off"
-                        required />
-                    <label htmlFor="phone">
-                        <span>Telefon</span>
-                    </label>
-                </div>
+                {/*<div>*/}
+                {/*    <input*/}
+                {/*        type="text"*/}
+                {/*        name="telefon"*/}
+                {/*        autoComplete="off"*/}
+                {/*        required />*/}
+                {/*    <label htmlFor="phone">*/}
+                {/*        <span>Telefon</span>*/}
+                {/*    </label>*/}
+                {/*</div>*/}
 
                 <div>
                     <input

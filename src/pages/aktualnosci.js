@@ -10,68 +10,70 @@ const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
 
     return (
-        <Layout location={location} title={siteTitle}>
-            <Seo title="Konakt"/>
-            <Helmet bodyAttributes={{
-                id: "contact-page"
-            }} />
+        <>
+            {/*<Layout location={location} title={siteTitle}>*/}
+                <Seo title="Konakt"/>
+                <Helmet bodyAttributes={{
+                    id: "contact-page"
+                }} />
 
-            <div className="contact-page">
-                <section className="container">
-                    <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
-                        <div className="col-6">
-                            <h3>We support utilities and resellers by providing their customers with superb service built atop smart technology.</h3>
+                <div className="contact-page">
+                    <section className="container">
+                        <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
+                            <div className="col-6">
+                                <h3>We support utilities and resellers by providing their customers with superb service built atop smart technology.</h3>
 
-                            <div className="grid  gap-xxxl margin-bottom-xxl">
-                                <div className="col-6">
-                                    <p >We support utilities and resellers by providing their customers with superb service built atop smart <span> technologyt ransition.</span></p>
+                                <div className="grid  gap-xxxl margin-bottom-xxl">
+                                    <div className="col-6">
+                                        <p >We support utilities and resellers by providing their customers with superb service built atop smart <span> technologyt ransition.</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <section className="container ">
+                    <section className="container ">
 
-                    <div className="projects-wrapper margin-bottom-xxl">
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                        </div>
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                        </div>
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                        </div>
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                        </div>
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                        </div>
-                        <div className="project">
-                            <img src={hero6} alt="" className="project__image responsive"/>
-                            <h4>Tytuł artykułu </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                        <div className="projects-wrapper margin-bottom-xxl">
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+                            <div className="project">
+                                <img src={hero6} alt="" className="project__image responsive"/>
+                                <h4>Tytuł artykułu </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
+                            </div>
+
                         </div>
 
-                    </div>
+                    </section>
 
-                </section>
+                </div>
 
-            </div>
-
-        </Layout>
+            {/*</Layout>*/}
+        </>
     )
 }
 

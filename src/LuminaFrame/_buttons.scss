@@ -1,13 +1,14 @@
+@use 'breakpoints' as *;
+
 .btn {
   border: 2px solid var(--color-white);
   border-radius: var(--radius-btn);
   color: var(--color-white);
-  padding: 1rem 2rem;
+  padding: .75rem 1.5rem;
   font-size: 1.2em;
   font-weight: 600;
   width: fit-content;
   //transform: scaleX(1.00);
-
 
   cursor:pointer;
   user-select:none;
@@ -16,10 +17,22 @@
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
 
+  @include breakpoint(sm, "not all") {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+  }
+
+
   //&:focus {
   //  outline: none;
   //}
-
+  &:hover{
+    background: var(--color-white);
+    color: var(--color-contrast);
+  }
   &:active {
     transform: translateY(4px) translateX(2px);
   }
@@ -32,6 +45,9 @@
       box-shadow: var(--shadow-lg);
       //color: var(--color-secondary);
       opacity: .96;
+    }
+    &:active {
+      transform: translateY(4px) translateX(2px);
     }
   }
   &--xs{

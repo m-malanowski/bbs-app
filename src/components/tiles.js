@@ -10,19 +10,19 @@ const Tiles = () => {
             <div className="tile"></div>
             <div className="tile">
                 <img src={icon1} alt="BBS" className="tile__icon"/>
-                <h5 className="tile__heading">EQUITY ENGAGEMENT</h5>
+                <h5 className="tile__heading">PROFESJONALIZM</h5>
                 <p className="tile__description">System audits and consulting with experts with deep industry knowledge</p>
             </div>
 
             <div className="tile">
                 <img src={icon2} alt="BBS" className="tile__icon"/>
-                <h5>EQUITY ENGAGEMENT</h5>
+                <h5>JAKOŚĆ</h5>
                 <p>System audits and consulting with experts with deep industry knowledge</p>
             </div>
 
             <div className="tile">
                 <img src={icon3} alt="BBS" className="tile__icon"/>
-                <h5>EQUITY ENGAGEMENT</h5>
+                <h5>DOŚWIADCZENIE</h5>
                 <p>System audits and consulting with experts with deep industry knowledge</p>
             </div>
         </section>

@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="footer">
 
             <div className="grid">
-                <div className="col-6">
+                <div className="col-6@md">
                     <img src={logoFooter} alt="BBS" className="footer__image"/>
                 </div>
-                <div className="col-6">
-                    <div className="grid padding-left-xl">
-                        <div className="col-4">
+                <div className="col-6@md">
+                    <div className="grid footer__links">
+                        <div className="col-4@xs">
                             <ul>
                                 <li>Sitemap</li>
                                 <li><Link to="/o-nas" className="link">O nas</Link></li>
@@ -23,7 +23,7 @@ const Footer = () => {
                                 <li><a href="" className="link">Blog</a></li>
                             </ul>
                         </div>
-                        <div className="col-4">
+                        <div className="col-4@xs">
                             <ul>
                                 <li>Adres</li>
                                 <li>Królewiecka 214</li>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 <li><a href="" className="link">info@bbs.com</a></li>
                             </ul>
                         </div>
-                        <div className="col-4">
+                        <div className="col-4@xs">
                             <ul>
                                 <li>Social</li>
                                 <li><a href="" className="link">Facebook</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <br/><br/>
-                    <small className="padding-left-xl">© {new Date().getFullYear()}, wszelkie prawa zastrzeżone </small>
+                    <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone </small>
                 </div>
             </div>
 

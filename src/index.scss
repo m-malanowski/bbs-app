@@ -1,3 +1,4 @@
+@use 'LuminaFrame/breakpoints' as *;
 @import "LuminaFrame/_spacing";
 @import "LuminaFrame/_grid";
 @import "LuminaFrame/_normalize";
@@ -5,16 +6,24 @@
 @import "LuminaFrame/_shared";
 @import "LuminaFrame/_typography";
 @import "LuminaFrame/_buttons";
+//@import "LuminaFrame/_breakpoints";
+
 
 //@font-face {
-//  font-family: "gta bold";
-//  src: url("fonts/GT America Bold.ttf") format("truetype");
+//  font-family: "gtae";
+//  src: url("fonts/GT America Extended Regular.ttf") format("truetype");
 //  font-display: swap;
 //}
-//
+
 @font-face {
-  font-family: "gta regular";
-  src: url("fonts/GT America Regular.ttf") format("truetype");
+  font-family: "Moderat Medium";
+  src: url("fonts/Moderat-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moderat Regular";
+  src: url("fonts/Moderat-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -25,15 +34,21 @@
   --color-contrast-lighter: #B5B5B5;
   --color-white: #FFFFFF;
   --color-secondary: #ff8933;
-  --color-primary: red;
-  --font-primary: 'gta regular';
-  //--font-primary: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --color-primary: #FFFFFF;
+  //--font-primary: 'Moderat Regular';
+  //--font-primary-medium: 'Moderat Medium';
+
+  //--font-primary: 'gtae';
+  //--font-primary-medium: 'gtae';
+
+  --font-primary: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --font-primary-medium: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
   //--font-primary-bold: 'gta bold', sans-serif;
   --radius-btn: 50px;
 
   --reveal-fx-timing-function: var(--ease-out);
   --reveal-fx-duratio: .6s;
-
 }
 
 body {
@@ -57,36 +72,55 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
-  width: 100vw;
+  //width: 100vw;
+  background-color: var(--color-contrast);
+
+  @include breakpoint(sm, "not all"){
+    grid-template-columns: 1fr;
+  }
+
 
   &__left {
     display: flex;
     //align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--color-contrast);
+    //background-color: var(--color-contrast);
     color: var(--color-white);
     padding: var(--space-xl);
+    @include breakpoint(sm, "not all"){
+      order: 2;
+    }
   }
 
   &__subtag {
     max-width: 65%;
+    @include breakpoint(sm, "not all") {
+      max-width: 100%;
+    }
   }
 
-  &__right {
-  }
+  //&__right {
+  //  background-color: var(--color-contrast);
+  //}
 
-  &__tag {
-
+  &__tag, &__btn {
+    margin-top: auto;
+    //@include breakpoint(sm, "not all"){
+    //  margin-top: revert;
+    //}
   }
 
   &__vertical {
     position: absolute;
     border-right: 2px solid var(--color-white);
-    left: 50.2%;
+    left: 49.9%;
     top: 0;
     bottom: 0;
     animation: vertical 3s infinite;
+    @include breakpoint(ld, "not all"){
+      display: none;
+    }
     //animation: vertical 3s normal forwards;
   }
 }
@@ -97,14 +131,18 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
-  width: 100vw;
+  background-color: var(--color-contrast);
 
+  //width: 100vw;
+  @include breakpoint(sm, "not all"){
+    grid-template-columns: 1fr;
+  }
   &__right {
     display: flex;
     //align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--color-contrast);
+    //background-color: var(--color-contrast);
     color: var(--color-white);
     padding: var(--space-xl);
   }
@@ -119,8 +157,18 @@ body {
     //animation: vertical 3s normal forwards;
   }
 
+  figure{
+    height: 100vh;
+    @include breakpoint(sm, "not all") {
+      height: revert;
+    }
+  }
+
   &__subtag {
     max-width: 65%;
+    @include breakpoint(sm, "not all") {
+      max-width: 100%;
+    }
   }
 
   &__left {
@@ -148,6 +196,18 @@ body {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+
+  @include breakpoint(sm, "not all") {
+    grid-template-columns: 1fr;
+  }
+  @include breakpoint(xs, "not all") {
+    margin-bottom: var(--space-xl);
+  }
+  &__left{
+    @include breakpoint(sm, "not all") {
+      height: 50vh;
+    }
+  }
 
   &__right {
     background-color: var(--color-contrast);
@@ -213,11 +273,17 @@ body {
   //justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  @include breakpoint(sm, "not all") {
+    grid-template-columns: 1fr;
+  }
 
   &--index {
     .tile {
       &:first-of-type {
         border: none;
+        @include breakpoint(sm, "not all") {
+          display: none;
+        }
       }
 
       &:hover:not(&:first-of-type) {
@@ -242,6 +308,13 @@ body {
   border: 1px solid rgba(0, 0, 0, .05);
   padding: var(--space-xxl) var(--space-xl);
 
+  @include breakpoint(md, "not all") {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__icon {
     margin-bottom: var(--space-lg);
   }
@@ -256,11 +329,19 @@ body {
 .bild {
   width: 100vw;
   height: 100vh;
-  background-image: url("images/bild1.jpg");
+  //background-image: url("images/bild1.jpg");
+  background-image: url("images/hero8.jpg");
   display: block;
   background-origin: content-box;
   background-size: cover;
+  background-position: center;
+
   position: relative;
+
+  @include breakpoint(sm, "not all") {
+    background-position: center;
+    height: 50vh;
+  }
 
   &__tile {
     position: absolute;
@@ -268,28 +349,45 @@ body {
     left: 49.65%;
     //left: 50%;
     //transform: translate(-50%, -50%);
-    width: 600px;
-    height: 400px;
+    //width: 600px;
+    //padding: var(--space-xl) var(--space-xxxxl) var(--space-xxl) var(--space-xl);
+    padding: var(--space-xl);
+    //height: 400px;
     background-color: var(--color-contrast);
+    @include breakpoint(sm, "not all") {
+      width: 100%;
+    }
+    @include breakpoint(xs, "not all"){
+      display: none;
+    }
     &--services{
+      padding: var(--space-xl);
       left: 0;
       bottom: 20%;
-      width: 400px;
-      height: 600px;
+      //width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include breakpoint(sm, "not all") {
+        display: none;
+      }
     }
   }
 
   &__title {
     font-weight: 700;
+    line-height: 1;
     color: var(--color-white);
-    padding: var(--space-xl);
+    //padding: var(--space-xl);
   }
 
   &__line {
-    width: 50%;
-    height: 4px;
+    width: calc(2* var(--space-xxxl)) ;
+    height: 2px;
     background-color: var(--color-white);
-    margin: 0 var(--space-xl);
+    margin-top: var(--space-xxl);
+    //margin: 0 var(--space-xl);
   }
 
   &--services{
@@ -306,12 +404,30 @@ body {
   //display: flex;
   //align-items: center;
   //padding: var(--space-xl);
+  //height: 80vh;
+  //@include breakpoint(sm, "not all") {
+  //  height: revert;
+  //}
+
   &__left {
     //padding: var(--space-xl);
+    @include breakpoint(sm, "not all") {
+      order: 2;
+    }
   }
-
+  figure{
+    height: 80vh;
+    @include breakpoint(sm, "not all") {
+      height: revert;
+    }
+  }
   &__right {
     background-color: var(--color-contrast);
+    height: 80vh;
+    @include breakpoint(sm, "not all") {
+      order: 1;
+      height: revert;
+    }
   }
 }
 
@@ -334,9 +450,10 @@ body {
   &__image {
     filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
   }
-
-  small {
-
+  &__links, small{
+    @include breakpoint(md) {
+      padding-left: var(--space-xl);
+    }
   }
 }
 
@@ -351,14 +468,20 @@ body {
   width: 100%;
   color: var(--color-white);
 
+
   &__left, &__right {
     padding: var(--space-lg) var(--space-xl);
   }
 
+  &__left{
+    position: relative;
+    z-index: 100;
+  }
+
   &__right {
     display: flex;
-    justify-content: space-between;
-    //justify-content: end;
+    //justify-content: space-between;
+    justify-content: end;
     gap: var(--space-md);
     align-items: center;
   }
@@ -366,10 +489,18 @@ body {
   &__language {
     display: flex;
     gap: var(--space-md);
+    @include breakpoint(sm, "not all") {
+      display: none;
+    }
   }
   &__hamburger-wrapper{
     display: flex;
-    gap: var(--space-lg)  ;
+    gap: var(--space-lg);
+    //p{
+    //  @include breakpoint(sm, "not all") {
+    //    display: none;
+    //  }
+    //}
   }
 
   &__hamburger {
@@ -505,8 +636,8 @@ body {
     //transition-delay: .3s;
     margin-left: auto;
     width: 70vw;
-    height: 70vh;
-    //height: 0;
+    //height: 70vh;
+    height: 0;
     //max-height: 0;
     box-shadow: var(--shadow-lg);
     background-color: var(--color-white);
@@ -514,6 +645,9 @@ body {
     padding: var(--space-xl);
     z-index: 22222;
     position: relative;
+    @include breakpoint(sm, "not all") {
+      width: revert;
+    }
     &--open{
       height: 70vh;
       //max-height: 70vh;
@@ -521,6 +655,9 @@ body {
       //transition: max-height 0.6s var(--ease-in);
 
       //transition-delay: .3s;
+      @include breakpoint(sm, "not all") {
+        height: 100vh;
+      }
     }
   }
 
@@ -541,20 +678,38 @@ body {
   &__links{
     display: flex;
     flex-direction: column;
+    @include breakpoint(sm, "not all") {
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__sublinks{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xs);
     max-width: 500px;
     margin: var(--space-lg) 0;
     color: var(--color-contrast-light);
+
+    //line-height: 1;
+    display: flex;
+    flex-direction: column;
+    //flex-basis: auto;
+
+    @include breakpoint(sm, "not all") {
+      //place-items: center;
+      //grid-template-columns: 1fr;
+      //flex-basis: revert;
+      align-items: center;
+      //justify-content: center;
+    }
   }
 
 
 
   &__link {
-    font-size: var(--text-xxxl);
+    font-size: calc(43px + (86 - 43) * ((100vw - 320px) / (1900 - 320)));
+    font-family: var(--font-primary-medium);
     padding: var(--space-xxxs) 0;
     line-height: 1.2;
 

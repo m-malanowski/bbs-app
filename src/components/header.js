@@ -12,12 +12,19 @@ const Header = ({toggleSideBar, isOpen}) => {
             </div>
 
             <div className="header__right">
-                <div className="header__language">
-                    <p>English</p>
-                    <img src={arrowDown} alt=""/>
-                </div>
+                {/*<p>Menu</p>*/}
+
+                {/*<div className="header__language">*/}
+                {/*    <p>English</p>*/}
+                {/*    <img src={arrowDown} alt=""/>*/}
+                {/*</div>*/}
                 <div className="header__hamburger-wrapper">
-                    <p>Menu</p>
+                    {/*<p>Menu</p>*/}
+                    <div className="header__language">
+                        <p>English</p>
+                        <img src={arrowDown} alt=""/>
+                    </div>
+
                     <div onClick={toggleSideBar} className={`header__hamburger ${isOpen? "header__hamburger--open" : ""}`}>
                         <div className="header__hamburger-icon"></div>
                     </div>

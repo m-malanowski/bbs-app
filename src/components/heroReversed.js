@@ -1,18 +1,35 @@
 import * as React from "react"
-import img from "../images/bild4.jpg"
+import img from "../images/hero16.jpg"
 import down from "../images/down.svg"
+import {motion} from "framer-motion";
 
+const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
 
 const Hero = () => {
 
     return(
         <div className="hero-reversed">
-            <div className="hero-reversed__left h-100">
-                <img src={img} alt="" className="image"/>
+            <motion.div className="hero-reversed__left"
+                        initial={{
+                            width: 0
+                        }}
+                        animate={{
+                            width: "100%",
+                            transition: {delay: 1.6, ...transition},
+                            transformOrigin: 'left'
+                        }}
+                        exit={{
+                            width: 0,
+                            transition: {delay: .2, ...transition},
+                        }}
+            >
+                <figure>
+                    <img src={img} alt="" className="image"/>
+                </figure>
 
-            </div>
+            </motion.div>
             <div className="hero-reversed__right ">
-                <div className="hero-reversed__vertical "></div>
+                {/*<div className="hero-reversed__vertical "></div>*/}
 
                 <h2 className="hero-reversed__tag heading margin-top-auto">
                     We’re creating a smarter, greener energy future, <span>today</span>

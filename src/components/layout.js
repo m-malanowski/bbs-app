@@ -5,7 +5,8 @@ import Header from "./header"
 import Sidebar from "./sidebar";
 import { Helmet } from "react-helmet"
 import FakeLoader from "./fakeLoder";
-
+import { motion, AnimatePresence } from "framer-motion"
+import { layoutVariants, transition } from './variants'
 
 const Layout = ({location, title, children}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -33,7 +34,7 @@ const Layout = ({location, title, children}) => {
     // }
     return (
         <>
-            <FakeLoader />
+            {/*<FakeLoader />*/}
 
             <div className="" data-is-root-path={isRootPath}>
                 {/*<header className="global-header">{header}</header>*/}
@@ -45,7 +46,28 @@ const Layout = ({location, title, children}) => {
 
                 <Header isOpen={isOpen} toggleSideBar={toggleSideBar}></Header>
                 <Sidebar isOpen={isOpen} toggleSideBar={toggleSideBar}></Sidebar>
-                <main>{children}</main>
+
+                <AnimatePresence
+                 initial={true}
+                 exitBeforeEnter
+                >
+                    <motion.main
+                        location={location}
+                        key={location.key}
+                        // variants={layoutVariants}
+                        // initial="initial"
+                        // animate="enter"
+                        // exit="exit"
+                        // transition={transition}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0, transition: {delay: 1.2, ...transition}, }}
+                    >
+                        {children}
+                    </motion.main>
+
+                </AnimatePresence>
+
                 <Footer></Footer>
             </div>
         </>

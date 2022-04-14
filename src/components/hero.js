@@ -1,6 +1,10 @@
 import * as React from "react"
-import img from "../images/bild3.jpg"
+import img from "../images/hero11.jpg"
 import {Link} from "gatsby";
+import {motion} from "framer-motion";
+
+    // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
+const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
 
 const Hero = ({reversed}) => {
     const isReversed = reversed
@@ -11,25 +15,38 @@ const Hero = ({reversed}) => {
     return(
         <div className="hero">
             <div className="hero__left">
-                <div className="hero__vertical "></div>
+                {/*<div className="hero__vertical "></div>*/}
 
-                <h2 className="hero__tag heading margin-top-auto">
-                    We’re creating a smarter, greener energy future, <span>today</span>
+                <h2 className="hero__tag heading">
+                    Twoja Inwestycja z <br/> <span>BBS</span> POLSKA
                 </h2>
                 <p className="hero__subtag ">
-                    At Shildan, we are transforming the built environment
-                    to inspire beautiful, sustainable architecturr
-                    our communities for generations to come.
+                    Celem działania firmy jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów.
                 </p>
-                <Link to="/kontakt" className="btn margin-top-xl margin-top-auto">Umów spotkanie</Link>
+                <Link to="/kontakt" className="hero__btn btn margin-top-xl">Umów spotkanie</Link>
             </div>
-            <div className="hero__right h-100">
+            <motion.div className="hero__right"
+                        initial={{
+                            width: 0,
+                            right: 0,
+                            transformOrigin: 'bottom'
+                        }}
+                        animate={{
+                            width: "100%",
+                            transition: {delay: 3.8, ...transition},
+                            transformOrigin: 'bottom'
+                        }}
+                        exit={{
+                            width: 0,
+                            transition: {delay: .2, ...transition},
+                        }}
+            >
                 <img src={img} alt="" className="image"/>
 
                 {/*<figure className="image-wrapper">*/}
                 {/*    <img src={img} alt="" className="image"/>*/}
                 {/*</figure>*/}
-            </div>
+            </motion.div>
         </div>
     )
 }

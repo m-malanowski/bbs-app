@@ -1,7 +1,11 @@
 // don't modify this file -> edit 📁 custom-style/_spacing.scss to set your custom spacing scale
+@use 'breakpoints' as *;
 
 :root {
     --space-unit:  1rem;
+    @include breakpoint(sm, "not all") {
+        --space-unit:  .5rem;
+    }
 }
 
 :root, * {
