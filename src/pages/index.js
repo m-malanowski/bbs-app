@@ -15,9 +15,10 @@ const Index = ({data, location}) => {
 
     return (
         <>
-            <FakeLoader />
+            <Seo title="All posts"/>
+
+            <FakeLoader></FakeLoader>
             {/*<Layout location={location} title={siteTitle}>*/}
-                <Seo title="All posts"/>
 
                 <Hero></Hero>
 
