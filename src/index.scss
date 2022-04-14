@@ -1030,7 +1030,6 @@ figure{
   //}
 }
 
-
 .loader-wrapper {
   left: 0;
   top: 0;
@@ -1043,46 +1042,4 @@ figure{
   position: absolute;
   overflow: hidden;
   flex-direction: column;
-
-  .svg-container {
-    //display: flex;
-    //flex-direction: column;
-    //transform: scale(.8);
-
-    //@include for-phone-only {
-    //  //transform: scale(1);
-    //  img:nth-of-type(1) {
-    //    width: 80%;
-    //    height: auto;
-    //  }
-    //  img:nth-of-type(2) {
-    //    width: 60%;
-    //    height: auto;
-    //  }
-    //}
-  }
-
-  img:first-of-type {
-    margin-top: 2rem;
-  }
-
-  img {
-    margin-top: 1rem;
-    //display: block;
-    text-align: center;
-    //height: auto;
-    //width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-
-.st0 {
-  fill: #FFFFFF;
-}
-
-.st1 {
-  fill: #CEFF00;
 }
