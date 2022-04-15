@@ -14,6 +14,7 @@ import {pathVariants} from "../components/variants";
 
 
 const transition2 = { duration: 2, yoyo: Infinity, ease: "easeInOut" };
+const transition = {duration: 3, ease: "easeInOut"};
 
 
 function FadeInWhenVisible({children}) {
@@ -47,7 +48,7 @@ const Index = ({data, location}) => {
                 initial={{opacity: 1}}
                 animate={{
                     opacity: 0,
-                    transition: {delay: 3.2, when: "beforeChildren", duration: .6},
+                    transition: {delay: 3.2, when: "beforeChildren", duration: .4},
                     transitionEnd: {
                         display: "none"
                     }
@@ -66,7 +67,7 @@ const Index = ({data, location}) => {
                         strokeLinecap="round"
                         initial={{pathLength: 0, scale: .1, opacity: 0}}
                         animate={{pathLength: 1, scale: 1, opacity: 1}}
-                        transition={transition2}
+                        transition={transition}
                     />
 
                     <motion.path
@@ -77,7 +78,7 @@ const Index = ({data, location}) => {
                         strokeLinecap="round"
                         initial={{pathLength: 0}}
                         animate={{pathLength: 1}}
-                        transition={transition2}
+                        transition={transition}
                     />
 
                 </svg>
@@ -88,91 +89,105 @@ const Index = ({data, location}) => {
             {/*<FakeLoader></FakeLoader>*/}
             {/*<Layout location={location} title={siteTitle}>*/}
 
-            <Hero></Hero>
+            <motion.div
+                style={{overflow: "hidden"}}
+                initial={{opacity: 0 }}
+                animate={{
+                    opacity: 1,
+                    transition: {
+                        delay: 3.6,
+                        duration: 1,
+                        ease: [0.6, 0.01, -0.05, 0.9]
+                    }
+                }}
+            >
 
-            <section className="container">
-                <div className="grid gap-xxxl@md margin-top-xl">
-                    <div className="col-6@md">
-                        {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
-                        <FadeInWhenVisible>
-                            <h2 className="heading">Oferowane usługi</h2>
-                        </FadeInWhenVisible>
-                    </div>
-                    <div className="col-6@md">
+                <Hero></Hero>
 
-                        <FadeInWhenVisible>
-                            <h3> Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane
-                                zabudowania.
-                                Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.</h3>
-                        </FadeInWhenVisible>
+                <section className="container">
+                    <div className="grid gap-xxxl@md margin-top-xl">
+                        <div className="col-6@md">
+                            {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
+                            <FadeInWhenVisible>
+                                <h2 className="heading">Oferowane usługi</h2>
+                            </FadeInWhenVisible>
+                        </div>
+                        <div className="col-6@md">
+
+                            <FadeInWhenVisible>
+                                <h3> Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane
+                                    zabudowania.
+                                    Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.</h3>
+                            </FadeInWhenVisible>
 
 
-                        <div className="grid gap-md margin-y-xxxl">
-                            <div className="col-6@md">Skateboard hammock quinoa disrupt meggings 90's tumblr tilde
-                                distillery.
-                            </div>
-                            <div className="col-6@md">Dreamcatcher put a bird on it ennui street art normcore you
-                                probably haven't heard of them. Iceland direct trade cardigan authentic kogi. Disrupt
-                                kombucha poutine lo-fi edison bulb prism migas literally green juice bicycle rights.
+                            <div className="grid gap-md margin-y-xxxl">
+                                <div className="col-6@md">Skateboard hammock quinoa disrupt meggings 90's tumblr tilde
+                                    distillery.
+                                </div>
+                                <div className="col-6@md">Dreamcatcher put a bird on it ennui street art normcore you
+                                    probably haven't heard of them. Iceland direct trade cardigan authentic kogi. Disrupt
+                                    kombucha poutine lo-fi edison bulb prism migas literally green juice bicycle rights.
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="grid gap-xxxl@md margin-bottom-xxl">
-                    <div className="col-6@md">
-                        <h2 className="heading">Nasza firma ma jasno sprecyzowany <span>cel:</span></h2>
+                    <div className="grid gap-xxxl@md margin-bottom-xxl">
+                        <div className="col-6@md">
+                            <h2 className="heading">Nasza firma ma jasno sprecyzowany <span>cel:</span></h2>
+                        </div>
+                        <div className="col-6@md">
+                            <h3>Dostarczać wysokiej jakości kompleksową obsługę inwestycji budowlanych.</h3>
+                        </div>
                     </div>
-                    <div className="col-6@md">
-                        <h3>Dostarczać wysokiej jakości kompleksową obsługę inwestycji budowlanych.</h3>
+                </section>
+
+                <Tiles/>
+
+                <section className="bild">
+                    <div className="bild__tile">
+                        <h2 className="bild__title">Best bulding <br/> solutions</h2>
+                        <div className="bild__line"></div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <Tiles/>
+                <section>
+                    <div className="teaser">
+                        {/*<div className="col-6">*/}
+                        <figure>
+                            <img src={hero6} alt="BBS"/>
+                        </figure>
+                        {/*</div>*/}
 
-            <section className="bild">
-                <div className="bild__tile">
-                    <h2 className="bild__title">Best bulding <br/> solutions</h2>
-                    <div className="bild__line"></div>
-                </div>
-            </section>
+                        <div className="col-6">
+                            <h2 className="heading padding-xl">
+                                Zapewniamy techniczne, kreatywne i terminowe podejście do <span>każdej</span> realizacji.
+                            </h2>
+                            <div className="grid padding-xl ">
+                                <div className="col-6@xs margin-left-auto">
+                                    <p>By harnessing the power of smart meters, big data, and machine learning, we raise the
+                                        IQ of your energy assets and allow you to buy or sell electricity from the palm of
+                                        your hand.
+                                        Join us today as we illuminate a path to an affordable, clean, energy future.</p>
+                                    <br/>
+                                    <p>Inventore numquam officiis quod. Accusamus at commodi cum, fugit incidunt minus natus
+                                        nostrum provident quae repellat.</p>
+                                    <br/>
+                                    <p>By harnessing the power of smart meters, big data, and machine learning, we raise the
+                                        IQ of your energy assets and allow you to buy or sell electricity from the palm of
+                                        your hand.
+                                        Join us today as we illuminate a path to an affordable, clean, energy future.</p>
+                                    <br/><br/>
+                                    <a href="" className="btn btn--dark margin-top-xl">Nasze usługi</a>
 
-            <section>
-                <div className="teaser">
-                    {/*<div className="col-6">*/}
-                    <figure>
-                        <img src={hero6} alt="BBS"/>
-                    </figure>
-                    {/*</div>*/}
-
-                    <div className="col-6">
-                        <h2 className="heading padding-xl">
-                            Zapewniamy techniczne, kreatywne i terminowe podejście do <span>każdej</span> realizacji.
-                        </h2>
-                        <div className="grid padding-xl ">
-                            <div className="col-6@xs margin-left-auto">
-                                <p>By harnessing the power of smart meters, big data, and machine learning, we raise the
-                                    IQ of your energy assets and allow you to buy or sell electricity from the palm of
-                                    your hand.
-                                    Join us today as we illuminate a path to an affordable, clean, energy future.</p>
-                                <br/>
-                                <p>Inventore numquam officiis quod. Accusamus at commodi cum, fugit incidunt minus natus
-                                    nostrum provident quae repellat.</p>
-                                <br/>
-                                <p>By harnessing the power of smart meters, big data, and machine learning, we raise the
-                                    IQ of your energy assets and allow you to buy or sell electricity from the palm of
-                                    your hand.
-                                    Join us today as we illuminate a path to an affordable, clean, energy future.</p>
-                                <br/><br/>
-                                <a href="" className="btn btn--dark margin-top-xl">Nasze usługi</a>
-
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <Contact></Contact>
+                <Contact></Contact>
+            </motion.div>
 
             {/*</Layout>*/}
         </>

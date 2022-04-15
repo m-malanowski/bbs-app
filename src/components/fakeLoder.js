@@ -2,7 +2,7 @@ import React from "react"
 import {pathVariants, logoShowSecondHouse, logoShowFirstHouse} from "./variants"
 import {motion} from "framer-motion"
 
-// const transition = {duration: 4, ease: "easeInOut"};
+const transition = {duration: 4, ease: "easeInOut"};
 // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
 const transition2 = { duration: 2, yoyo: Infinity, ease: "easeInOut" };
 
