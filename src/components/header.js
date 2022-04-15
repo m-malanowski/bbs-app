@@ -23,10 +23,6 @@ const Header = ({toggleSideBar, isOpen}) => {
             <div className="header__right">
                 {/*<p>Menu</p>*/}
 
-
-                {
-                    console.log(document.documentElement.lang)
-                }
                 {/*<div className="header__language">*/}
                 {/*    <p>English</p>*/}
                 {/*    <img src={arrowDown} alt=""/>*/}
