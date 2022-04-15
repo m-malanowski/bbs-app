@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./src/index.scss"
 
 import Layout from "./src/components/layout";
