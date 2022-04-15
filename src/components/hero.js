@@ -2,16 +2,15 @@ import * as React from "react"
 import img from "../images/hero11.jpg"
 import {Link} from "gatsby";
 import {motion} from "framer-motion";
+import { useTranslation } from 'react-i18next';
+
 
     // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
 
-const Hero = ({reversed}) => {
-    const isReversed = reversed
+const Hero = () => {
+    const { t, i18n } = useTranslation();
 
-    if(isReversed){
-
-    }
     return(
         <div className="hero">
             <div className="hero__left">
@@ -20,6 +19,10 @@ const Hero = ({reversed}) => {
                 <h2 className="hero__tag heading">
                     Twoja Inwestycja z <br/> <span>BBS</span> POLSKA
                 </h2>
+                {/*<h2  className="hero__tag heading">*/}
+                {/*    {t('Investition')}*/}
+                {/*</h2>*/}
+
                 <p className="hero__subtag ">
                     Celem działania firmy jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów.
                 </p>

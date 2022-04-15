@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet"
 import FakeLoader from "./fakeLoder";
 import { motion, AnimatePresence } from "framer-motion"
 import { layoutVariants, transition } from './variants'
+import './i18n';
 
 const Layout = ({location, title, children}) => {
     const [isOpen, setIsOpen] = useState(false)

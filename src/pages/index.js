@@ -11,9 +11,9 @@ import {motion} from "framer-motion"
 import FadeInWhenVisible from "../components/fadeWhenVisible";
 
 
-const isDarkMode = () => {
-    window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)".matches)
-}
+// const isDarkMode = () => {
+//     window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)".matches)
+// }
 
 
 const Index = ({data, location}) => {

@@ -490,18 +490,34 @@ body {
   &__language {
     display: flex;
     gap: var(--space-md);
+    align-items: baseline;
     @include breakpoint(sm, "not all") {
       display: none;
+    }
+    &--open{
+      ul{
+        height: auto !important;
+      }
+    }
+    ul{
+      height: 1.9rem;
+      overflow: hidden;
+    }
+    &__arrow{
+      transform: rotate(0deg);
+      transition: transform .55s var(--ease-out-back);
+      &--rolled{
+        transform: rotate(180deg);
+        transition: transform .25s var(--ease-out-back);
+      }
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
   &__hamburger-wrapper{
     display: flex;
     gap: var(--space-lg);
-    //p{
-    //  @include breakpoint(sm, "not all") {
-    //    display: none;
-    //  }
-    //}
   }
 
   &__hamburger {
