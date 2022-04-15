@@ -43,18 +43,18 @@ const Index = ({data, location}) => {
 
 
             <motion.div
-                className="loader-wrapper"
+                className="greeting"
                 initial={{opacity: 1}}
                 animate={{
                     opacity: 0,
-                    transition: {delay: 3.2, when: "beforeChildren", duration: .4},
+                    transition: {delay: 3.2, when: "beforeChildren", duration: .6},
                     transitionEnd: {
                         display: "none"
                     }
                 }}
             >
-                <motion.svg
-                    variants={pathVariants} initial="hidden" animate="visible" className="initialLogo"
+                <svg
+                    // variants={pathVariants} initial="hidden" animate="visible" className="initialLogo"
                     width="179" height="156" viewBox="0 0 179 156" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                     <motion.path
@@ -80,7 +80,7 @@ const Index = ({data, location}) => {
                         transition={transition2}
                     />
 
-                </motion.svg>
+                </svg>
 
             </motion.div>
 
