@@ -27,14 +27,14 @@ const Hero = ({reversed}) => {
             </div>
             <motion.div className="hero__right"
                         initial={{
-                            height: 0,
+                            width: 0,
                         }}
                         animate={{
-                            height: "100%",
+                            width: "100%",
                             transition: {delay: 3.8, ...transition},
                         }}
                         exit={{
-                            height: 0,
+                            width: 0,
                             transition: {delay: .2, ...transition},
                         }}
             >
