@@ -1,40 +1,52 @@
 import React, { useState } from "react"
 import logo from "../images/logo.svg"
+import logoPolska from "../images/logo-polska.svg"
+
 import arrowDown from "../images/arrow-down.svg"
-import {Link} from "gatsby";
+import {Link, navigate} from "gatsby";
 
 const Header = ({toggleSideBar, isOpen}) => {
     const [isRoll, setIsRoll] = useState(false)
+    const [isActiveEn, setActiveEN] = useState(false)
 
-    const toggleLanguage = () => {
-        setIsRoll(!isRoll)
+
+    const showLanguages = () => {
+        setIsRoll(!isRoll);
     }
-
+    const selectEn = () => {
+        localStorage.setItem("lang", "en")
+        setActiveEN(true);
+        // navigate("/", { replace: true });
+    }
+    const selectPl = () => {
+        localStorage.setItem("lang", "pl")
+        setActiveEN(false);
+        // navigate("/", { replace: true });
+    }
 
 
     return(
         <div className="header">
             <div className="header__left">
                 <a href="/">
-                    <img src={logo} alt="" className="header__logo"/>
+                    {
+                        localStorage.getItem("lang") == "en" ?
+                        <img src={logo} height={50} alt="" className="header__logo"/> :
+                        <img src={logoPolska} height={50} alt="" className="header__logo"/>
+                    }
                 </a>
             </div>
 
             <div className="header__right">
-                {/*<p>Menu</p>*/}
-
-                {/*<div className="header__language">*/}
-                {/*    <p>English</p>*/}
-                {/*    <img src={arrowDown} alt=""/>*/}
-                {/*</div>*/}
+ 
                 <div className="header__hamburger-wrapper">
                     {/*<p>Menu</p>*/}
                     <div className={`header__language ${isRoll? "header__language--open" : ""}`}>
                         <ul>
-                            <li><Link className="link" to="/">English</Link></li>
-                            <li><Link className="link" to="/">Polski</Link></li>
+                            <li onClick={selectPl}><a className="link" href="/">Polski</a></li>
+                            <li onClick={selectEn}> <a className="link" href="/">English</a></li>
                         </ul>
-                        <img className={`header__language__arrow ${isRoll? "header__language__arrow--rolled" : "" }`} onClick={toggleLanguage} src={arrowDown} alt=""/>
+                        <img className={`header__language__arrow ${isRoll? "header__language__arrow--rolled" : "" }`} onClick={showLanguages} src={arrowDown} alt=""/>
                     </div>
 
                     <div onClick={toggleSideBar} className={`header__hamburger ${isOpen? "header__hamburger--open" : ""}`}>

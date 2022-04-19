@@ -24,6 +24,9 @@ const resources = {
     }
 };
 
+
+console.log(localStorage.getItem("lang"))
+
 i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
@@ -33,9 +36,11 @@ i18n
         // if you're using a language detector, do not define the lng option
 
         // lng: (document.documentElement.lang) || 'pl',
-        lng: 'pl',
+        // lng: 'pl',
+        lng: localStorage.getItem("lang") || 'pl',
+        // lng: localStorage.getItem("lang"),
 
-        fallbackLng: 'pl',
+        // fallbackLng: 'pl',
         keySeparator: '.', // we do not use keys in form messages.welcome
 
         interpolation: {
