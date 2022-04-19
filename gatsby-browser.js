@@ -12,6 +12,10 @@ export const wrapPageElement = ({ element, props }) => {
     return <Layout {...props}>{element}</Layout>;
 };
 
+const windowGlobal = typeof window !== 'undefined' && window
+windowGlobal.localStorage.setItem("lang", "pl")
+
+
 const transitionDelay = 1500
 export const shouldUpdateScroll = ({ routerProps: { location }, getSavedScrollPosition }) => {
     if (location.action === "PUSH") {
