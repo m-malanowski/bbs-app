@@ -1,25 +1,26 @@
 import React, { useState } from "react"
 import logo from "../images/logo.svg"
 import logoPolska from "../images/logo-polska.svg"
-
 import arrowDown from "../images/arrow-down.svg"
-import {Link, navigate} from "gatsby";
+// import {Link, navigate} from "gatsby";
 
 const Header = ({toggleSideBar, isOpen}) => {
     const [isRoll, setIsRoll] = useState(false)
     const [isActiveEn, setActiveEN] = useState(false)
+
+    const windowGlobal = typeof window !== 'undefined' && window
 
 
     const showLanguages = () => {
         setIsRoll(!isRoll);
     }
     const selectEn = () => {
-        localStorage.setItem("lang", "en")
+        windowGlobal.localStorage.setItem("lang", "en")
         setActiveEN(true);
         // navigate("/", { replace: true });
     }
     const selectPl = () => {
-        localStorage.setItem("lang", "pl")
+        windowGlobal.localStorage.setItem("lang", "pl")
         setActiveEN(false);
         // navigate("/", { replace: true });
     }
@@ -30,15 +31,15 @@ const Header = ({toggleSideBar, isOpen}) => {
             <div className="header__left">
                 <a href="/">
                     {
-                        localStorage.getItem("lang") == "en" ?
-                        <img src={logo} height={50} alt="" className="header__logo"/> :
-                        <img src={logoPolska} height={50} alt="" className="header__logo"/>
+                        windowGlobal.localStorage.getItem("lang") == "en" ?
+                        <img src={logo} height={45} alt="" className="header__logo"/> :
+                        <img src={logoPolska} height={45} alt="" className="header__logo"/>
                     }
                 </a>
             </div>
 
             <div className="header__right">
- 
+
                 <div className="header__hamburger-wrapper">
                     {/*<p>Menu</p>*/}
                     <div className={`header__language ${isRoll? "header__language--open" : ""}`}>

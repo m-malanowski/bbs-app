@@ -20,25 +20,22 @@ const ContactPage = ({data, location}) => {
                 <div className="contact-page">
                     <section className="container">
                         <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
-                            <div className="col-6">
+                            <div className="col-6@md">
                                 <h3>We support utilities and resellers by providing their customers with superb service built atop smart technology.</h3>
 
                                 <div className="grid  gap-xxxl margin-bottom-xxl">
-                                    <div className="col-6">
+                                    <div className="col-6@md">
                                         <p >Your energy transition partner <span>transition</span></p>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-6@md">
                                         <p>We support utilities and resellers by providing their customers with superb service built atop smart technology.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
-
-                            </div>
                         </div>
                     </section>
 
-                    <section className="container ">
+                    <section className="container">
 
                         <div className="filter margin-bottom-xl">
                             <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Wszystkie</Link>

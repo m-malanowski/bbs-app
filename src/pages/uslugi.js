@@ -20,15 +20,15 @@ const Services = ({data, location}) => {
                 <HeroReversed></HeroReversed>
 
                 <section className="container">
-                    <div className="grid grid gap-xxxl">
-                        <div className="col-6">
+                    <div className="grid gap-xxxl">
+                        <div className="col-6@md">
                             <h2 className="heading">Our not-so-secret plan: <span>power</span> the global transition</h2>
                         </div>
-                        <div className="col-6">
+                        <div className="col-6@md">
                             <h3 className="margin-bottom-md">We support utilities and resellers by providing their <br/> customers with superb service built atop smart technology.</h3>
 
                             <div className="grid padding-xl ">
-                                <div className="col-6 margin-left-auto">
+                                <div className="col-6@md margin-left-auto">
                                     <p>By harnessing the power of smart meters, big data, and machine learning, we raise the IQ of your energy assets and allow you to buy or sell electricity from the palm of your hand.
                                         Join us today as we illuminate a path to an affordable, clean, energy future.</p>
                                     <br/>
@@ -36,13 +36,13 @@ const Services = ({data, location}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid gap-xxxl margin-bottom-xxl">
-                        <div className="col-6">
+                    <div className="grid gap-xxxl margin-bottom-xxl">
+                        <div className="col-6@md">
                             <h2 className="heading">Your energy transition partner transition</h2>
                         </div>
-                        <div className="col-6">
+                        <div className="col-6@md">
                             <div className="grid padding-xl ">
-                                <div className="col-6 margin-left-auto">
+                                <div className="col-6@md margin-left-auto">
                                     <p>By harnessing the power of smart meters, big data, and machine learning, we raise the IQ of your energy assets and allow you to buy or sell electricity from the palm of your hand.
                                         Join us today as we illuminate a path to an affordable, clean, energy future.</p>
                                     <br/>

@@ -23,11 +23,11 @@ const ContactPage = ({data, location}) => {
                 <div className="contact-page">
                     <section className="container">
                         <div className="grid gap-xxxl margin-y-xxxl">
-                            <div className="col-6">
+                            <div className="col-6@md">
                                 <h3>We support utilities and resellers by providing their customers with superb service built atop smart technology.</h3>
 
-                                <div className="grid  gap-xxxl margin-bottom-xxl">
-                                    <div className="col-6">
+                                <div className="grid gap-xxxl margin-bottom-xxl">
+                                    <div className="col-6@md">
                                         <p >Your energy transition partner <span>transition</span></p>
                                         <br/>
                                         <p>Customers with superb service built atop  superb service built atop smart technology.</p>
@@ -39,12 +39,12 @@ const ContactPage = ({data, location}) => {
                                         {/*    <li>info@bbs.com</li>*/}
                                         {/*</ul>*/}
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-6@md">
                                         <p>We support utilities and resellers by providing their customers with superb service built atop smart technology.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-6@md">
 
                                 <Form></Form>
 

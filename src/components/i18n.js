@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
+const windowGlobal = typeof window !== 'undefined' && window
 
 // window.setTimeout('console.log(document.documentElement.lang)', 500);
 //
@@ -37,7 +37,7 @@ i18n
 
         // lng: (document.documentElement.lang) || 'pl',
         // lng: 'pl',
-        lng: localStorage.getItem("lang") || 'pl',
+        lng: windowGlobal.localStorage.getItem("lang") || 'pl',
         // lng: localStorage.getItem("lang"),
 
         // fallbackLng: 'pl',

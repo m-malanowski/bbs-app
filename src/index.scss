@@ -197,7 +197,7 @@ body {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-
+  background-color: var(--color-contrast);
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
@@ -211,7 +211,7 @@ body {
   }
 
   &__right {
-    background-color: var(--color-contrast);
+    //background-color: var(--color-contrast);
     color: var(--color-white);
     //display: flex;
     //flex-direction: column;
@@ -838,8 +838,17 @@ figure{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
+  @include breakpoint(sm, "not all"){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(sm, "not all"){
+    grid-template-columns: 1fr;
+  }
 }
-.project{
+.project img{
+  @include breakpoint(sm, "not all"){
+    border-radius: 12px;
+  }
 
 }
 
@@ -848,6 +857,10 @@ figure{
   gap: var(--space-md);
   align-items: center;
   justify-content: end;
+  @include breakpoint(sm, "not all"){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 
@@ -889,6 +902,9 @@ figure{
     min-height: 450px;
     display: flex;
     flex-direction: column;
+    @include breakpoint(sm, "not all"){
+      width: 100%;
+    }
   }
 
   form div {
