@@ -154,7 +154,7 @@ const Index = ({data, location}) => {
 
 
                                 <br/><br/>
-                                <a href="" className="btn btn--dark margin-top-xl">Nasze usługi</a>
+                                <a href="" className="btn btn--xs margin-top-xl">Nasze usługi</a>
 
                             </div>
                         </div>

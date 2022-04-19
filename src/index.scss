@@ -198,6 +198,8 @@ body {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   background-color: var(--color-contrast);
+  color: var(--color-white);
+
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
@@ -729,7 +731,7 @@ body {
     font-family: var(--font-primary-medium);
     padding: var(--space-xxxs) 0;
     line-height: 1.2;
-
+    font-weight: 500;
     &:hover {
       color: var(--color-secondary);
     }
