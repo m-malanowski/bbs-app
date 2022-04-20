@@ -13,7 +13,7 @@ const transition = {
 export const Image = () => {
     const [isOpen, setOpen] = useState(false);
 
-    useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+    // useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
 
     return (
         <div className={`project ${isOpen ? "open" : ""}`}>

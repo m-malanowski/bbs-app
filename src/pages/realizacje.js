@@ -22,15 +22,28 @@ const ContactPage = ({data, location}) => {
                     <section className="container">
                         <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
                             <div className="col-6@md">
-                                <h3>We support utilities and resellers by providing their customers with superb service built atop smart technology.</h3>
+                                <h3>Projekty i budowa hal stalowych to nasza codzienność, a na naszą korzyść przemawia doświadczenie i opinie zadowolonych klientów. </h3>
 
-                                <div className="grid  gap-xxxl margin-bottom-xxl">
+                                <div className="grid gap-xxxl margin-bottom-xxl">
                                     <div className="col-6@md">
-                                        <p >Your energy transition partner <span>transition</span></p>
+                                        <p> Od ponad <span>20 lat</span> z powodzeniem realizujemy takie przedsięwzięcia jak: </p>
+
+                                        <ul className="margin-top-md">
+                                            <li>- projektowanie hal przemysłowych i magazynowych,</li>
+                                            <li>– budowa obiektów przemysłowych, </li>
+                                            <li>- montaż hal stalowych. </li>
+                                        </ul>
                                     </div>
                                     <div className="col-6@md">
-                                        <p>We support utilities and resellers by providing their customers with superb service built atop smart technology.</p>
+                                        <p>Zapraszamy do zapoznania się z naszymy realizacjami na terenie Polski i nie tylko. </p>
                                     </div>
+                                    {/*<div className="col-12@md">*/}
+                                    {/*    <ul>*/}
+                                    {/*        <li>projektowanie hal przemysłowych i magazynowych,</li>*/}
+                                    {/*        <li>budowa obiektów przemysłowych – budowa hal magazynowych, produkcyjnych, przemysłowych, stalowych, </li>*/}
+                                    {/*        <li>montaż hal stalowych. </li>*/}
+                                    {/*    </ul>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>

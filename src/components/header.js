@@ -34,7 +34,7 @@ const Header = ({toggleSideBar, isOpen}) => {
                     {/*    <img src={logo} height={45} alt="" className="header__logo"/> :*/}
                     {/*    <img src={logoPolska} height={45} alt="" className="header__logo"/>*/}
                     {/*}*/}
-                    <img src={logoPolska} height={45} alt="BBS Polska" className="header__logo"/> :
+                    <img src={logoPolska} height={45} alt="BBS Polska" className="header__logo"/>
                 </a>
             </div>
 
