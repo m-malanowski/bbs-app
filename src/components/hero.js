@@ -17,7 +17,7 @@ const Hero = () => {
                 <div className="hero__vertical "></div>
 
                 <h2  className="hero__tag heading">
-                    {t('Investition')} <br/> <span>BBS</span> POLSKA
+                    {t('Investition')} <br/> <span>BBS</span> Polska
                 </h2>
 
                 <p className="hero__subtag ">

@@ -71,7 +71,7 @@ small {
   font-size: var(--text-sm, 0.75rem);
 }
 
-p span, h3 span {
+p span, h2 span, h3 span {
   color: var(--color-secondary);
 }
 
@@ -83,7 +83,7 @@ p span, h3 span {
     color: var(--color-secondary);
   }
   &--gray{
-    font-size: calc(43px + (86 - 43) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1900 - 320)));
     color: var(--color-contrast-lighter);
   }
 }

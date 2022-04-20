@@ -6,6 +6,13 @@ import hero6 from "../images/hero7.jpg";
 import {Helmet} from "react-helmet";
 import Contact from "../components/contact";
 import {Image} from "../components/image";
+import img from "../images/hero12.jpg";
+import img2 from "../images/projects/montaz-hali-magazynowej-2000m2.jpg";
+import img3 from "../images/projects/budowa-salonu-samochodowego.jpg";
+import img4 from "../images/projects/wymiana-pasma-swietlnego-lukowego.jpg";
+import img5 from "../images/projects/wymiana-elewacji-hali-z-lat-70.jpg";
+import img6 from "../images/projects/wymiana-pokrycia-dachowego.jpg";
+
 
 const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -27,23 +34,15 @@ const ContactPage = ({data, location}) => {
                                 <div className="grid gap-xxxl margin-bottom-xxl">
                                     <div className="col-6@md">
                                         <p> Od ponad <span>20 lat</span> z powodzeniem realizujemy takie przedsięwzięcia jak: </p>
-
+                                    </div>
+                                    <div className="col-6@md">
                                         <ul className="margin-top-md">
                                             <li>- projektowanie hal przemysłowych i magazynowych,</li>
                                             <li>– budowa obiektów przemysłowych, </li>
                                             <li>- montaż hal stalowych. </li>
                                         </ul>
                                     </div>
-                                    <div className="col-6@md">
-                                        <p>Zapraszamy do zapoznania się z naszymy realizacjami na terenie Polski i nie tylko. </p>
-                                    </div>
-                                    {/*<div className="col-12@md">*/}
-                                    {/*    <ul>*/}
-                                    {/*        <li>projektowanie hal przemysłowych i magazynowych,</li>*/}
-                                    {/*        <li>budowa obiektów przemysłowych – budowa hal magazynowych, produkcyjnych, przemysłowych, stalowych, </li>*/}
-                                    {/*        <li>montaż hal stalowych. </li>*/}
-                                    {/*    </ul>*/}
-                                    {/*</div>*/}
+
                                 </div>
                             </div>
                         </div>
@@ -59,29 +58,13 @@ const ContactPage = ({data, location}) => {
                             <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Nadzór inwestycji</Link>
                         </div>
 
-
                         <div className="projects-wrapper">
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-                            {/*<div className="project">*/}
-                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
-                            {/*</div>*/}
-
-                            <Image></Image>
-
+                            <Image img={img}></Image>
+                            <Image img={img2}></Image>
+                            <Image img={img3}></Image>
+                            <Image img={img4}></Image>
+                            <Image img={img5}></Image>
+                            <Image img={img6}></Image>
                         </div>
                     </section>
 

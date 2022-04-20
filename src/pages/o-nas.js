@@ -1,7 +1,7 @@
 import * as React from "react"
 import {Link, graphql} from "gatsby"
 // import Layout from "../components/layout"
-import sectionImage from '../images/bild2.jpg'
+import sectionImage from '../images/bild3.jpg'
 import Seo from "../components/seo"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
@@ -15,25 +15,21 @@ const About = ({data, location}) => {
     return (
         <>
             {/*<Layout location={location} title={siteTitle}>*/}
-            <Seo title="All posts"/>
+            <Seo title="Projekty i budowa Hal Stalowych"/>
 
             <HeroReversed sectionImage={sectionImage}
                           title={<Fragment> Zacznij budowę z <br/> <span>BBS Polska </span></Fragment>}
                           subTitle="Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. Doświadczenie, baza własnego sprzętu budowlanego oraz kompetentne brygady montażowe pozwalają nam zaoferować konkurencyjne ceny na wykonanie prac."></HeroReversed>
 
             <section className="container">
-                <div className="grid gap-xxxl">
+                <div className="grid gap-xxxl margin-top-xl">
                     <div className="col-6@md">
-                        <h2 className="heading">Your energy transition partner</h2>
+                        <h2 className="heading">Hale stalowe na miarę potrzeb Klienta</h2>
                     </div>
                     <div className="col-6@md">
-                        <p className="margin-bottom-md">We support utilities and resellers by providing
-                            their <br/> customers with superb service built atop smart technology.</p>
+                        <p className="margin-bottom-md">W <span>BBS</span> Polska projektujemy, produkujemy i montujemy wielofunkcyjne hale stalowe dla szerokiego zakresu celów i branż. Nasza koncepcja dla hal stalowych jest powszechnie uznawana za sprawną i trwałą konstrukcję o wysokiej jakości z możliwością dostosowania do różnych potrzeb i wymagań. </p>
 
-                        <h2 className="heading--gray padding-y-xxxl">Buying and
-                            selling energy
-                            doesn’t need to
-                            be hard work.</h2>
+                        <h2 className="heading--gray padding-y-xxxl">Projekty i budowa Hal Stalowych Ambitne pomysły i rzetelna realizacja</h2>
 
                         {/*<div className="grid gap-md margin-y-xxxl">*/}
                         {/*    <div className="col-6">Skateboard hammock quinoa disrupt meggings 90's tumblr tilde distillery.</div>*/}
@@ -43,29 +39,28 @@ const About = ({data, location}) => {
                 </div>
                 <div className="grid grid gap-xxxl">
                     <div className="col-6@md">
-                        <h2 className="heading">Your energy transition partner <span>transition</span></h2>
+                        <h2 className="heading">Nasza dewiza</h2>
                     </div>
                     <div className="col-6@md">
-                        <h3>We support utilities and resellers by providing their customers with superb service built
-                            atop smart technology.</h3>
+                        <h3>Firma <span>BBS</span> Polska powstała jako naturalna konsekwencja wieloletniej działalności na polskim i europejskim rynku.</h3>
 
                         <div className="grid grid gap-xxxl margin-bottom-xxl">
-                            <div className="col-6">
-                                <p>Your energy transition partner <span>transition</span></p>
+                            <div className="col-6@md">
+                                <p> Jako producent konstrukcji stalowych z 20 letnim doświadczeniem w realizacji inwestycji, połączyliśmy nowoczesną wizję firmy skierowanej na klienta, z tradycyjnym kształtem przedsiębiorstwa produkcyjnego.
+                                    Funkcjonowanie w takim modelu umożliwia nam oferowanie usług dużo bardziej indywidualnych, dopasowanych w pierwszej kolejności do potrzeb inwestorów. To sprawia, że jesteśmy godnym zaufania partnerem w inwestycjach budowlanych.
+                                </p>
                             </div>
-                            <div className="col-6">
-                                <p>We support utilities and resellers by providing their customers with superb service
-                                    built atop smart technology.</p>
+                            <div className="col-6@md">
+                                <p>Nasze realizacje to zarówno niewielkie obiekty spełniające potrzeby małych i średnich przedsiębiorców, jak i duże magazyny i zakłady produkcyjne. Dzięki własnej wytwórni i zatrudnionym specjalistom jesteśmy w stanie realizować nawet najbardziej ambitne projekty.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
             <section className="bild bild--services">
                 <div className="bild__tile bild__tile--services">
-                    <h2 className="bild__title ">Best <br/> building <br/> solutions</h2>
+                    <h2 className="bild__title "><span>B</span>est <br/> <span>B</span>uilding <br/> <span>S</span>olutions</h2>
                     <div className="bild__line"></div>
                 </div>
             </section>

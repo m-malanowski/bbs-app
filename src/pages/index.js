@@ -41,115 +41,141 @@ const Index = ({data, location}) => {
                     }
                 }}
             >
-            <Hero></Hero>
+                <Hero></Hero>
 
-            <section className="container">
-                <div className="grid gap-xxxl@md margin-top-xl">
-                    <div className="col-6@md">
-                        {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
-                        <FadeInWhenVisible>
-                            <h2 className="heading">Oferowane usługi</h2>
-                        </FadeInWhenVisible>
-                    </div>
-                    <div className="col-6@md">
+                <section className="container">
+                    <div className="grid gap-xxxl@md margin-top-xl">
+                        <div className="col-6@md">
+                            {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
+                            <FadeInWhenVisible>
+                                <h2 className="heading">Kim jesteśmy?</h2>
+                            </FadeInWhenVisible>
+                        </div>
+                        <div className="col-6@md">
 
-                        <FadeInWhenVisible>
-                            <h3> Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane
-                                zabudowania.
-                                Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.</h3>
-                        </FadeInWhenVisible>
+                            <FadeInWhenVisible>
+                                <h3>BBS POLSKA - Best Building Solutions jest firmą wykonawczą z Elbląga. Firma ma jasno
+                                    sprecyzowany cel: dostarczać <span> wysokiej jakości </span> kompleksową obsługę
+                                    inwestycji budowlanych.</h3>
+                            </FadeInWhenVisible>
 
+                            <div className="grid gap-md margin-y-xxxl">
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible>
+                                        <p>
+                                            Usługi świadczone przez firmę <span>BBS </span> Polska związane są przede wszystkim z przygotwywaniem
+                                            projektów oraz wznoszeniem obiektów budowlanych. Specjalizujemy się w
+                                            obiektach przemysłowych.
+                                        </p>
+                                    </FadeInWhenVisible>
 
-                        <div className="grid gap-md margin-y-xxxl">
-                            <div className="col-6@md">
-                                <FadeInWhenVisible>
-                                    <p>Skateboard hammock quinoa disrupt meggings 90's tumblr tilde
-                                        distillery.
-                                    </p>
-                                </FadeInWhenVisible>
-                            </div>
-                            <div className="col-6@md">
-                                <FadeInWhenVisible>
-                                    <p>
-                                        Dreamcatcher put a bird on it ennui street art normcore you
-                                        probably haven't heard of them. Iceland direct trade cardigan authentic kogi.
-                                        Disrupt
-                                        kombucha poutine lo-fi edison bulb prism migas literally green juice bicycle rights.
-                                    </p>
-                                </FadeInWhenVisible>
+                                    {/*<Link to="/realizacje" href="" className="btn btn--dark margin-top-xxl ">Nasze*/}
+                                    {/*    realizacje</Link>*/}
+
+                                </div>
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible>
+                                        <p> Realizujemy projekty na zlecenie klientów i dla nich tworzymy
+                                            spersonalizowane
+                                            zabudowania.
+                                            Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.
+                                        </p>
+                                    </FadeInWhenVisible>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="grid gap-xxxl@md margin-bottom-xxl">
-                    <div className="col-6@md">
-                        <FadeInWhenVisible>
-                            <h2 className="heading">Nasza firma ma jasno sprecyzowany <span>cel:</span></h2>
-                        </FadeInWhenVisible>
+                    <div className="grid gap-xxxl@md margin-bottom-xxl">
+                        <div className="col-6@md">
+                            <FadeInWhenVisible>
+                                <h2 className="heading">Dlaczego my?</h2>
+                            </FadeInWhenVisible>
+                        </div>
+                        <div className="col-6@md">
+                            <FadeInWhenVisible>
+                                <h3>Dbając o wysoki standard świadczonych usług utrzymujemy i stale doskonalimy ich jakość. <br/> Nasze główne atuty to: </h3>
+                            </FadeInWhenVisible>
+                        </div>
                     </div>
-                    <div className="col-6@md">
-                        <FadeInWhenVisible>
-                            <h3>Dostarczać wysokiej jakości kompleksową obsługę inwestycji budowlanych.</h3>
-                        </FadeInWhenVisible>
-                    </div>
-                </div>
-            </section>
 
-            <Tiles/>
-
-            <section className="bild">
-                <div className="bild__tile">
-                    <h2 className="bild__title">20 lat <br/> doświadczenia</h2>
-                    <div className="bild__line"></div>
-                </div>
-            </section>
-
-            <section>
-                <div className="teaser">
-                    {/*<div className="col-6">*/}
-                    <figure>
-                        <img src={hero6} alt="BBS"/>
-                    </figure>
+                    {/*<div className="grid gap-xxxl@md margin-bottom-xxl">*/}
+                    {/*    <div className="col-6@md">*/}
+                    {/*        <FadeInWhenVisible>*/}
+                    {/*            <h2 className="heading">Nasza firma ma jasno sprecyzowany <span>cel:</span></h2>*/}
+                    {/*        </FadeInWhenVisible>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="col-6@md">*/}
+                    {/*        <FadeInWhenVisible>*/}
+                    {/*            <h3>Dostarczać wysokiej jakości kompleksową obsługę inwestycji budowlanych.</h3>*/}
+                    {/*        </FadeInWhenVisible>*/}
+                    {/*    </div>*/}
                     {/*</div>*/}
+                </section>
 
-                    <div className="col-6">
+                <Tiles/>
 
-                        <FadeInWhenVisible>
-                            <h2 className="heading padding-xl">
-                                Zapewniamy techniczne, kreatywne i terminowe podejście
-                                do <span>każdej</span> realizacji.
-                            </h2>
-                        </FadeInWhenVisible>
+                <section className="bild">
+                    <div className="bild__tile">
+                        <h2 className="bild__title">20 lat <br/> doświadczenia</h2>
+                        <div className="bild__line"></div>
+                    </div>
+                </section>
 
-                        <div className="grid padding-xl ">
-                            <div className="col-6@xs margin-left-auto">
-                                <FadeInWhenVisible>
-                                    <p>Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych obiektów firmy BBS POLSKA, znajdują się liczne hale magazynowe, produkcyjne, jak również modernizacje obiektów istniejących.
-                                    </p>
-                                </FadeInWhenVisible>
+                <section>
+                    <div className="teaser">
+                        {/*<div className="col-6">*/}
+                        <figure>
+                            <img src={hero6} alt="BBS"/>
+                        </figure>
+                        {/*</div>*/}
 
-                                <br/>
+                        <div className="col-6">
 
-                                <FadeInWhenVisible>
-                                    <p>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w Polsce i w UE, możemy podjąć się realizacji obiektów spełniając oczekiwania naszych klientów.
-                                    </p>
-                                </FadeInWhenVisible>
+                            <FadeInWhenVisible>
+                                <h2 className="heading padding-xl">
+                                    Zapewniamy techniczne, kreatywne i terminowe podejście
+                                    do <span>każdej</span> realizacji.
+                                </h2>
+                            </FadeInWhenVisible>
 
-                                <br/>
+                            <div className="grid padding-xl ">
+                                <div className="col-6@xs margin-left-auto">
+                                    <FadeInWhenVisible>
+                                        <p>Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem
+                                            działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o
+                                            rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych
+                                            obiektów firmy BBS POLSKA, znajdują się liczne hale magazynowe, produkcyjne,
+                                            jak również modernizacje obiektów istniejących.
+                                        </p>
+                                    </FadeInWhenVisible>
 
-                                <FadeInWhenVisible>
-                                    <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
-                                </FadeInWhenVisible>
+                                    <br/>
 
-                                <Link to="/o-nas" href="" className="btn btn--dark margin-y-xl ">Dowiedz się więcej</Link>
+                                    <FadeInWhenVisible>
+                                        <p>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w
+                                            Polsce i w UE, możemy podjąć się realizacji obiektów spełniając oczekiwania
+                                            naszych klientów.
+                                        </p>
+                                    </FadeInWhenVisible>
 
+                                    <br/>
+
+                                    <FadeInWhenVisible>
+                                        <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy
+                                            zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
+                                    </FadeInWhenVisible>
+
+                                    <Link to="/realizacje" href="" className="btn btn--dark margin-y-xl ">Nasze realizacje</Link>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <Contact></Contact>
+                <Contact></Contact>
             </motion.div>
 
             {/*</Layout>*/}

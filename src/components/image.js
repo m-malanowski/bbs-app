@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState, useRef } from "react";
 import { motion, useDomEvent } from "framer-motion";
-import hero6 from "../images/hero12.jpg";
 
 
 const transition = {
@@ -10,7 +9,7 @@ const transition = {
     stiffness: 120
 };
 
-export const Image = () => {
+export const Image = ({img}) => {
     const [isOpen, setOpen] = useState(false);
 
     // useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
@@ -24,8 +23,8 @@ export const Image = () => {
                 onClick={() => setOpen(false)}
             />
             <motion.img
-                src={hero6}
-                alt="BBS"
+                src={img}
+                alt="BBS Polska"
                 onClick={() => setOpen(!isOpen)}
                 // layoutTransition={transition}
                 layout={true}

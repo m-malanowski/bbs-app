@@ -33,7 +33,8 @@
   --color-contrast-light: #959595;
   --color-contrast-lighter: #B5B5B5;
   --color-white: #FFFFFF;
-  --color-secondary: #ff8933;
+  //--color-secondary: #ff8933;
+  --color-secondary: #FF8C36;
   --color-primary: #FFFFFF;
   //--font-primary: 'Moderat Regular';
   //--font-primary-medium: 'Moderat Medium';
@@ -460,7 +461,6 @@ body {
 
 .footer {
   padding: var(--space-xl);
-
   ul {
     li:first-of-type {
       color: var(--color-contrast-light);
@@ -663,8 +663,9 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background: var(--color-contrast);
-    opacity: .85;
+    //background: var(--color-contrast);
+    //opacity: .85;
+    background: rgba(0, 0, 0, 0.9);
     -webkit-transition: opacity .25s cubic-bezier(.1,.6,.4,1);
     transition: opacity .25s cubic-bezier(.1,.6,.4,1);
     //-webkit-transition: opacity .25s var(--ease-out-back);
@@ -887,6 +888,7 @@ figure{
     .project__shade{
       pointer-events: auto;
       opacity: 1;
+      z-index: 1;
     }
     .project__image{
       position: fixed;
@@ -894,6 +896,7 @@ figure{
       height: auto;
       max-width: 100%;
       margin: auto;
+      z-index: 10001;
     }
   }
   &__shade{
@@ -905,6 +908,7 @@ figure{
     pointer-events: none;
     opacity: 0;
     background: rgba(0, 0, 0, 0.9);
+    //z-index: 1;
   }
   &__image{
     position: absolute;
@@ -914,7 +918,7 @@ figure{
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: 1001;
+    //z-index: 1001;
   }
 }
 
@@ -1071,22 +1075,9 @@ figure{
   button{
     margin-top: 10rem;
     background: transparent;
-    //color: var(--color-white);
-    //font-size: 16px;
-    //font-family: var(--font-primary-light);
-    //letter-spacing: 1px;
-    //border: none;
-    //cursor: pointer;
-    //display: inline-block;
-    //padding: 8px 40px;
-    //background: #1d1d20;
-    //box-shadow: 2px 5px 6px 2px rgba(0, 0, 0, .4);
-    //border-radius: 15px;
-    //text-transform: uppercase;
-    //margin-bottom: 2rem;
-    //&:hover{
-    //  box-shadow: 2px 5px 6px 2px rgba(0, 0, 0, 1);
-    //}
+    @include breakpoint(sm, "not all") {
+      width: 100%;
+    }
   }
 
   textarea{

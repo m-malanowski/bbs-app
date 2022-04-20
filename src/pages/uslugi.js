@@ -5,9 +5,11 @@ import Seo from "../components/seo"
 import Hero from "../components/hero"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
-import hero6 from "../images/hero7.jpg";
 import TilesServices from "../components/tilesServices";
-import sectionImage from "../images/projects/montaz-hali-magazynowej-2000m2.jpg"
+import hero6 from "../images/hero12.jpg";
+// import sectionImage from "../images/projects/montaz-hali-magazynowej-2000m2.jpg"
+import sectionImage from "../images/hero10.jpg"
+
 
 const Services = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -16,12 +18,14 @@ const Services = ({data, location}) => {
     return (
         <>
             {/*<Layout location={location} title={siteTitle}>*/}
-            <Seo title="All posts"/>
+            <Seo title="Hale i konstrukcje stalowe "/>
 
             <HeroReversed sectionImage={sectionImage} title="Hale i konstrukcje stalowe " subTitle="Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. Doświadczenie, baza własnego sprzętu budowlanego oraz kompetentne brygady montażowe pozwalają nam zaoferować konkurencyjne ceny na wykonanie prac."></HeroReversed>
 
+            {/*<TilesServices/>*/}
+
             <section className="container">
-                <div className="grid gap-xxxl">
+                <div className="grid gap-xxxl margin-top-xl">
                     <div className="col-6@md">
                         <h2 className="heading">Zacznij budowę z  <span>BBS Polska</span></h2>
                     </div>
@@ -38,15 +42,12 @@ const Services = ({data, location}) => {
                 </div>
                 <div className="grid gap-xxxl margin-bottom-xxl">
                     <div className="col-6@md">
-                        <h2 className="heading">Wysoka jakość oferowanych usług</h2>
+                        <h2 className="heading">Usługi  konstrukcyjne, archiktoniczne, branżowe.</h2>
                     </div>
                     <div className="col-6@md">
                         <div className="grid padding-xl ">
                             <div className="col-6@md margin-left-auto">
-                                <p>By harnessing the power of smart meters, big data, and machine learning, we raise the
-                                    IQ of your energy assets and allow you to buy or sell electricity from the palm of
-                                    your hand.
-                                    Join us today as we illuminate a path to an affordable, clean, energy future.</p>
+                                <p>W ramach działalności spółki, świadczymy usługi sprzętowe na terenie miasta Elbląg oraz okolic. Do dyspozycji mamy żuraw samojezdny, podnośniki spalinowe samojezdne przegubowe, nożycowe, ładowarkę obrotową. </p>
                                 <br/>
                                 <Link to="/wynajem-sprzetu-budowlanego" className="btn btn--dark margin-top-xl">Wynajem
                                     sprzętu</Link>
@@ -67,20 +68,40 @@ const Services = ({data, location}) => {
 
                     <div className="col-6 teaser__right ">
                         <h2 className="heading padding-xl">
-                            Getting the price right
+                            Oferowane uslugi
                         </h2>
-                        <div className="grid padding-x-xl">
-                            <div className="col-8">
-                                <p className="paragraph-larger">By harnessing the power of smart meters, big data, and machine y from the palm of your hand.</p>
-                            </div>
-                        </div>
+                        {/*<div className="grid padding-x-xl">*/}
+                        {/*    <div className="col-8">*/}
+                        {/*        <p className="paragraph-larger">By harnessing the power of smart meters, big data, and machine y from the palm of your hand.</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
 
-                        <div className="grid grid gap-md padding-xl margin-top-auto">
-                            <div className="col-6">
-                                <p className="paragraph-larger">Your energy transition partner <span>transition</span></p>
+                        <div className="grid gap-md padding-x-xl padding-bottom-xl">
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Usługi projektowe</h4>
+                                <p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>
                             </div>
-                            <div className="col-6">
-                                <p className="paragraph-larger">We support utilities and resellers by providing their customers with superb service built atop smart technology.</p>
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Prefabrykacja konstrukcji</h4>
+                                <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>
+                            </div>
+
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Montaż konstrukcji</h4>
+                                <p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady montażowe z wieloletnim doświadczeniem.</p>
+                            </div>
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Nadzór Inwestycyjne</h4>
+                                <p>Świadczymy usługi indywidualne związane z nadzorem technicznym oraz kontrolą budżetu budowanych obiektów. </p>
+                            </div>
+
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Dachy płaskie</h4>
+                                <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
+                            </div>
+                            <div className="col-6@md margin-y-lg">
+                                <h4>Przeglądy okresowe</h4>
+                                <p>Wykonujemy przeglądy okresowe obiektów budowlanych - zgodnie z wymaganiami i obowiązującymi przepisami.</p>
                             </div>
                         </div>
 

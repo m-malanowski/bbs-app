@@ -21,9 +21,9 @@ const Tiles = () => {
                     </div>
                     <div className="col-6@md">
                         <div className="grid  padding-xl">
-                            <h3>Ponad <span>20 lat</span> rzetelnej oraz sumiennej pracy sprawiło, że stajemy się uznaną marką w branży. Od kilku lat notujemy okres bardzo dynamicznego rozwoju, zatrudniamy już ponad <span>X</span> pracowników</h3>
+                            <h3>Ponad <span>20 lat</span> rzetelnej oraz sumiennej pracy sprawiło, że stajemy się uznaną marką w branży. Od kilku lat notujemy okres  dynamicznego rozwoju, zatrudniamy już ponad <span>X</span> pracowników</h3>
                             <br/>
-                            <h3><span>BBS Polska</span>  w liczbach:</h3>
+                            <h3><span>BBS </span>Polska w liczbach:</h3>
                         </div>
                     </div>
                 </div>

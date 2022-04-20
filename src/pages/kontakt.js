@@ -24,7 +24,7 @@ const ContactPage = ({data, location}) => {
                     <section className="container">
                         <div className="grid gap-xxxl margin-y-xxxl">
                             <div className="col-6@md">
-                                <h3>Planujesz inwestycję: budowę, modernizację lub przymierzasz się do realizacji - skorzystaj z usług naszej firmy. Zachęcamy do kontaktu z naszą firmą lub pozostawienie danych kontaktowych. </h3>
+                                <h3>Planujesz inwestycję: budowę, modernizację lub przymierzasz się do realizacji - skorzystaj z usług naszej firmy. Zapraszamy do kontaktu lub pozostawienie danych kontaktowych. </h3>
 
                                 <div className="grid gap-xxxl margin-bottom-xxl margin-top-xxl">
                                     <div className="col-6@md">

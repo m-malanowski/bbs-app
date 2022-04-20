@@ -1,7 +1,7 @@
 import * as React from "react"
-import icon1 from "../images/icon1.svg"
-import icon2 from "../images/icon2.svg"
-import icon3 from "../images/icon3.svg"
+import punctuality from "../images/icon3.svg"
+import precision from "../images/icon2.svg"
+import credibility from "../images/icon1.svg"
 
 
 const Tiles = () => {
@@ -9,21 +9,21 @@ const Tiles = () => {
         <section className="tiles tiles--index">
             <div className="tile"></div>
             <div className="tile">
-                <img src={icon1} alt="BBS" className="tile__icon"/>
-                <h5 className="tile__heading">PROFESJONALIZM</h5>
-                <p className="tile__description">System audits and consulting with experts with deep industry knowledge</p>
+                <img src={punctuality} alt="BBS" className="tile__icon"/>
+                <h5 className="tile__heading">Terminowość</h5>
+                <p className="tile__description">Harmonogramam prac uzgadniamy z klientem i na bieżąco go monitorujemy.</p>
             </div>
 
             <div className="tile">
-                <img src={icon2} alt="BBS" className="tile__icon"/>
-                <h5>JAKOŚĆ</h5>
-                <p>System audits and consulting with experts with deep industry knowledge</p>
+                <img src={credibility} alt="BBS" className="tile__icon"/>
+                <h5 className="tile__heading">Wiarygodność</h5>
+                <p>Ciągły dialog z klientem oraz wychodzenie naprzeciw wymaganiom każdego inwestora to elementy, które wyróżniają nas na rynku. </p>
             </div>
 
             <div className="tile">
-                <img src={icon3} alt="BBS" className="tile__icon"/>
-                <h5>DOŚWIADCZENIE</h5>
-                <p>System audits and consulting with experts with deep industry knowledge</p>
+                <img src={precision} alt="BBS" className="tile__icon"/>
+                <h5 className="tile__heading">Precyzja</h5>
+                <p>Precyzja w konstrukcji stalowej to podstawa.</p>
             </div>
         </section>
     )

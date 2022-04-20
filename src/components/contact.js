@@ -17,7 +17,8 @@ const Contact = () => {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible>
-                            <p>Nasi doradcy chętnie pomogą. <br/> Telefonicznie, poprzez formularz kontaktowy lub Email. <br/> Jesteśmy dla Ciebie</p>
+                            <p>Nasi doradcy chętnie pomogą.
+                                Zapraszamy do kontaktu <br/> celem omówienia realizacji Państwa Inwestycji  <br/> Jesteśmy dla Ciebie</p>
                         </FadeInWhenVisible>
 
                         <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>
