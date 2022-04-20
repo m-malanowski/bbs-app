@@ -14,11 +14,8 @@ const Hero = () => {
     return(
         <div className="hero">
             <div className="hero__left">
-                {/*<div className="hero__vertical "></div>*/}
+                <div className="hero__vertical "></div>
 
-                {/*<h2 className="hero__tag heading">*/}
-                {/*    Twoja Inwestycja z <br/> <span>BBS</span> POLSKA*/}
-                {/*</h2>*/}
                 <h2  className="hero__tag heading">
                     {t('Investition')} <br/> <span>BBS</span> POLSKA
                 </h2>

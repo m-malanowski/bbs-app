@@ -29,11 +29,12 @@ const Header = ({toggleSideBar, isOpen}) => {
         <div className="header">
             <div className="header__left">
                 <a href="/">
-                    {
-                        windowGlobal.localStorage.getItem("lang") == "en" ?
-                        <img src={logo} height={45} alt="" className="header__logo"/> :
-                        <img src={logoPolska} height={45} alt="" className="header__logo"/>
-                    }
+                    {/*{*/}
+                    {/*    windowGlobal.localStorage.getItem("lang") == "en" ?*/}
+                    {/*    <img src={logo} height={45} alt="" className="header__logo"/> :*/}
+                    {/*    <img src={logoPolska} height={45} alt="" className="header__logo"/>*/}
+                    {/*}*/}
+                    <img src={logoPolska} height={45} alt="BBS Polska" className="header__logo"/> :
                 </a>
             </div>
 
