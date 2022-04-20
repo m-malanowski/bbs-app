@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
 
-const Hero = () => {
+const Hero = ({sectionImage, title, subTitle}) => {
 
     return(
         <div className="hero-reversed">
@@ -24,7 +24,7 @@ const Hero = () => {
                         }}
             >
                 <figure>
-                    <img src={img} alt="" className="image"/>
+                    <img src={sectionImage} alt="" className="image"/>
                 </figure>
 
             </motion.div>
@@ -32,12 +32,10 @@ const Hero = () => {
                 {/*<div className="hero-reversed__vertical "></div>*/}
 
                 <h2 className="hero-reversed__tag heading margin-top-auto">
-                    We’re creating a smarter, greener energy future, <span>today</span>
+                    {title}
                 </h2>
                 <p className="hero-reversed__subtag ">
-                    At Shildan, we are transforming the built environment
-                    to inspire beautiful, sustainable architecturr
-                    our communities for generations to come.
+                    {subTitle}
                 </p>
                 <img className="margin-top-auto" src={down} alt="BBS" width="60"/>
             </div>

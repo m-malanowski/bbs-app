@@ -9,11 +9,11 @@
 //@import "LuminaFrame/_breakpoints";
 
 
-//@font-face {
-//  font-family: "gtae";
-//  src: url("fonts/GT America Extended Regular.ttf") format("truetype");
-//  font-display: swap;
-//}
+@font-face {
+  font-family: "gtae";
+  src: url("fonts/GT America Extended Regular.ttf") format("truetype");
+  font-display: swap;
+}
 
 //@font-face {
 //  font-family: "Moderat Medium";
@@ -38,11 +38,11 @@
   //--font-primary: 'Moderat Regular';
   //--font-primary-medium: 'Moderat Medium';
 
-  //--font-primary: 'gtae';
-  //--font-primary-medium: 'gtae';
+  --font-primary: 'gtae';
+  --font-primary-medium: 'gtae';
 
-  --font-primary: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-primary-medium: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  //--font-primary: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  //--font-primary-medium: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
   //--font-primary-bold: 'gta bold', sans-serif;
   --radius-btn: 50px;
@@ -197,9 +197,6 @@ body {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  background-color: var(--color-contrast);
-  color: var(--color-white);
-
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
@@ -213,7 +210,7 @@ body {
   }
 
   &__right {
-    //background-color: var(--color-contrast);
+    background-color: var(--color-contrast);
     color: var(--color-white);
     //display: flex;
     //flex-direction: column;
@@ -732,6 +729,7 @@ body {
     padding: var(--space-xxxs) 0;
     line-height: 1.2;
     font-weight: 500;
+
     &:hover {
       color: var(--color-secondary);
     }
@@ -851,8 +849,51 @@ figure{
   @include breakpoint(sm, "not all"){
     border-radius: 12px;
   }
-
 }
+.project{
+  cursor: zoom-in;
+  position: relative;
+  //width: 100%;
+  //height: 0;
+  padding-top: 66.66%;
+
+  &.open{
+    cursor: zoom-out;
+    .project__shade{
+      pointer-events: auto;
+      opacity: 1;
+    }
+    .project__image{
+      position: fixed;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+  &__shade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  &__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+}
+
+
 
 .filter{
   display: flex;
@@ -1078,3 +1119,5 @@ figure{
   overflow: hidden;
   flex-direction: column;
 }
+
+

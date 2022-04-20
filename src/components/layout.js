@@ -40,7 +40,7 @@ const Layout = ({location, title, children}) => {
             <div className="" data-is-root-path={isRootPath}>
                 {/*<header className="global-header">{header}</header>*/}
                 <Helmet
-                    bodyAttributes={{
+                        bodyAttributes={{
                         class: `${isOpen? "no-scroll backdrop" : ""}`
                     }}
                 />

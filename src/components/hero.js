@@ -24,7 +24,7 @@ const Hero = () => {
                 </h2>
 
                 <p className="hero__subtag ">
-                    Celem działania firmy jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów.
+                    Naszym celem jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów.
                 </p>
                 <Link to="/kontakt" className="hero__btn btn margin-top-xl">Umów spotkanie</Link>
             </div>

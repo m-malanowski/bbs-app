@@ -10,7 +10,6 @@ const Header = ({toggleSideBar, isOpen}) => {
 
     const windowGlobal = typeof window !== 'undefined' && window
 
-
     const showLanguages = () => {
         setIsRoll(!isRoll);
     }

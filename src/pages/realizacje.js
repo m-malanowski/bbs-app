@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import hero6 from "../images/hero7.jpg";
 import {Helmet} from "react-helmet";
 import Contact from "../components/contact";
+import {Image} from "../components/image";
 
 const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -47,30 +48,32 @@ const ContactPage = ({data, location}) => {
 
 
                         <div className="projects-wrapper">
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
-                            <div className="project">
-                                <img src={hero6} alt="" className="project__image responsive"/>
-                            </div>
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+                            {/*<div className="project">*/}
+                            {/*    <img src={hero6} alt="" className="project__image responsive"/>*/}
+                            {/*</div>*/}
+
+                            <Image></Image>
 
                         </div>
-
                     </section>
 
                 </div>
+            {/*<Contact></Contact>*/}
 
             {/*</Layout>*/}
         </>

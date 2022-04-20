@@ -1,8 +1,8 @@
 import * as React from "react"
 import {Link, graphql} from "gatsby"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
+import sectionImage from '../images/hero14.jpg'
 import Seo from "../components/seo"
-import Hero from "../components/hero"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
 import hero6 from "../images/bild2.jpg";
@@ -15,7 +15,7 @@ const About = ({data, location}) => {
             {/*<Layout location={location} title={siteTitle}>*/}
                 <Seo title="All posts"/>
 
-                <HeroReversed></HeroReversed>
+                <HeroReversed sectionImage={sectionImage}></HeroReversed>
 
                 <section className="container">
                     <div className="grid gap-xxxl">

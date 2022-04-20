@@ -21,8 +21,10 @@ const Index = ({data, location}) => {
 
     return (
         <>
-            <Seo title="BBD Best Builidng Solutions"/>
-
+            <Seo
+                title="BBS Polska | Montaż konstrukcji stalowych Elbląg"
+                description="BBS POLSKA SP.Z O.O. oferuje usługi projektowe, wykonawcze, montażowe, przeglądy na terenie miasta Elbląg,  jak również na terenie całej Polski i krajów UE. Posiadamy wykwalifkowaną kadrę inżynierską, pracowników montażu oraz zaplecze sprzętowe umożliwiające realizację zleceń naszych klientów."
+            />
 
             <FakeLoader></FakeLoader>
             {/*<Layout location={location} title={siteTitle}>*/}
@@ -97,7 +99,7 @@ const Index = ({data, location}) => {
 
             <section className="bild">
                 <div className="bild__tile">
-                    <h2 className="bild__title">Best bulding <br/> solutions</h2>
+                    <h2 className="bild__title">20 lat <br/> doświadczenia</h2>
                     <div className="bild__line"></div>
                 </div>
             </section>
@@ -154,7 +156,7 @@ const Index = ({data, location}) => {
 
 
                                 <br/><br/>
-                                <a href="" className="btn btn--xs margin-top-xl">Nasze usługi</a>
+                                <a href="" className="btn btn--dark margin-top-xl">Nasze usługi</a>
 
                             </div>
                         </div>
@@ -162,7 +164,7 @@ const Index = ({data, location}) => {
                 </div>
             </section>
 
-                <Contact></Contact>
+            <Contact></Contact>
             </motion.div>
 
             {/*</Layout>*/}
