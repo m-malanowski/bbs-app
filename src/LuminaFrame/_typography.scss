@@ -71,7 +71,7 @@ small {
   font-size: var(--text-sm, 0.75rem);
 }
 
-p span {
+p span, h3 span {
   color: var(--color-secondary);
 }
 

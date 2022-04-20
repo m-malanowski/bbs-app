@@ -20,7 +20,7 @@ const Hero = () => {
                 {/*    Twoja Inwestycja z <br/> <span>BBS</span> POLSKA*/}
                 {/*</h2>*/}
                 <h2  className="hero__tag heading">
-                    {t('Investition')}
+                    {t('Investition')} <br/> <span>BBS</span> POLSKA
                 </h2>
 
                 <p className="hero__subtag ">

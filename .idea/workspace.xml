@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/GT America Extended Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/counter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/heroReversed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/i18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tilesServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilesServices.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/mateusz/Pulpit/gatsby-starter-blog/src/fonts",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier",
-    "ts.external.directory.path": "/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/src/fonts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/fonts" />
@@ -98,6 +98,8 @@
       <workItem from="1650286092522" duration="1517000" />
       <workItem from="1650373856887" duration="12806000" />
       <workItem from="1650434791730" duration="10371000" />
+      <workItem from="1650452248545" duration="636000" />
+      <workItem from="1650455158364" duration="8214000" />
     </task>
     <servers />
   </component>

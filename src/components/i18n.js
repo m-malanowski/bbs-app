@@ -14,12 +14,12 @@ const windowGlobal = typeof window !== 'undefined' && window
 const resources = {
     pl: {
         translation: {
-            "Investition": "Twoja Inwestycja z BBS POLSKA"
+            "Investition": "Twoja Inwestycja z"
         }
     },
     en: {
         translation: {
-            "Investition": "Your investition with BBS Poland"
+            "Investition": "Your investition with"
         }
     }
 };

@@ -28,7 +28,7 @@ const Footer = () => {
                                 <li>Adres</li>
                                 <li>Królewiecka 215</li>
                                 <li>82-300, Elbląg</li>
-                                <li><a className="link" href="tel:609 534 950">609 534 950 </a></li>
+                                <li><a className="link" href="tel: +48 609 534 950">+48 609 534 950 </a></li>
                                 <li><a href="mailto:biuro@bbs-polska.com" className="link">biuro@bbs-polska.com</a></li>
                             </ul>
                         </div>

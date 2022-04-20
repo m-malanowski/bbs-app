@@ -18,21 +18,15 @@ const Services = ({data, location}) => {
             {/*<Layout location={location} title={siteTitle}>*/}
             <Seo title="All posts"/>
 
-            <HeroReversed sectionImage={sectionImage}
-                          title="Potrzebujesz specjalistycznego sprzętu budowlanego?"
-                          subTitle={<Fragment> Nie musisz od razu kupować potrzebnego Ci sprzętu budowlanego!
-                              Wynajmij go w <span>BBS Polska</span> Dysponujemy własnym sprzętem budowlanym. Zachęcamy do zapoznania się z naszą ofertą.  </Fragment>}
-            >
-            </HeroReversed>
+            <HeroReversed sectionImage={sectionImage} title="Hale i konstrukcje stalowe " subTitle="Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. Doświadczenie, baza własnego sprzętu budowlanego oraz kompetentne brygady montażowe pozwalają nam zaoferować konkurencyjne ceny na wykonanie prac."></HeroReversed>
 
             <section className="container">
                 <div className="grid gap-xxxl">
                     <div className="col-6@md">
-                        <h2 className="heading">Our not-so-secret plan: <span>power</span> the global transition</h2>
+                        <h2 className="heading">Zacznij budowę z  <span>BBS Polska</span></h2>
                     </div>
                     <div className="col-6@md">
-                        <h3 className="margin-bottom-md">We support utilities and resellers by providing
-                            their <br/> customers with superb service built atop smart technology.</h3>
+                        <h3 className="margin-bottom-md">Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane zabudowania. Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.</h3>
 
                         <div className="grid padding-xl ">
                             <div className="col-6@md margin-left-auto">
@@ -44,7 +38,7 @@ const Services = ({data, location}) => {
                 </div>
                 <div className="grid gap-xxxl margin-bottom-xxl">
                     <div className="col-6@md">
-                        <h2 className="heading">Your energy transition partner transition</h2>
+                        <h2 className="heading">Wysoka jakość oferowanych usług</h2>
                     </div>
                     <div className="col-6@md">
                         <div className="grid padding-xl ">
@@ -63,14 +57,38 @@ const Services = ({data, location}) => {
                 </div>
             </section>
 
-            <section className="bild bild--services">
-                <div className="bild__tile bild__tile--services">
-                    <h2 className="bild__title ">Best <br/> building <br/> solutions</h2>
-                    <div className="bild__line"></div>
+            <section>
+                <div className="teaser">
+                    {/*<div className="col-6 teaser__left">*/}
+                    <figure>
+                        <img src={hero6} alt="BBS" className=""/>
+                    </figure>
+                    {/*</div>*/}
+
+                    <div className="col-6 teaser__right ">
+                        <h2 className="heading padding-xl">
+                            Getting the price right
+                        </h2>
+                        <div className="grid padding-x-xl">
+                            <div className="col-8">
+                                <p className="paragraph-larger">By harnessing the power of smart meters, big data, and machine y from the palm of your hand.</p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid gap-md padding-xl margin-top-auto">
+                            <div className="col-6">
+                                <p className="paragraph-larger">Your energy transition partner <span>transition</span></p>
+                            </div>
+                            <div className="col-6">
+                                <p className="paragraph-larger">We support utilities and resellers by providing their customers with superb service built atop smart technology.</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <TilesServices/>
+
 
             {/*<section >*/}
             {/*    <div className="grid teaser">*/}

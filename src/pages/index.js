@@ -124,39 +124,24 @@ const Index = ({data, location}) => {
                         <div className="grid padding-xl ">
                             <div className="col-6@xs margin-left-auto">
                                 <FadeInWhenVisible>
-                                    <p>By harnessing the power of smart meters, big data, and machine learning, we raise
-                                        the
-                                        IQ of your energy assets and allow you to buy or sell electricity from the palm
-                                        of
-                                        your hand.
-                                        Join us today as we illuminate a path to an affordable, clean, energy
-                                        future.</p>
-                                </FadeInWhenVisible>
-
-                                <br/>
-
-                                <FadeInWhenVisible>
-                                    <p>Inventore numquam officiis quod. Accusamus at commodi cum, fugit incidunt minus
-                                        natus
-                                        nostrum provident quae repellat.
+                                    <p>Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych obiektów firmy BBS POLSKA, znajdują się liczne hale magazynowe, produkcyjne, jak również modernizacje obiektów istniejących.
                                     </p>
                                 </FadeInWhenVisible>
 
                                 <br/>
 
                                 <FadeInWhenVisible>
-                                    <p>By harnessing the power of smart meters, big data, and machine learning, we raise
-                                        the
-                                        IQ of your energy assets and allow you to buy or sell electricity from the palm
-                                        of
-                                        your hand.
-                                        Join us today as we illuminate a path to an affordable, clean, energy
-                                        future.</p>
+                                    <p>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w Polsce i w UE, możemy podjąć się realizacji obiektów spełniając oczekiwania naszych klientów.
+                                    </p>
                                 </FadeInWhenVisible>
 
+                                <br/>
 
-                                <br/><br/>
-                                <a href="" className="btn btn--dark margin-top-xl">Nasze usługi</a>
+                                <FadeInWhenVisible>
+                                    <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
+                                </FadeInWhenVisible>
+
+                                <Link to="/o-nas" href="" className="btn btn--dark margin-y-xl ">Dowiedz się więcej</Link>
 
                             </div>
                         </div>

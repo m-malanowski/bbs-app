@@ -7,6 +7,7 @@ import sectionImage from "../images/projects/montaz-hali-magazynowej-2000m2.jpg"
 
 const Services = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
+    const Fragment = React.Fragment;
 
 
     return (
@@ -14,7 +15,11 @@ const Services = ({data, location}) => {
             {/*<Layout location={location} title={siteTitle}>*/}
             <Seo title="Wynajem sprzętu budowlanego Elbląg i okolice" description="Wypożyczalnia sprzętu budowlanego Elbląg"/>
 
-            <HeroReversed sectionImage={sectionImage} title="Nie musisz od razu kupować potrzebnego Ci sprzętu budowlanego! Wynajmij go w <span>BBS Polska</span> "></HeroReversed>
+            <HeroReversed sectionImage={sectionImage}
+                          title="Potrzebujesz specjalistycznego sprzętu budowlanego?"
+                          subTitle={<Fragment> Nie musisz od razu kupować potrzebnego Ci sprzętu budowlanego!
+                              Wynajmij go w <span>BBS Polska</span> Dysponujemy własnym sprzętem budowlanym. Zachęcamy do zapoznania się z naszą ofertą.  </Fragment>}
+            ></HeroReversed>
 
             <section className="container">
                 <div className="grid gap-xxxl">

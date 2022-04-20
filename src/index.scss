@@ -276,6 +276,23 @@ body {
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
+  &--top{
+    grid-template-columns: repeat(2, 1fr);
+    @include breakpoint(sm, "not all") {
+      grid-template-columns: 1fr;
+      order: 2;
+    }
+    .tile:first-of-type:hover{
+      box-shadow: var(--shadow-md);
+      border: 1px solid transparent;
+    }
+    .tile:nth-of-type(2){
+      border: none;
+      @include breakpoint(sm, "not all") {
+        display: none;
+      }
+    }
+  }
 
   &--index {
     .tile {
@@ -317,6 +334,14 @@ body {
 
   &__icon {
     margin-bottom: var(--space-lg);
+  }
+  &__number{
+    font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1900 - 320)));
+    color: var(--color-secondary);
+    font-weight: 700;
+  }
+  &__heading{
+    text-transform: uppercase;
   }
 
   &--single {

@@ -61,9 +61,9 @@ const ContactPage = ({data, location}) => {
                                         {/*<br/>*/}
                                         <h4>Nasze biuro</h4>
                                         <ul>
-                                            <li>ul. Królewiecka 214</li>
+                                            <li>ul. Królewiecka 215</li>
                                             <li>82-300, Elbląg</li>
-                                            <li><a className="link" href="tel:609 534 950">tel. 609 534 950 </a></li>
+                                            <li><a className="link" href="tel: +48 609 534 950">tel. +48 609 534 950 </a></li>
                                             <li><a className="link" href="mailto: biuro@bbs-polska.com">biuro@bbs-polska.com</a></li>
                                             <br/>
                                             <li><a className="link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps?saddr=My+Location&daddr=BBS+POLSKA+SP.+Z+O.O.">Wskazówki dojazdu</a></li>

@@ -17,10 +17,9 @@ const Contact = () => {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible>
-                            <p>By harnessing the power of smart meters, big data, <br/> and machine y from the palm of your hand.</p>
+                            <p>Nasi doradcy chętnie pomogą. <br/> Telefonicznie, poprzez formularz kontaktowy lub Email. <br/> Jesteśmy dla Ciebie</p>
                         </FadeInWhenVisible>
 
-                        <br/><br/>
                         <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>
                     </div>
                 </div>

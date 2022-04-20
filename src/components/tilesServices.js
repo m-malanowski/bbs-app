@@ -2,57 +2,55 @@ import * as React from "react"
 import icon1 from "../images/icon1.svg"
 import icon2 from "../images/icon2.svg"
 import icon3 from "../images/icon3.svg"
+import Counter from "./counter";
 
 
 const Tiles = () => {
     return (
         <section>
             <div>
-                <div className="grid gap-xxl">
-                    <div className="col-6">
+                <div className="grid ">
+                    <div className="col-6@md tiles tiles--top">
                         <div className="tile tile--single">
-                            <img src={icon1} alt="BBS" className="tile__icon"/>
-                            <h5 className="tile__heading">EQUITY ENGAGEMENT</h5>
-                            <p className="tile__description">System audits and consulting with experts with deep
-                                industry knowledge
-                            </p>
+                            {/*<img src={icon1} alt="BBS" className="tile__icon"/>*/}
+                            <span className="tile__number">20</span>
+                            <h5 className="tile__heading">Lat doświadczenia</h5>
+                            <p className="tile__description">W tym czasie zdążyliśmy poznać rynek od podszewki i śmiało możemy nazwać się ekspertami</p>
                         </div>
+                        <div className="tile tile--single"></div>
                     </div>
-                    <div className="col-6">
-                        <div className="grid padding-x-md padding-y-xl">
-                            <h3>By harnessing the power of smart meters, big data, and machine learning, we raise the IQ
-                                of your energy assets and allow you to buy or sell electricity from the palm of your
-                                hand.
-                                Join us today as we illuminate a path to an affordable, clean, energy future.</h3>
+                    <div className="col-6@md">
+                        <div className="grid  padding-xl">
+                            <h3>Ponad <span>20 lat</span> rzetelnej oraz sumiennej pracy sprawiło, że stajemy się uznaną marką w branży. Od kilku lat notujemy okres bardzo dynamicznego rozwoju, zatrudniamy już ponad <span>X</span> pracowników</h3>
                             <br/>
+                            <h3><span>BBS Polska</span>  w liczbach:</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="tiles tiles--services">
                 <div className="tile">
-                    <img src={icon1} alt="BBS" className="tile__icon"/>
-                    <h5 className="tile__heading">EQUITY ENGAGEMENT</h5>
-                    <p className="tile__description">System audits and consulting with experts with deep industry
-                        knowledge</p>
+                    <span className="tile__number">284</span>
+                    <h5 className="tile__heading">Zakończonych projektów</h5>
+                    <p className="tile__description">Dzięki swojemu zaangażowaniu
+                        i współpracy, osiągamy wyjątkowe rezultaty.</p>
                 </div>
                 <div className="tile">
-                    <img src={icon1} alt="BBS" className="tile__icon"/>
-                    <h5 className="tile__heading">EQUITY ENGAGEMENT</h5>
-                    <p className="tile__description">System audits and consulting with experts with deep industry
-                        knowledge</p>
-                </div>
-
-                <div className="tile">
-                    <img src={icon2} alt="BBS" className="tile__icon"/>
-                    <h5>EQUITY ENGAGEMENT</h5>
-                    <p>System audits and consulting with experts with deep industry knowledge</p>
+                    <span className="tile__number">30</span>
+                    <h5 className="tile__heading">Wykwalifikowanych monterów</h5>
+                    <p className="tile__description">Zatrudniające obecnie ponad 30 wysoko wykwalifikowanych pracowników.</p>
                 </div>
 
                 <div className="tile">
-                    <img src={icon3} alt="BBS" className="tile__icon"/>
-                    <h5>EQUITY ENGAGEMENT</h5>
-                    <p>System audits and consulting with experts with deep industry knowledge</p>
+                    <span className="tile__number">427</span>
+                    <h5 className="tile__heading">Zadowolonych klientów</h5>
+                    <p>Referencje, otrzymane od naszych klientów potwierdzają wysoką jakość świadczonych przez nas usług.</p>
+                </div>
+
+                <div className="tile">
+                    <Counter from={0} to={6}></Counter>
+                    <h5 className="tile__heading">Kraje, w których realizowaliśmy projekty</h5>
+                    <p>Posiadamy rozbudowane zaplecze logistyczne</p>
                 </div>
             </div>
         </section>
