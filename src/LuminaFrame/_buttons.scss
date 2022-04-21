@@ -1,7 +1,7 @@
 @use 'breakpoints' as *;
 
 .btn {
-  border: 2px solid var(--color-white);
+  border: 1px solid var(--color-white);
   border-radius: var(--radius-btn);
   color: var(--color-white);
   padding: .75rem 1.5rem;

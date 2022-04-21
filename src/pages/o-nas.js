@@ -7,6 +7,7 @@ import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
 import hero6 from "../images/bild2.jpg";
 import TilesServices from "../components/tilesServices";
+import TilesAbout from "../components/tilesAbout";
 
 const About = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -65,7 +66,7 @@ const About = ({data, location}) => {
                 </div>
             </section>
 
-            <TilesServices/>
+            <TilesAbout/>
 
             <Contact></Contact>
 

@@ -76,7 +76,7 @@ const Services = ({data, location}) => {
                         {/*    </div>*/}
                         {/*</div>*/}
 
-                        <div className="grid gap-md padding-x-xl padding-bottom-xl">
+                        <div className="grid gap-lg padding-x-xl padding-bottom-xl">
                             <div className="col-6@md margin-y-lg">
                                 <h4>Usługi projektowe</h4>
                                 <p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>
