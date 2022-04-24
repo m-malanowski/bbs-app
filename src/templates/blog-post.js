@@ -27,20 +27,20 @@ const ArticleSingle = ({ data }) => {
         }}   />
         {/*<SEO title={data.blog.title + ' Porady Prawne | Blog'} description={data.blog.description}/>*/}
         <div className="article-page">
-            <div className="page-content container-fluid">
+            <div className="page-content container">
                 <motion.div variants={variants} initial="initial" animate="animate" exit="exit" transition={transition} className="article">
                     <div className="article-header">
                         <div>
-                            <h1> { data.article.title } </h1>
+                            <h1> { data.article.Title } </h1>
                             {/*<p>Data publikacji: { data.blog.date }</p>*/}
                         </div>
                     </div>
                     <div className="border-bottom"/>
                     <div className="article-body">
                         {/*<h6 className="mb-5">{data.blog.description}</h6>*/}
-                        {/*<ReactMarkdown source={data.blog.content}/>*/}
+                        <ReactMarkdown source={data.article.Content}/>
                     </div>
-
+                    {data.article.Content}
                     <div className="back-button">
                         {/*<Button url='/blog' buttonDesc='Powrót'/>*/}
 
@@ -55,6 +55,7 @@ const ArticleSingle = ({ data }) => {
 export const query = graphql`
   query GetSingleArticle($slug: String) {
     article: strapiArticle(Slug: { eq: $slug }) {
+      id
       Content
       Title
     }

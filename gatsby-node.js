@@ -1,7 +1,7 @@
 const path = require("path")
 
 // create pages dynamically
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
@@ -9,7 +9,6 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
-            Content
             Slug
           }
         }
@@ -17,13 +16,29 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allStrapiArticle.edges.forEach(article => {
-    createPage({
-      path: `/blog/${article.Slug}`,
-      component: path.resolve(`src/templates/blog-post.js`),
-      context: {
-        Slug: article.Slug,
-      },
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  result.data.allStrapiArticle.edges.forEach(edge => {
+    const slug = edge.node.Slug
+    actions.createPage({
+      // path: slug,
+      path: `/blog/${slug}`,
+      component: require.resolve(`./src/templates/blog-post.js`),
+      context: { slug: slug },
     })
   })
+
+  // result.data.allStrapiArticle.edges.forEach(article => {
+  //   createPage({
+  //     path: `/blog/${article.Slug}`,
+  //     component: path.resolve(`src/templates/blog-post.js`),
+  //     context: {
+  //       Slug: article.Slug,
+  //     },
+  //   })
+  // })
 }

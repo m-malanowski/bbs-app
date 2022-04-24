@@ -30,9 +30,7 @@ const Articles = ({data, location}) => {
                     <section className="container ">
 
 
-
                         <div className="articles-wrapper margin-bottom-xxl">
-
                             {data.allStrapiArticle.edges.map(edge => (
                                 <article className="article" key={edge.node.id}>
                                     <div className="article__img">
@@ -41,19 +39,9 @@ const Articles = ({data, location}) => {
                                     <div>
                                         <h2 className="margin-top-sm article__article">{ edge.node.Title }</h2>
                                         <p>{ edge.node.Content }</p>
-                                        <Link to={"/blog/" + edge.node.Slug} className="btn btn--xs margin-left-auto margin-top-lg">Czytaj więcej</Link>
-                                    </div>
-                                </article>
-                            ))}
-                            {data.allStrapiArticle.edges.map(edge => (
-                                <article className="article" key={edge.node.id}>
-                                    <div className="article__img">
-                                        <img src={article1} alt={ edge.node.Title } />
-                                    </div>
-                                    <div>
-                                        <h2 className="margin-top-sm article__article">{ edge.node.Title }</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                                        <Link to={"/blog/"} className="btn btn--xs margin-left-auto margin-top-lg">Czytaj więcej</Link>
+                                        {/*<span>{edge.node.Slug}</span>*/}
+                                        {/*<Link to={"/blog/" + edge.node.Slug} className="btn btn--xs margin-left-auto margin-top-lg">Czytaj więcej</Link>*/}
+                                        <Link to={edge.node.Slug} className="btn btn--xs margin-left-auto margin-top-lg">Czytaj więcej</Link>
                                     </div>
                                 </article>
                             ))}
@@ -69,16 +57,6 @@ const Articles = ({data, location}) => {
                                 </div>
                             </article>
 
-                            <article className="article">
-                                <div className="article__img">
-                                    <img src={article1} alt="elo" className="article__image"/>
-                                </div>
-                                <div>
-                                    <h2 className="margin-top-sm article__article">Magazyn zamkniety polotwarty czy otwarty?</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cupiditate, l veritatis voluptate? Fugiat ipsum labore quas ullam unde.</p>
-                                    <Link to={"/blog/"} className="btn btn--xs margin-left-auto margin-top-lg">Czytaj więcej</Link>
-                                </div>
-                            </article>
 
                         </div>
                     </section>
