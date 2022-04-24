@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 const Form = () => {
     return (
         <div className="contact-form" >
-            <form name="contact" action="https://formspree.io/f/xrgowgrw"  method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" action="https://formspree.io/f/mbjwplgd"  method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-contact" value="contact" />
                 <div>
