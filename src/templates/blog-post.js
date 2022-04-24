@@ -38,7 +38,7 @@ const ArticleSingle = ({ data }) => {
                     <div className="border-bottom"/>
                     <div className="article-body">
                         {/*<h6 className="mb-5">{data.blog.description}</h6>*/}
-                        <ReactMarkdown source={data.article.Content}/>
+                        <ReactMarkdown> { data.article.Content } </ReactMarkdown>
                     </div>
                     {data.article.Content}
                     <div className="back-button">
