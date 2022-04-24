@@ -1,0 +1,12 @@
+{
+    "index":{
+        "hero": {
+            "title": "Twoja Inwestycja z",
+            "subtitle": "Naszym celem jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów."
+        },
+        "whoWeAre": "Kim jesteśmy?"
+    },
+    "general": {
+        "appointment": "Umów spotkanie"
+    }
+}

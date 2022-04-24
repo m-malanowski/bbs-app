@@ -2,8 +2,8 @@ import * as React from "react"
 import img from "../images/hero11.jpg"
 import {Link} from "gatsby";
 import {motion} from "framer-motion";
-import { useTranslation } from 'react-i18next';
-
+// import { useTranslation } from 'react-i18next';
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
     // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
@@ -17,13 +17,13 @@ const Hero = () => {
                 <div className="hero__vertical "></div>
 
                 <h2  className="hero__tag heading">
-                    {t('Investition')} <br/> <span>BBS</span> Polska
+                    {t('index.hero.title')} <br/> <span>BBS</span> Polska
                 </h2>
 
                 <p className="hero__subtag ">
-                    Naszym celem jest dostarczanie najwyższej jakości świadczonych usług. Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów.
+                    {t('index.hero.subtitle')}
                 </p>
-                <Link to="/kontakt" className="hero__btn btn margin-top-xl">Umów spotkanie</Link>
+                <Link to="/kontakt" className="hero__btn btn margin-top-xl">{t('general.appointment')}</Link>
             </div>
             <motion.div className="hero__right"
                         initial={{

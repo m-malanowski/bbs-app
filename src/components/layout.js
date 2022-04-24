@@ -7,7 +7,9 @@ import { Helmet } from "react-helmet"
 import FakeLoader from "./fakeLoder";
 import { motion, AnimatePresence } from "framer-motion"
 import { layoutVariants, transition } from './variants'
-import './i18n';
+import {withTranslation} from "react-i18next";
+import PropTypes from "prop-types";
+// import './i18n';
 
 const Layout = ({location, title, children}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -18,21 +20,7 @@ const Layout = ({location, title, children}) => {
 
     const rootPath = `${__PATH_PREFIX__}/`
     const isRootPath = location.pathname === rootPath
-    // let header
 
-    // if (isRootPath) {
-    //     header = (
-    //         <h1 className="main-heading">
-    //             <Link to="/">{title}</Link>
-    //         </h1>
-    //     )
-    // } else {
-    //     header = (
-    //         <Link className="header-link-home" to="/">
-    //             {title}
-    //         </Link>
-    //     )
-    // }
     return (
         <>
             {/*<FakeLoader />*/}
@@ -74,5 +62,8 @@ const Layout = ({location, title, children}) => {
         </>
     )
 }
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
-export default Layout
+export default withTranslation()(Layout)

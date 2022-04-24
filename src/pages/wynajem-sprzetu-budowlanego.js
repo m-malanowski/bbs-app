@@ -82,7 +82,7 @@ const Services = ({data, location}) => {
                             </div>
 
                             <div className="col-6@md margin-0">
-                                <Link to="/kontakt" className="btn margin-top-xl">Wynajem sprzętu</Link>
+                                <Link to="/kontakt" className="btn margin-top-xl">Wynajmij sprzęt</Link>
                             </div>
 
                         </div>

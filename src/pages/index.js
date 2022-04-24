@@ -1,6 +1,7 @@
 import * as React from "react"
-import {Link, graphql} from "gatsby"
-import Layout from "../components/layout"
+// import {Link, graphql} from "gatsby"
+import {graphql} from "gatsby"
+// import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Tiles from "../components/tiles";
@@ -9,15 +10,14 @@ import hero6 from "../images/hero18.jpg"
 import FakeLoader from "../components/fakeLoder";
 import {motion} from "framer-motion"
 import FadeInWhenVisible from "../components/fadeWhenVisible";
-
-
-// const isDarkMode = () => {
-//     window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)".matches)
-// }
-
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+import LanguageSwitcher from "../components/languageSwitcher";
 
 const Index = ({data, location}) => {
     // const siteTitle = data.site.siteMetadata?.title || `Title`
+    const { t } = useTranslation();
+    const {languages, originalPath} = useI18next();
 
     return (
         <>
@@ -25,10 +25,11 @@ const Index = ({data, location}) => {
                 title="BBS Polska | Montaż konstrukcji stalowych Elbląg"
                 description="BBS POLSKA SP.Z O.O. oferuje usługi projektowe, wykonawcze, montażowe, przeglądy na terenie miasta Elbląg,  jak również na terenie całej Polski i krajów UE. Posiadamy wykwalifkowaną kadrę inżynierską, pracowników montażu oraz zaplecze sprzętowe umożliwiające realizację zleceń naszych klientów."
             />
+            <LanguageSwitcher/>
 
             <FakeLoader></FakeLoader>
             {/*<Layout location={location} title={siteTitle}>*/}
-
+            {/*<Header ></Header>*/}
             <motion.div
                 style={{overflow: "hidden"}}
                 initial={{opacity: 0}}
@@ -48,7 +49,7 @@ const Index = ({data, location}) => {
                         <div className="col-6@md">
                             {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
                             <FadeInWhenVisible>
-                                <h2 className="heading">Kim jesteśmy?</h2>
+                                <h2 className="heading">{ t('index.whoWeAre') }</h2>
                             </FadeInWhenVisible>
                         </div>
                         <div className="col-6@md">
@@ -208,3 +209,17 @@ export default Index
 //     }
 //   }
 // `
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

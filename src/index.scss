@@ -119,7 +119,7 @@ body {
     top: 0;
     bottom: 0;
     animation: vertical 3s infinite;
-    @include breakpoint(ld, "not all"){
+    @include breakpoint(md, "not all"){
       display: none;
     }
     //animation: vertical 3s normal forwards;
@@ -743,6 +743,8 @@ body {
     max-width: 500px;
     margin: var(--space-lg) 0;
     color: var(--color-contrast-light);
+    flex-basis: auto;
+
 
     //line-height: 1;
     display: flex;
@@ -1148,3 +1150,50 @@ figure{
 }
 
 
+.languages{
+  //display: flex;
+  //flex-direction: column;
+  ////gap: var(--space-xxs);
+  //position: absolute;
+  //top: 5%;
+  //right: 10%;
+  //a{
+  //  color: var(--color-white);
+  //}
+
+
+  position: absolute;
+  top: 3.5%;
+  right: 7.5%;
+
+  display: flex;
+  gap: var(--space-md);
+  align-items: baseline;
+  @include breakpoint(sm, "not all") {
+    display: none;
+  }
+  &--open{
+    ul{
+      height: auto !important;
+    }
+  }
+  ul{
+    height: 1.9rem;
+    overflow: hidden;
+    li a{
+      color: var(--color-white);
+    }
+  }
+  &__arrow{
+    transform: rotate(0deg);
+    transition: transform .55s var(--ease-out-back);
+    &--rolled{
+      transform: rotate(180deg);
+      transition: transform .25s var(--ease-out-back);
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+}

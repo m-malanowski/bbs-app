@@ -29,6 +29,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `locale`,
+        path: `${__dirname}/src/locales`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -49,6 +56,34 @@ module.exports = {
           `gatsby-remark-smartypants`,
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`pl`, `en`],
+        defaultLanguage: `pl`,
+        siteUrl: `http://localhost:8000/`,
+        i18nextOptions: {
+          fallbackLng: 'pl',
+          interpolation: {
+            escapeValue: false
+          },
+          keySeparator: '.',
+          nsSeparator: false
+        },
+        // pages: [
+        //   {
+        //     matchPath: '/:lang?/blog/:uid',
+        //     getLanguageFromPath: true,
+        //     excludeLanguages: ['es']
+        //   },
+        //   {
+        //     matchPath: '/preview',
+        //     languages: ['en']
+        //   }
+        // ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
