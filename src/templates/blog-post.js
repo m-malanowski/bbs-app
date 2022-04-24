@@ -1,107 +1,65 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react"
+import { graphql, Link } from "gatsby"
+import ReactMarkdown from "react-markdown"
+import { Helmet } from "react-helmet"
+import SEO from "../components/seo"
+import { motion } from "framer-motion"
+const transition = {delay: .2, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]};
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+const variants = {
+    initial: {
+        y: 50,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 50,
+        opacity: 0
+    }
+}
+const ArticleSingle = ({ data }) => {
+    return <>
+        <Helmet bodyAttributes={{
+            id: 'article-page'
+        }}   />
+        {/*<SEO title={data.blog.title + ' Porady Prawne | Blog'} description={data.blog.description}/>*/}
+        <div className="article-page">
+            <div className="page-content container-fluid">
+                <motion.div variants={variants} initial="initial" animate="animate" exit="exit" transition={transition} className="article">
+                    <div className="article-header">
+                        <div>
+                            <h1> { data.article.title } </h1>
+                            {/*<p>Data publikacji: { data.blog.date }</p>*/}
+                        </div>
+                    </div>
+                    <div className="border-bottom"/>
+                    <div className="article-body">
+                        {/*<h6 className="mb-5">{data.blog.description}</h6>*/}
+                        {/*<ReactMarkdown source={data.blog.content}/>*/}
+                    </div>
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+                    <div className="back-button">
+                        {/*<Button url='/blog' buttonDesc='Powrót'/>*/}
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
-    </Layout>
-  )
+                    </div>
+
+                </motion.div>
+            </div>
+        </div>
+    </>
 }
 
-export default BlogPostTemplate
-
-export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(id: { eq: $id }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-      }
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
+export const query = graphql`
+  query GetSingleArticle($slug: String) {
+    article: strapiArticle(Slug: { eq: $slug }) {
+      Content
+      Title
     }
   }
 `
+
+export default ArticleSingle
+// date(formatString: "D MMMM YYYY", locale: "pl")

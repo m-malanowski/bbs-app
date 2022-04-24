@@ -56,7 +56,8 @@ body {
   overflow-x: hidden;
   background-color: var(--color-white);
   font-family: var(--font-primary);
-  &.no-scroll{
+
+  &.no-scroll {
     overflow: hidden;
   }
 
@@ -76,7 +77,7 @@ body {
   //width: 100vw;
   background-color: var(--color-contrast);
 
-  @include breakpoint(sm, "not all"){
+  @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
 
@@ -89,7 +90,7 @@ body {
     //background-color: var(--color-contrast);
     color: var(--color-white);
     padding: var(--space-xl);
-    @include breakpoint(sm, "not all"){
+    @include breakpoint(sm, "not all") {
       order: 2;
     }
   }
@@ -119,7 +120,7 @@ body {
     top: 0;
     bottom: 0;
     animation: vertical 3s infinite;
-    @include breakpoint(md, "not all"){
+    @include breakpoint(md, "not all") {
       display: none;
     }
     //animation: vertical 3s normal forwards;
@@ -135,9 +136,10 @@ body {
   background-color: var(--color-contrast);
 
   //width: 100vw;
-  @include breakpoint(sm, "not all"){
+  @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
+
   &__right {
     display: flex;
     //align-items: center;
@@ -158,7 +160,7 @@ body {
     //animation: vertical 3s normal forwards;
   }
 
-  figure{
+  figure {
     height: 100vh;
     @include breakpoint(sm, "not all") {
       //height: revert;
@@ -204,7 +206,8 @@ body {
   @include breakpoint(xs, "not all") {
     margin-bottom: var(--space-xl);
   }
-  &__left{
+
+  &__left {
     @include breakpoint(sm, "not all") {
       height: 50vh;
     }
@@ -277,27 +280,32 @@ body {
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
-  &--about{
+
+  &--about {
     grid-template-columns: repeat(2, 1fr);
     @include breakpoint(sm, "not all") {
       grid-template-columns: 1fr;
     }
-    .tile:hover{
+
+    .tile:hover {
       box-shadow: var(--shadow-md);
       border: 1px solid transparent;
     }
   }
-  &--top{
+
+  &--top {
     grid-template-columns: repeat(2, 1fr);
     @include breakpoint(sm, "not all") {
       grid-template-columns: 1fr;
       order: 2;
     }
-    .tile:first-of-type:hover{
+
+    .tile:first-of-type:hover {
       box-shadow: var(--shadow-md);
       border: 1px solid transparent;
     }
-    .tile:nth-of-type(2){
+
+    .tile:nth-of-type(2) {
       border: none;
       @include breakpoint(sm, "not all") {
         display: none;
@@ -346,12 +354,14 @@ body {
   &__icon {
     margin-bottom: var(--space-lg);
   }
-  &__number{
+
+  &__number {
     font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1900 - 320)));
     color: var(--color-secondary);
     font-weight: 700;
   }
-  &__heading{
+
+  &__heading {
     text-transform: uppercase;
   }
 
@@ -393,10 +403,11 @@ body {
     @include breakpoint(sm, "not all") {
       width: 100%;
     }
-    @include breakpoint(xs, "not all"){
+    @include breakpoint(xs, "not all") {
       display: none;
     }
-    &--services{
+
+    &--services {
       padding: var(--space-xl);
       left: 0;
       bottom: 20%;
@@ -419,14 +430,14 @@ body {
   }
 
   &__line {
-    width: calc(2* var(--space-xxxl)) ;
+    width: calc(2 * var(--space-xxxl));
     height: 2px;
     background-color: var(--color-white);
     margin-top: var(--space-xxl);
     //margin: 0 var(--space-xl);
   }
 
-  &--services{
+  &--services {
     background-image: url("images/bild4.jpg");
 
 
@@ -452,12 +463,14 @@ body {
       padding: var(--space-xxl) 0;
     }
   }
-  figure{
+
+  figure {
     height: 80vh;
     @include breakpoint(sm, "not all") {
       height: revert;
     }
   }
+
   &__right {
     background-color: var(--color-contrast);
     height: 80vh;
@@ -472,6 +485,7 @@ body {
 
 .footer {
   padding: var(--space-xl);
+
   ul {
     li:first-of-type {
       color: var(--color-contrast-light);
@@ -486,7 +500,8 @@ body {
   &__image {
     filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
   }
-  &__links, small{
+
+  &__links, small {
     @include breakpoint(md) {
       padding-left: var(--space-xl);
     }
@@ -509,7 +524,7 @@ body {
     padding: var(--space-lg) var(--space-xl);
   }
 
-  &__left{
+  &__left {
     position: relative;
     z-index: 100;
   }
@@ -529,28 +544,34 @@ body {
     @include breakpoint(sm, "not all") {
       display: none;
     }
-    &--open{
-      ul{
+
+    &--open {
+      ul {
         height: auto !important;
       }
     }
-    ul{
+
+    ul {
       height: 1.9rem;
       overflow: hidden;
     }
-    &__arrow{
+
+    &__arrow {
       transform: rotate(0deg);
       transition: transform .55s var(--ease-out-back);
-      &--rolled{
+
+      &--rolled {
         transform: rotate(180deg);
         transition: transform .25s var(--ease-out-back);
       }
-      &:hover{
+
+      &:hover {
         cursor: pointer;
       }
     }
   }
-  &__hamburger-wrapper{
+
+  &__hamburger-wrapper {
     display: flex;
     gap: var(--space-lg);
   }
@@ -642,7 +663,7 @@ body {
 }
 
 // **************  sidebar   ************** //
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -668,7 +689,8 @@ body {
     visibility: visible;
     opacity: 1;
   }
-  &__backdrop{
+
+  &__backdrop {
     position: absolute;
     top: 0;
     left: 0;
@@ -677,14 +699,15 @@ body {
     //background: var(--color-contrast);
     //opacity: .85;
     background: rgba(0, 0, 0, 0.9);
-    -webkit-transition: opacity .25s cubic-bezier(.1,.6,.4,1);
-    transition: opacity .25s cubic-bezier(.1,.6,.4,1);
+    -webkit-transition: opacity .25s cubic-bezier(.1, .6, .4, 1);
+    transition: opacity .25s cubic-bezier(.1, .6, .4, 1);
     //-webkit-transition: opacity .25s var(--ease-out-back);
     //transition: opacity .25s var(--ease-out-back);
     cursor: pointer;
     z-index: 11;
   }
-  &__content{
+
+  &__content {
     //transition: max-height 0.15s ease-out;
     //transition-delay: .3s;
     margin-left: auto;
@@ -701,7 +724,8 @@ body {
     @include breakpoint(sm, "not all") {
       width: revert;
     }
-    &--open{
+
+    &--open {
       height: 70vh;
       //max-height: 70vh;
       //transition: max-height 0.55s var(--ease-out-back);
@@ -728,7 +752,7 @@ body {
   //color: var(--color-contrast);
   //padding: var(--space-xl);
 
-  &__links{
+  &__links {
     display: flex;
     flex-direction: column;
     @include breakpoint(sm, "not all") {
@@ -736,7 +760,8 @@ body {
       justify-content: center;
     }
   }
-  &__sublinks{
+
+  &__sublinks {
     //display: grid;
     //grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xs);
@@ -761,7 +786,6 @@ body {
   }
 
 
-
   &__link {
     font-size: calc(43px + (86 - 43) * ((100vw - 320px) / (1900 - 320)));
     font-family: var(--font-primary-medium);
@@ -773,7 +797,6 @@ body {
       color: var(--color-secondary);
     }
   }
-
 
 
 }
@@ -844,7 +867,7 @@ body {
   //width: 100%;
   height: auto;
   //transition: opacity, transform var(--reveal-fx-timing-function),-webkit-transform var(--reveal-fx-timing-function);
-  transition: opacity,-webkit-transform var(--reveal-fx-timing-function);
+  transition: opacity, -webkit-transform var(--reveal-fx-timing-function);
   transition-duration: var(--reveal-fx-duration);
 }
 
@@ -853,16 +876,17 @@ ul {
   padding: 0;
 }
 
-figure{
+figure {
   margin: 0;
-  img{
+
+  img {
     display: inline-block;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 
-    transition: opacity,-webkit-transform var(--reveal-fx-timing-function);
+    transition: opacity, -webkit-transform var(--reveal-fx-timing-function);
     transition-duration: var(--reveal-fx-duration);
   }
 }
@@ -871,39 +895,43 @@ figure{
   overflow: hidden;
 }
 
-// **************  projects   ************** //
+// **************  projects & articles  ************** //
 
-.projects-wrapper{
+.projects-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: var(--space-lg);
-  @include breakpoint(sm, "not all"){
+  @include breakpoint(sm, "not all") {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include breakpoint(sm, "not all"){
+  @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
 }
-.project img{
-  @include breakpoint(sm, "not all"){
+
+.project img, .article img {
+  @include breakpoint(sm, "not all") {
     border-radius: 12px;
   }
 }
-.project{
+
+.project {
   cursor: zoom-in;
   position: relative;
   //width: 100%;
   //height: 0;
   padding-top: 66.66%;
 
-  &.open{
+  &.open {
     cursor: zoom-out;
-    .project__shade{
+
+    .project__shade {
       pointer-events: auto;
       opacity: 1;
       z-index: 1;
     }
-    .project__image{
+
+    .project__image {
       position: fixed;
       width: auto;
       height: auto;
@@ -912,7 +940,8 @@ figure{
       z-index: 10001;
     }
   }
-  &__shade{
+
+  &__shade {
     position: fixed;
     top: 0;
     left: 0;
@@ -923,7 +952,8 @@ figure{
     background: rgba(0, 0, 0, 0.9);
     //z-index: 1;
   }
-  &__image{
+
+  &__image {
     position: absolute;
     top: 0;
     left: 0;
@@ -935,14 +965,76 @@ figure{
   }
 }
 
+.articles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  //gap: var(--space-lg);
+  //@include breakpoint(sm, "not all") {
+  //  grid-template-columns: repeat(2, 1fr);
+  //}
+  //@include breakpoint(sm, "not all") {
+  //  grid-template-columns: 1fr;
+  //}
+}
 
 
-.filter{
+.article {
+  display: flex;
+  flex-direction: row;
+  //display: grid;
+  //grid-template-columns: 1fr 2fr;
+  gap: var(--space-lg);
+  border-bottom: 1px solid rgba(255,255,255, .3);
+  padding: var(--space-xxl) 0;
+  align-items: center;
+  @include breakpoint(sm, "not all") {
+    flex-direction: column;
+  }
+  &__title{
+    color: var(--color-secondary);
+  }
+  &__img{
+    border: 1px solid var(--color-white);
+    //height: 42.8rem;
+    position: relative;
+    //width: 100%;
+    height: 400px;
+    width: 40%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      //object-fit: contain;
+    }
+  }
+  img {
+    ////max-width: 800px;
+    ////width: 100%;
+    //height: 400px;
+    //width: 700px;
+    //object-fit: cover;
+    //object-position: bottom;
+
+
+
+
+    //@include breakpoint(lg, "not all") {
+    //  max-width: 400px;
+    //}
+    //@include breakpoint(sm, "not all") {
+    //  border-radius: 12px;
+    //  max-width: 100%;
+    //}
+  }
+}
+
+
+.filter {
   display: flex;
   gap: var(--space-md);
   align-items: center;
   justify-content: end;
-  @include breakpoint(sm, "not all"){
+  @include breakpoint(sm, "not all") {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -969,13 +1061,6 @@ figure{
 }
 
 
-
-
-
-
-
-
-
 // **************  form   ************** //
 
 
@@ -987,7 +1072,7 @@ figure{
     min-height: 450px;
     display: flex;
     flex-direction: column;
-    @include breakpoint(sm, "not all"){
+    @include breakpoint(sm, "not all") {
       width: 100%;
     }
   }
@@ -998,7 +1083,8 @@ figure{
     height: 3rem;
     position: relative;
   }
-  form div:first-of-type{
+
+  form div:first-of-type {
     margin-top: 0;
   }
 
@@ -1014,17 +1100,19 @@ figure{
       background-color: transparent;
     }
   }
+
   form div {
-    textarea{
+    textarea {
       border-bottom: 1px solid var(--color-white);
     }
   }
 
   .message-div label {
     border-bottom: none;
-    &:after{
+
+    &:after {
       content: "";
-      border-bottom:none;
+      border-bottom: none;
     }
   }
 
@@ -1080,12 +1168,13 @@ figure{
     transform: translateX(0%);
   }
 
-  a{
+  a {
     margin-top: 5rem;
     margin-bottom: 2rem;
 
   }
-  button{
+
+  button {
     margin-top: 10rem;
     background: transparent;
     @include breakpoint(sm, "not all") {
@@ -1093,7 +1182,7 @@ figure{
     }
   }
 
-  textarea{
+  textarea {
     resize: both;
     overflow: auto;
     height: 8rem !important;
@@ -1102,16 +1191,20 @@ figure{
   textarea:required {
     box-shadow: none;
   }
+
   textarea:invalid {
     box-shadow: none;
   }
+
   input:required {
     box-shadow: none;
   }
+
   input:invalid {
     box-shadow: none;
   }
-  .agreements{
+
+  .agreements {
     font-size: 14px;
     line-height: 1.4;
     max-width: 80%;
@@ -1150,7 +1243,7 @@ figure{
 }
 
 
-.languages{
+.languages {
   //display: flex;
   //flex-direction: column;
   ////gap: var(--space-xxs);
@@ -1172,26 +1265,32 @@ figure{
   @include breakpoint(sm, "not all") {
     display: none;
   }
-  &--open{
-    ul{
+
+  &--open {
+    ul {
       height: auto !important;
     }
   }
-  ul{
+
+  ul {
     height: 1.9rem;
     overflow: hidden;
-    li a{
+
+    li a {
       color: var(--color-white);
     }
   }
-  &__arrow{
+
+  &__arrow {
     transform: rotate(0deg);
     transition: transform .55s var(--ease-out-back);
-    &--rolled{
+
+    &--rolled {
       transform: rotate(180deg);
       transition: transform .25s var(--ease-out-back);
     }
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
   }

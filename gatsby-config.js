@@ -58,6 +58,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: 'http://localhost:1337',
+        accessToken: '961e50a7141d75dd4e5eb3933a55097458b569d77edcfc16d521f8185f4185994673294ccbfdd977a5eecf9014be53e02ec921993c2d95a7c1d507252cc75ec287b1455fd5150ab1b2ec8d44a3c3b69eb88f4a5cc2fdb5602c0eb42c4e521b353fb7d72134b1b5c46f0564f7cb374a7171402e1f4b1209af61977e52d4c82b30',
+        collectionTypes: ['article', 'project'],
+        // contentTypes: ['articles', 'projects'],
+        singleTypes: ['private-policy'],
+      }
+    },
+    {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,

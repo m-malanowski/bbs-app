@@ -30,7 +30,6 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                             animate={isOpen ? "open" : "closed"}
                             variants={variants}
                             transition={transition}
-
                 >
                     <Link to="/o-nas" className="sidebar__link" onClick={toggleSideBar}>O nas</Link>
                     <Link to="/uslugi" className="sidebar__link" onClick={toggleSideBar}>Usługi</Link>
@@ -44,9 +43,9 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                      transition={transition}
                 >
                     <Link to="/" className="sidebar__sublink link" onClick={toggleSideBar}>Strona główna</Link>
-                    <Link to="/aktualnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Aktualności</Link>
-                    <Link to="/aktualnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Polityka prywatności</Link>
-                    <Link to="/aktualnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Facebook</Link>
+                    <Link to="/blog" className="sidebar__sublink link" onClick={toggleSideBar}>Blog</Link>
+                    <Link to="/polityka-prywatnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Polityka prywatności</Link>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BBSPOLSKAHALESTALOWE/" onClick={toggleSideBar} className="sidebar__sublink link">Facebook</a>
                 </motion.div>
             </div>
         </section>
