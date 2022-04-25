@@ -42,10 +42,13 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                      variants={variants}
                      transition={transition}
                 >
-                    <Link to="/" className="sidebar__sublink link" onClick={toggleSideBar}>Strona główna</Link>
+                    {/*<Link to="/" className="sidebar__sublink link" onClick={toggleSideBar}>Strona główna</Link>*/}
+
                     <Link to="/blog" className="sidebar__sublink link" onClick={toggleSideBar}>Blog</Link>
-                    <Link to="/polityka-prywatnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Polityka prywatności</Link>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BBSPOLSKAHALESTALOWE/" onClick={toggleSideBar} className="sidebar__sublink link">Facebook</a>
+                    <Link to="/polityka-prywatnosci" className="sidebar__sublink link" onClick={toggleSideBar}>Polityka prywatności</Link>
+                    <a className="link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps?saddr=My+Location&daddr=BBS+POLSKA+SP.+Z+O.O.">Wskazówki dojazdu</a>
+
                 </motion.div>
             </div>
         </section>

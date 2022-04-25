@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown"
 import {Helmet} from "react-helmet"
 import SEO from "../components/seo"
 import {motion} from "framer-motion"
-import img from "../images/hero25.jpg";
+import img from "../images/hero4.jpg";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
 import Contact from "../components/contact";
 
@@ -25,10 +25,10 @@ const variants = {
         opacity: 0
     }
 }
-const ArticleSingle = ({data}) => {
+const Privacy = ({data}) => {
     return <>
         <Helmet bodyAttributes={{
-            id: 'article-page'
+            id: 'privacy-page'
         }}/>
         {/*<SEO title={data.blog.title + ' Porady Prawne | Blog'} description={data.blog.description}/>*/}
         <motion.div className="article-page">
@@ -45,7 +45,7 @@ const ArticleSingle = ({data}) => {
                                initial="initial"
                                exit="exit"
                     >
-                        {data.article.Title}
+                        Polityka prywatności
                     </motion.h1>
                 </div>
                 <motion.div className="hero__right"
@@ -74,22 +74,20 @@ const ArticleSingle = ({data}) => {
                 <div className="grid gap-xxl@md margin-top-xl">
                     <div className="col-6@md">
                         {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
-                        <FadeInWhenVisible delay={0.1}>
-                            <h3>BBS POLSKA - Best Building Solutions jest firmą wykonawczą z Elbląga. Firma ma jasno
-                                sprecyzowany cel: dostarczać  kompleksową obsługę
-                                inwestycji budowlanych.
-                            </h3>
+                        <FadeInWhenVisible>
+                            <h3>Polityka prywatności naszej strony</h3>
                         </FadeInWhenVisible>
                     </div>
                     <div className="col-6@md">
 
-                    <FadeInWhenVisible delay={0.4}>
-                        <p>
-                            {data.article.Content}
-                        </p>
-                    </FadeInWhenVisible>
+                        <FadeInWhenVisible>
+                            <p>
+                                {/*{data.article.Content}*/}
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum dolorem ducimus ex harum, id maiores maxime nulla odit optio, quos rem repudiandae sit tenetur ut. Dolores pariatur repellat tenetur.
+                            </p>
+                        </FadeInWhenVisible>
 
-                    <Link to="/blog"  className="btn btn--dark margin-top-xxl"> Powrót do artykułów</Link>
+                        <Link to="/"  className="btn btn--dark margin-top-xxl"> Powrót do głównej</Link>
 
                     </div>
                 </div>
@@ -100,15 +98,15 @@ const ArticleSingle = ({data}) => {
     </>
 }
 
-export const query = graphql`
-  query GetSingleArticle($slug: String) {
-    article: strapiArticle(Slug: { eq: $slug }) {
-      id
-      Content
-      Title
-    }
-  }
-`
+// export const query = graphql`
+//   query GetSingleArticle($slug: String) {
+//     article: strapiArticle(Slug: { eq: $slug }) {
+//       id
+//       Content
+//       Title
+//     }
+//   }
+// `
 
-export default ArticleSingle
+export default Privacy
 // date(formatString: "D MMMM YYYY", locale: "pl")

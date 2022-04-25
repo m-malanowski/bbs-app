@@ -9,23 +9,23 @@
 //@import "LuminaFrame/_breakpoints";
 
 
+@font-face {
+  font-family: "gtae";
+  src: url("fonts/GT America Extended Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 //@font-face {
-//  font-family: "gtae";
-//  src: url("fonts/GT America Extended Regular.ttf") format("truetype");
+//  font-family: "Moderat Medium";
+//  src: url("fonts/Moderat-Extended-Medium.ttf") format("truetype");
 //  font-display: swap;
 //}
 
-@font-face {
-  font-family: "Moderat Medium";
-  src: url("fonts/Moderat-Extended-Medium.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Moderat Regular";
-  src: url("fonts/Moderat-Extended-Regular.ttf") format("truetype");
-  font-display: swap;
-}
+//@font-face {
+//  font-family: "Moderat Regular";
+//  src: url("fonts/Moderat-Extended-Regular.ttf") format("truetype");
+//  font-display: swap;
+//}
 
 :root {
   --color-contrast: #222222;
@@ -36,11 +36,11 @@
   //--color-secondary: #ff8933;
   --color-secondary: #FF8C36;
   --color-primary: #FFFFFF;
-  --font-primary: 'Moderat Regular';
-  --font-primary-medium: 'Moderat Medium';
+  //--font-primary: 'Moderat Regular';
+  //--font-primary-medium: 'Moderat Medium';
 
-  //--font-primary: 'gtae';
-  //--font-primary-medium: 'gtae';
+  --font-primary: 'gtae';
+  --font-primary-medium: 'gtae';
 
   //--font-primary: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   //--font-primary-medium: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -80,6 +80,9 @@ body {
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
+  &--article{
+
+  }
 
 
   &__left {
@@ -92,6 +95,7 @@ body {
     padding: var(--space-xl);
     @include breakpoint(sm, "not all") {
       order: 2;
+      padding: var(--space-xxxl) var(--space-xl);
     }
   }
 
@@ -102,9 +106,26 @@ body {
     }
   }
 
-  //&__right {
-  //  background-color: var(--color-contrast);
-  //}
+  &__right {
+    background-color: var(--color-contrast);
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    //margin-left: 50%;
+    //background-color: #1c1c1c;
+    @include breakpoint(sm, "not all") {
+      position: relative;
+      margin-left: 0 !important;
+
+    }
+  }
+
+
 
   &__tag, &__btn {
     margin-top: auto;
@@ -877,8 +898,9 @@ ul {
 }
 
 figure {
+  overflow: hidden;
   margin: 0;
-
+  width: 100%;
   img {
     display: inline-block;
     width: 100%;
@@ -886,8 +908,8 @@ figure {
     -o-object-fit: cover;
     object-fit: cover;
 
-    transition: opacity, -webkit-transform var(--reveal-fx-timing-function);
-    transition-duration: var(--reveal-fx-duration);
+    //transition: opacity, -webkit-transform var(--reveal-fx-timing-function);
+    //transition-duration: var(--reveal-fx-duration);
   }
 }
 
@@ -1008,9 +1030,13 @@ figure {
   }
 }
 
-.article-page{
-  background-color: var(--color-contrast);
-  color: var(--color-white);
+#article-page, #privacy-page{
+  //background-color: var(--color-contrast);
+  //color: var(--color-white);
+  .footer{
+    background-color: var(--color-contrast);
+    color: var(--color-white);
+  }
 }
 
 
@@ -1188,19 +1214,6 @@ figure {
 
 // **************  loader   ************** //
 
-.initialLogo {
-  overflow: visible;
-  //stroke: #fff;
-  stroke-width: 1;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  transform: scale(.8);
-  //stroke-dasharray: 100;
-  //@include for-phone-only {
-  //  transform: scale(1);
-  //}
-}
-
 .greeting {
   left: 0;
   top: 0;
@@ -1210,33 +1223,35 @@ figure {
   z-index: 10001 !important;
   display: grid;
   place-items: center;
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
+  //overflow: hidden;
   flex-direction: column;
+  background-attachment: fixed;
 }
 
 
 .languages {
-  //display: flex;
-  //flex-direction: column;
-  ////gap: var(--space-xxs);
-  //position: absolute;
-  //top: 5%;
-  //right: 10%;
-  //a{
-  //  color: var(--color-white);
-  //}
-
-
   position: absolute;
   top: 3.5%;
   right: 7.5%;
 
+  z-index: 6;
   display: flex;
   gap: var(--space-md);
   align-items: baseline;
+  @include breakpoint(xl, "not all") {
+    right: 10%;
+  }
+  @include breakpoint(lg, "not all") {
+    right: 15%;
+  }
   @include breakpoint(sm, "not all") {
-    display: none;
+    right: 20%;
+    top: 1.5%;
+  }
+  @include breakpoint(xs, "not all") {
+    right: 25%;
+    //display: none;
   }
 
   &--open {

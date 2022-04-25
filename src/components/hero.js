@@ -1,12 +1,16 @@
 import * as React from "react"
-import img from "../images/hero11.jpg"
+import img from "../images/heroIndex.jpg"
+// import img from "../images/hero25.jpg"
 import {Link} from "gatsby";
 import {motion} from "framer-motion";
 // import { useTranslation } from 'react-i18next';
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {variants} from "./variants"
 
     // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
+const exitTransition = { duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9] }
+const textTransition = { delay: 3.8, duration: .6, ease: [0.87, 0, 0.13, 1] }
 
 const Hero = () => {
     const { t, i18n } = useTranslation();
@@ -14,35 +18,58 @@ const Hero = () => {
     return(
         <div className="hero">
             <div className="hero__left">
-                <div className="hero__vertical "></div>
+                {/*<div className="hero__vertical"></div>*/}
 
-                <h2  className="hero__tag heading">
+                <motion.h2  className="hero__tag heading"
+                     variants={variants}
+                     animate={{
+                         y: 0,
+                         opacity: 1,
+                         transition: {delay: 4.7, ...transition},
+                     }}
+                     initial="initial"
+                     exit="exit"
+                >
                     {t('index.hero.title')} <br/> <span>BBS</span> Polska
-                </h2>
+                </motion.h2>
 
-                <p className="hero__subtag ">
+                <motion.p className="hero__subtag"
+                          variants={variants}
+                          animate={{
+                              y: 0,
+                              opacity: 1,
+                              transition: {delay: 4.8, ...transition},
+                          }}
+                          initial="initial"
+                          exit="exit"
+                >
                     {t('index.hero.subtitle')}
-                </p>
-                <Link to="/kontakt" className="hero__btn btn margin-top-xl">{t('general.appointment')}</Link>
+                </motion.p>
+                <Link to="/kontakt" className="hero__btn btn margin-top-xl">
+                    {t('general.appointment')}
+                </Link>
             </div>
             <motion.div className="hero__right"
                         initial={{
-                            width: 0,
+                            // width: 0,
+                            marginLeft: 0
                         }}
                         animate={{
-                            width: "100%",
-                            transition: {delay: 3.8, ...transition},
+                            // width: "100%",
+                            marginLeft: '50%',
+                            transition: {delay: 4.2,  duration: 1.2, ease: [0.87, 0, 0.13, 1] },
                         }}
                         exit={{
-                            width: 0,
-                            transition: {delay: .2, ...transition},
+                            // width: 0,
+                            marginLeft: 0,
+                            transition: {delay: .2, ...exitTransition},
                         }}
             >
-                <img src={img} alt="" className="image"/>
+                {/*<img src={img} alt="BBS Best building solutions" className="image"/>*/}
 
-                {/*<figure className="image-wrapper">*/}
-                {/*    <img src={img} alt="" className="image"/>*/}
-                {/*</figure>*/}
+                <figure>
+                    <img src={img} alt="BBS Best building solutions" />
+                </figure>
             </motion.div>
         </div>
     )

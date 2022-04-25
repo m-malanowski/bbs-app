@@ -1,5 +1,26 @@
 import React from "react"
 
+const variants = {
+    initial: {
+        y: 50,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 50,
+        opacity: 0,
+        transition: {
+            duration: .6,
+            ease: [0.11, 0, 0.5, 0]
+        }
+    }
+}
+
+
+
 const splitTextVariants = {
     visible: i => ({
         y: 0,
@@ -20,6 +41,8 @@ const splitTextVariants = {
     })
 }
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
+
+
 
 const commonVariants = {
     initial: {
@@ -217,6 +240,8 @@ export { pathVariantsOuter }
 export { staggerContainer }
 export { staggerItem }
 export { pathVariants2 }
+
+export { variants }
 
 
 export { logoStarRotate }

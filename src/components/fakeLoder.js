@@ -1,10 +1,21 @@
 import React from "react"
-import {pathVariants, logoShowSecondHouse, logoShowFirstHouse} from "./variants"
+// import {pathVariants, logoShowSecondHouse, logoShowFirstHouse} from "./variants"
 import {motion} from "framer-motion"
 
-const transition = {duration: 3.4, ease: "easeInOut"};
-// const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
-const transition2 = { duration: 2, yoyo: Infinity, ease: "easeInOut" };
+const svgVariants = {
+    hidden: {
+        rotate: -180,
+        // scale: 10.1,
+    },
+    visible: {
+        rotate: 0,
+        // scale: 1,
+        transition: {
+            default: { duration: 3.2, ease: [0.68, -0.6, 0.32, 1.6] }
+        }
+    }
+}
+
 
 const FakeLoader = () => {
     return (
@@ -19,19 +30,29 @@ const FakeLoader = () => {
                 }
             }}
         >
-            <svg
+            <motion.svg
+                variants={svgVariants}
+                initial="hidden"
+                animate="visible"
                 width="179" height="156" viewBox="0 0 179 156" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
                 <motion.path
                     d="M57.161 57.3v9.214l-30.058 21.61v39.236L44.6 114.774V97.093l29.698-21.35 29.698 21.35v30.849h17.494V88.124L82.873 60.362l21.482-15.445 29.698 21.352v34.376l17.494-12.577V57.3l-47.192-33.928L57.161 57.3z"
-                    fill="transparent"
-                    strokeWidth="2"
+                    fill="#F68712"
+                    strokeWidth="0"
                     stroke="#F68712"
 
                     strokeLinecap="round"
-                    initial={{pathLength: 0, scale: .1, opacity: 0}}
-                    animate={{pathLength: 1, scale: 1, opacity: 1}}
-                    transition={transition}
+                    initial={{pathLength: 1, scale: .1, opacity: 0}}
+                    animate={{
+                        pathLength: 0,
+                        scale: 1,
+                        opacity: 1,
+                        // transitionEnd: {
+                        //     fill: "#F68712",
+                        // }
+                    }}
+                    transition={{ delay: 1.2, duration: .9, ease: [0.87, 0, 0.13, 1]}}
                 />
 
                 <motion.path
@@ -40,12 +61,24 @@ const FakeLoader = () => {
                     strokeWidth="2"
                     stroke="#F68712"
                     strokeLinecap="round"
-                    initial={{pathLength: 0}}
-                    animate={{pathLength: 1}}
-                    transition={transition}
+                    // initial={{pathLength: 0}}
+                    // animate={{pathLength: 1}}
+                    // transition={transition}
+
+                    initial={{pathLength: 1, scale: .15, opacity: 0}}
+                    animate={{
+                        pathLength: 1,
+                        scale: 1,
+                        opacity: 1,
+                        // transitionEnd: {
+                        //     fill: "#F68712",
+                        // }
+                    }}
+                    transition={{delay: .2, duration: 2.8, ease: [0.87, 0, 0.13, 1]}}
+
                 />
 
-            </svg>
+            </motion.svg>
         </motion.div>
     )
 }

@@ -3,6 +3,7 @@ import contactImage from "../images/conect2.jpg"
 import {Link} from "gatsby";
 import hero6 from "../images/bild2.jpg";
 import FadeInWhenVisible from "./fadeWhenVisible";
+import ImagesScrolling from "./scrollEffect";
 
 
 const Contact = () => {
@@ -28,7 +29,9 @@ const Contact = () => {
                     {/*<img src={contactImage} alt="BBS" className="image"/>*/}
 
                     <figure>
-                        <img src={contactImage} alt="BBS" className="image"/>
+                        {/*<img src={contactImage} alt="BBS" className="image"/>*/}
+                        <ImagesScrolling scaleValue={1.3} pictureSrc={contactImage} alt="BBS Polska"/>
+
                     </figure>
                 </div>
             </div>

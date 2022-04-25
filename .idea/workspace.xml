@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/scrollEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fakeLoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fakeLoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tilesAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilesAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/variants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/variants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/mateusz/Pulpit/gatsby-starter-blog/src/templates",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier",
-    "ts.external.directory.path": "/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/src/templates&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/templates" />
@@ -90,6 +104,7 @@
       <workItem from="1650564849710" duration="6243000" />
       <workItem from="1650701093592" duration="9093000" />
       <workItem from="1650789527407" duration="38366000" />
+      <workItem from="1650881949984" duration="18898000" />
     </task>
     <servers />
   </component>
