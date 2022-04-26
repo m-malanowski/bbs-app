@@ -16,6 +16,8 @@ import LanguageSwitcher from "../components/languageSwitcher";
 import * as PropTypes from "prop-types";
 import ImagesScrolling from "../components/scrollEffect";
 import TilesAbout from "../components/tilesAbout";
+// import teaserImg from "../images/boxer1.jpg"
+import teaserImg from "../images/hero12.jpg"
 
 const variants = {
     initial: {
@@ -146,6 +148,87 @@ const Index = ({data, location}) => {
                 <FadeInWhenVisible delay={0.4}>
                     <Tiles/>
                 </FadeInWhenVisible>
+
+
+                <section>
+                    <div className="teaser">
+                        {/*<div className="col-6 teaser__left">*/}
+                        <figure>
+                            {/*<img src={teaserImg} alt="BBS" />*/}
+                            <ImagesScrolling scaleValue={1.3} pictureSrc={teaserImg} alt="BBS Polska"/>
+                        </figure>
+                        {/*</div>*/}
+
+                        <div className="col-6 teaser__right">
+                            <h2 className="heading padding-x-xl padding-top-xl">
+                                Oferowane uslugi
+                            </h2>
+                            <div className="grid padding-x-xl">
+                                <div className="col-8">
+                                    <p className="paragraph-larger">Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. </p>
+                                </div>
+                            </div>
+
+                            <div className="grid gap-lg padding-x-xl padding-top-xxxl">
+
+                                <div className="col-6@md margin-y-lg">
+                                    <h4>Prefabrykacja konstrukcji</h4>
+                                    <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>
+                                </div>
+
+                                <div className="col-6@md margin-y-lg">
+                                    <h4>Montaż konstrukcji</h4>
+                                    <p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady montażowe z wieloletnim doświadczeniem.</p>
+                                </div>
+
+                                <div className="col-6@md margin-y-lg">
+                                    <h4>Dachy płaskie</h4>
+                                    <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section className="container">
+                    <div className="grid gap-xxxl@md margin-top-xl">
+                        <div className="col-6@md">
+                            <FadeInWhenVisible delay={.1}>
+                                <h2 className="heading">Zapewniamy techniczne i terminowe podejście do każdej realizacji.</h2>
+                            </FadeInWhenVisible>
+                        </div>
+                        <div className="col-6@md">
+
+                            <FadeInWhenVisible delay={.4}>
+                                <h3>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w <span>Polsce</span> i w <span>UE</span>, możemy podjąć się realizacji obiektów spełniając oczekiwania naszych klientów.</h3>
+                            </FadeInWhenVisible>
+
+                            <div className="grid gap-md margin-y-xxxl">
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible delay={0.2}>
+                                        <p>
+                                            Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych obiektów firmy <span>BBS POLSKA</span>, znajdują się liczne hale magazynowe, produkcyjne, jak również modernizacje obiektów istniejących.
+                                        </p>
+                                    </FadeInWhenVisible>
+
+                                    <Link to="/realizacje" href="" className="btn btn--dark margin-top-xxl ">Nasze
+                                        realizacje
+                                    </Link>
+
+                                </div>
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible delay={0.3}>
+                                        <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
+                                    </FadeInWhenVisible>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
                 <motion.section className="bild "

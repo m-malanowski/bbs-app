@@ -76,6 +76,7 @@ module.exports = {
         languages: [`pl`, `en`],
         defaultLanguage: `pl`,
         siteUrl: `http://localhost:8000/`,
+        // generateDefaultLanguagePage: true,
         i18nextOptions: {
           fallbackLng: 'pl',
           interpolation: {

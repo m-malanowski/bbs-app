@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react";
-import { animate, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import {animate, motion, useAnimation} from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 
 function Counter({ from, to }) {
     const ref = useRef();
-    const inView = useInView();
+    // const inView = useInView();/
 
     useEffect(() => {
-        if(inView){
+        // if(inView){
+
             const controls = animate(from, to, {
                 duration: 1,
                 onUpdate(value) {
@@ -15,7 +16,7 @@ function Counter({ from, to }) {
                 }
             });
             return () => controls.stop();
-        }
+        // }
     }, [from, to, ref]);
 
     return <motion.span className="tile__number"

@@ -1,5 +1,6 @@
 import * as React from "react"
-import img from "../images/heroIndex.jpg"
+// import img from "../images/heroIndex.jpg"
+import img from "../images/hero8.jpg"
 // import img from "../images/hero25.jpg"
 import {Link} from "gatsby";
 import {motion} from "framer-motion";

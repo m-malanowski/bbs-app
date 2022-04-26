@@ -1,13 +1,15 @@
 import * as React from "react"
 import {Link, graphql} from "gatsby"
 // import Layout from "../components/layout"
-import sectionImage from '../images/bild3.jpg'
 import Seo from "../components/seo"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
 import hero6 from "../images/bild2.jpg";
 import TilesServices from "../components/tilesServices";
 import TilesAbout from "../components/tilesAbout";
+// import sectionImage from '../images/bild3.jpg'
+import sectionImage from '../images/drone1.jpg'
+
 
 const About = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`

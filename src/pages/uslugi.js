@@ -5,10 +5,11 @@ import Seo from "../components/seo"
 import Hero from "../components/hero"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
-import TilesServices from "../components/tilesServices";
+// import TilesServices from "../components/tilesServices";
 import hero6 from "../images/hero12.jpg";
 // import sectionImage from "../images/projects/montaz-hali-magazynowej-2000m2.jpg"
-import sectionImage from "../images/hero10.jpg"
+// import sectionImage from "../images/hero10.jpg"
+import sectionImage from "../images/drone2.jpg"
 
 
 const Services = ({data, location}) => {
