@@ -24,7 +24,7 @@ const FakeLoader = () => {
             initial={{opacity: 1}}
             animate={{
                 opacity: 0,
-                transition: {delay: 3.2, when: "beforeChildren", duration: .4},
+                transition: {delay: 3.4, when: "beforeChildren", duration: .4},
                 transitionEnd: {
                     display: "none"
                 }
@@ -52,7 +52,7 @@ const FakeLoader = () => {
                         //     fill: "#F68712",
                         // }
                     }}
-                    transition={{ delay: 1.2, duration: .9, ease: [0.87, 0, 0.13, 1]}}
+                    transition={{ delay: 1.6, duration: 1.0, ease: [0.87, 0, 0.13, 1]}}
                 />
 
                 <motion.path
