@@ -19,7 +19,7 @@ const Hero = () => {
     return(
         <div className="hero">
             <div className="hero__left">
-                {/*<div className="hero__vertical"></div>*/}
+                <div className="hero__vertical"></div>
 
                 <motion.h2  className="hero__tag heading"
                      variants={variants}
