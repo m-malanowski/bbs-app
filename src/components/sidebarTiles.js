@@ -24,7 +24,7 @@ export function SidebarTiles({ isOpen, toggleSideBar }) {
         <>
             <motion.div className="div2" initial={false} animate={isOpen ? "show" : "hide"} variants={variants}>
                 <img src={icon1} width={50} alt="BBS" className="tile__icon"/>
-                <Link to="/uslugi" onClick={toggleSideBar}> <h4>Sprawdź nasze usługi</h4> </Link>
+                <Link to="/wynajem-sprzetu-budowlanego" onClick={toggleSideBar}> <h4>Wynajmij sprzęt</h4> </Link>
             </motion.div>
             <motion.div className="div3" initial={false} animate={isOpen ? "show" : "hide"} variants={variants}>
                 <img src={icon3} width={50} alt="BBS" className="tile__icon"/>
