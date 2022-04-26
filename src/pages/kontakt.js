@@ -76,7 +76,6 @@ const ContactPage = ({data, location}) => {
                                             <FadeInWhenVisible delay={1.2}>
                                                 <li><a className="link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps?saddr=My+Location&daddr=BBS+POLSKA+SP.+Z+O.O.">Wskazówki dojazdu</a></li>
                                             </FadeInWhenVisible>
-
                                         </ul>
                                     </div>
                                 </div>
