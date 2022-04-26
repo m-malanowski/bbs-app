@@ -26,7 +26,7 @@ const Hero = () => {
                      animate={{
                          y: 0,
                          opacity: 1,
-                         transition: {delay: 4.7, ...transition},
+                         transition: {delay: 4.8, ...transition},
                      }}
                      initial="initial"
                      exit="exit"
@@ -39,16 +39,30 @@ const Hero = () => {
                           animate={{
                               y: 0,
                               opacity: 1,
-                              transition: {delay: 4.8, ...transition},
+                              transition: {delay: 4.9, ...transition},
                           }}
                           initial="initial"
                           exit="exit"
                 >
                     {t('index.hero.subtitle')}
                 </motion.p>
-                <Link to="/kontakt" className="hero__btn btn margin-top-xl">
-                    {t('general.appointment')}
-                </Link>
+
+                <motion.div
+                    className="margin-top-xl"
+                    variants={variants}
+                    animate={{
+                        y: 0,
+                        opacity: 1,
+                        transition: {delay: 5, ...transition},
+                    }}
+                    initial="initial"
+                    exit="exit"
+                >
+                    <Link to="/kontakt" className="hero__btn btn margin-top-xl">
+                        {t('general.appointment')}
+                    </Link>
+                </motion.div>
+
             </div>
             <motion.div className="hero__right"
                         initial={{
@@ -68,9 +82,21 @@ const Hero = () => {
             >
                 {/*<img src={img} alt="BBS Best building solutions" className="image"/>*/}
 
-                <figure>
+                <motion.figure
+                    variants={variants}
+                    animate={{
+                        y: 0,
+                        scale: 1.0,
+                        // opacity: 1,
+                        transition: {delay: 3.2, duration: 3, ease: [0.6, 0.01, -0.05, 0.9]},
+                    }}
+                    initial={{
+                        scale: 1.4,
+                    }}
+                    // exit="exit"
+                >
                     <img src={img} alt="BBS Best building solutions" />
-                </figure>
+                </motion.figure>
             </motion.div>
         </div>
     )

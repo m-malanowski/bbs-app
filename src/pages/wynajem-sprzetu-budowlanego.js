@@ -58,7 +58,7 @@ const Services = ({data, location}) => {
 
                     <div className="col-6 teaser__right ">
                         <h2 className="heading padding-xl">
-                            Nasza Park maszynowy
+                            Nasz Park maszynowy
                         </h2>
 
                         <div className="grid gap-lg padding-x-xl padding-bottom-xl">
