@@ -1,6 +1,9 @@
 import * as React from "react"
 import logoFooter from "../images/logo-footer.svg"
 import {Link} from "gatsby";
+// import ImagesScrolling from "./scrollEffect";
+// import teaserImg from "../images/hero12.jpg";
+import FadeInWhenVisible from "./fadeWhenVisible";
 
 
 const Footer = () => {
@@ -9,7 +12,11 @@ const Footer = () => {
 
             <div className="grid">
                 <div className="col-6@md">
-                    <img src={logoFooter} alt="BBS" className="footer__image"/>
+                    <FadeInWhenVisible delay={.4}>
+                        <img src={logoFooter} alt="BBS" className="footer__image"/>
+                    </FadeInWhenVisible>
+                    {/*<ImagesScrolling scaleValue={} pictureSrc={logoFooter} alt="BBS Polska" className="footer__image"/>*/}
+
                 </div>
                 <div className="col-6@md">
                     <div className="grid footer__links">
