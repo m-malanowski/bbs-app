@@ -4,15 +4,17 @@ import styled from "styled-components";
 import { Link } from "gatsby"
 
 const NavLink = styled(motion.li)`
+  padding: var(--space-xs) 0;
   a {
     transition: all 200ms ease-in-out;
-    font-size: calc(40px + (80 - 40) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(40px + (100 - 40) * ((100vw - 320px) / (1900 - 320)));
     font-family: var(--font-primary-medium);
     padding: var(--space-xxxs) 0;
     line-height: 1.2;
     font-weight: 500;
     &:hover {
-      color: var(--color-secondary);
+      letter-spacing: 4px;
+      transition: all 200ms ease-in-out;
     }
   }
 `;
@@ -23,7 +25,7 @@ const variants = {
         opacity: 1,
     },
     hide: {
-        transform: "translateY(5em)",
+        transform: "translateY(2.5em)",
         opacity: 0,
     },
 };
@@ -39,15 +41,15 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                 variants={{
                     show: {
                         ...variants.show,
-                        transition: { delay: 0.7, duration: 0.6, ease },
+                        transition: { delay: 0.7, duration: 1.2, ease },
                     },
                     hide: {
                         ...variants.hide,
-                        transition: { delay: 0.2, duration: 0.1 },
+                        transition: { delay: 0.14, duration: 0.1 },
                     },
                 }}
             >
-                <Link to="/o-nas" className="sidebar__link" onClick={toggleSideBar}>O nas</Link>
+                <Link to="/o-nas" className="link link--sidebar" onClick={toggleSideBar}>O nas</Link>
             </NavLink>
 
             <NavLink
@@ -56,15 +58,15 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                 variants={{
                     show: {
                         ...variants.show,
-                        transition: { delay: 0.8, duration: 0.6, ease },
+                        transition: { delay: 0.8, duration: 1.2, ease },
                     },
                     hide: {
                         ...variants.hide,
-                        transition: { delay: 0.15, duration: 0.1 },
+                        transition: { delay: 0.11, duration: 0.1 },
                     },
                 }}
             >
-                <Link to="/uslugi" className="sidebar__link" onClick={toggleSideBar}>Usługi</Link>
+                <Link to="/uslugi" className="link link--sidebar" onClick={toggleSideBar}>Usługi</Link>
             </NavLink>
 
             <NavLink
@@ -73,15 +75,15 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                 variants={{
                     show: {
                         ...variants.show,
-                        transition: { delay: 0.9, duration: 0.6, ease },
+                        transition: { delay: 0.9, duration: 1.2, ease },
                     },
                     hide: {
                         ...variants.hide,
-                        transition: { delay: 0.1, duration: 0.1 },
+                        transition: { delay: 0.08, duration: 0.1 },
                     },
                 }}
             >
-                <Link to="/realizacje" className="sidebar__link" onClick={toggleSideBar}>Realizacje</Link>
+                <Link to="/realizacje" className="link link--sidebar" onClick={toggleSideBar}>Realizacje</Link>
             </NavLink>
 
             <NavLink
@@ -90,7 +92,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                 variants={{
                     show: {
                         ...variants.show,
-                        transition: { delay: 1.0, duration: 0.6, ease },
+                        transition: { delay: 1.0, duration: 1.2, ease },
                     },
                     hide: {
                         ...variants.hide,
@@ -98,7 +100,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/kontakt" className="sidebar__link" onClick={toggleSideBar}>Kontakt</Link>
+                <Link to="/kontakt" className="link link--sidebar" onClick={toggleSideBar}>Kontakt</Link>
             </NavLink>
 
         </ul>

@@ -48,7 +48,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <br/><br/>
-                    <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone </small>
+                    <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone, <a href="/polityka-prywatnosci" className="link">Polityka prywatności</a> </small>
                 </div>
             </div>
 

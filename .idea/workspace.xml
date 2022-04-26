@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebarTiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarTiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebarLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarLinks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
       <workItem from="1650789527407" duration="38366000" />
       <workItem from="1650881949984" duration="21107000" />
       <workItem from="1650957304279" duration="14985000" />
-      <workItem from="1650987102697" duration="4782000" />
+      <workItem from="1650987102697" duration="6930000" />
     </task>
     <servers />
   </component>

@@ -34,6 +34,9 @@
   &:hover{
     background: var(--color-white);
     color: var(--color-contrast);
+
+    letter-spacing: 1px;
+    transition: letter-spacing .3s var(--ease-out-back);
   }
   &:active {
     transform: translateY(4px) translateX(2px);

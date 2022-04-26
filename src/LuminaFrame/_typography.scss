@@ -120,7 +120,12 @@ a {
 
 .link {
   position: relative;
+  transition: letter-spacing .3s var(--ease-out-back);
 
+  &:hover{
+    letter-spacing: 1px;
+    transition: letter-spacing .3s var(--ease-out-back);
+  }
 
   &::before {
     content: '';
@@ -141,6 +146,11 @@ a {
   &:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+  }
+  &--sidebar{
+    &::before {
+      height: 4px;
+    }
   }
 
 }
