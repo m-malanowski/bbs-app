@@ -5,8 +5,8 @@ module.exports = {
       name: `Mateusz Malanowski`,
       summary: `Lumina Studio`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://www.bbs-polska.com//`,
+    description: `BBS Polska App`,
+    siteUrl: `https://www.bbs-polska.com/`,
     social: {
       twitter: `bbspolska`,
     },
@@ -100,12 +100,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-NDPNFSLVVY`,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {

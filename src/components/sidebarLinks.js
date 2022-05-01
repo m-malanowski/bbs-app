@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
+import {useTranslation} from "gatsby-plugin-react-i18next";
 
 const NavLink = styled(motion.li)`
   padding: var(--space-xs) 0;
@@ -33,6 +34,9 @@ const variants = {
 const ease = [0.68, -0.6, 0.32, 1.6]
 
 export function NavMenu({ isOpen, toggleSideBar }) {
+
+    const { t, i18n } = useTranslation();
+
     return (
         <ul>
             <NavLink
@@ -49,7 +53,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/o-nas" className="link link--sidebar" onClick={toggleSideBar}>O nas</Link>
+                <Link to="/o-nas" className="link link--sidebar" onClick={toggleSideBar}>{t('index.hero.title')}</Link>
             </NavLink>
 
             <NavLink

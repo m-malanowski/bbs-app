@@ -4,9 +4,30 @@ import {Link} from "gatsby";
 // import ImagesScrolling from "./scrollEffect";
 // import teaserImg from "../images/hero12.jpg";
 import FadeInWhenVisible from "./fadeWhenVisible";
+// import { useStaticQuery, graphql } from "gatsby"
+import {I18nextContext, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+
+
 
 
 const Footer = () => {
+    // const data = useStaticQuery(graphql`
+    //       query($language: String!) {
+    //         locales: allLocale(filter: {language: {eq: $language}}) {
+    //           edges {
+    //             node {
+    //               ns
+    //               data
+    //               language
+    //             }
+    //           }
+    //         }
+    //       }
+    //   `)
+
+    const context = React.useContext(I18nextContext);
+    console.log(context, 'Footer context')
+
     return(
         <div className="footer">
 
@@ -48,7 +69,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <br/><br/>
-                    <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone, <a href="/polityka-prywatnosci" className="link">Polityka prywatności</a> </small>
+                    <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone, <a href="/polityka-prywatnosci" className="link">Polityka prywatności</a> by: <a
+                      className="link"  href="https://lumina.studio" target="_blank" rel="noopener noreferrer" >lumina.studio</a></small>
                 </div>
             </div>
 

@@ -95,12 +95,31 @@ const ContactPage = ({data, location}) => {
 
 export default ContactPage
 
-export const pageQuery = graphql`
-  query {
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     site {
       siteMetadata {
         title
       }
     }
   }
-`
+`;

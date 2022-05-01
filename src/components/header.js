@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import logo from "../images/logo.svg"
-import logoPolska from "../images/logo-polska.svg"
+import logoPolska from "../images/logo-footer.svg"
 // import arrowDown from "../images/arrow-down.svg"
 // import {Link, navigate} from "gatsby";
 // import { graphql } from "gatsby";
@@ -27,10 +27,7 @@ const Header = ({toggleSideBar, isOpen}) => {
                     {/*    <img src={logoPolska} height={45} alt="" className="header__logo"/>*/}
                     {/*}*/}
 
-
-                    {language == 'en' ? <img src={logoPolska} height={45} alt="BBS Polska" className="header__logo"/> : <img src={logo} height={45} alt="BBS" className="header__logo"/>}
-
-                    {console.log(language)}
+                    {language == 'pl' ? <img src={logoPolska} height={50} alt="BBS Polska" className="header__logo"/> : <img src={logo} height={45} alt="BBS" className="header__logo"/>}
 
                 </a>
             </div>

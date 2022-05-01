@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
     return (
         <div className={`languages ${isRoll? "languages--open" : ""}`}>
             <ul>
-                {languages.map((language) => (
+                {languages.map((language, id) => (
                     <li>
                         <Link
                             className="link"

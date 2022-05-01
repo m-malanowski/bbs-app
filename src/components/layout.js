@@ -9,23 +9,33 @@ import { motion, AnimatePresence } from "framer-motion"
 import { layoutVariants, transition } from './variants'
 import {withTranslation} from "react-i18next";
 import PropTypes from "prop-types";
+import "../index.scss"
+import {useI18next} from "gatsby-plugin-react-i18next";
+
 // import './i18n';
 
-const Layout = ({location, title, children}) => {
+const Layout = ({location, title, children, key}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggleSideBar = () => {
         setIsOpen(!isOpen)
     }
 
-    const rootPath = `${__PATH_PREFIX__}/`
-    const isRootPath = location.pathname === rootPath
+    // const rootPath = `${__PATH_PREFIX__}/`
+    // const isRootPath = location.pathname === rootPath
+
+    console.log(location, 'location')
+    console.log(key, 'key')
+    console.log(children, 'children')
+    console.log(title, 'title')
+    const { languages, originalPath } = useI18next();
+    console.log(originalPath, 'originalPath ')
+
 
     return (
         <>
-            {/*<FakeLoader />*/}
-
-            <div className="" data-is-root-path={isRootPath}>
+            {/*<div className="" data-is-root-path={isRootPath}>*/}
+            <div className="">
                 {/*<header className="global-header">{header}</header>*/}
                 <Helmet
                         bodyAttributes={{
@@ -41,8 +51,8 @@ const Layout = ({location, title, children}) => {
                  exitBeforeEnter
                 >
                     <motion.main
-                        location={location}
-                        key={location.key}
+                        location={originalPath}
+                        key={originalPath}
                         // variants={layoutVariants}
                         // initial="initial"
                         // animate="enter"

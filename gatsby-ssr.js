@@ -1,9 +1,32 @@
-import React from "react";
+// import React from "react";
+//
+// import "./src/index.scss"
+//
+// import Layout from "./src/components/layout";
+//
+// export const wrapPageElement = ({ element, props }) => {
+//     return <Layout {...props}>{element}</Layout>;
+// };
 
-import "./src/index.scss"
+// const styles = require('./src/index.scss');
 
-import Layout from "./src/components/layout";
+const React = require('react');
+const Layout = require('./src/components/layout').default;
 
-export const wrapPageElement = ({ element, props }) => {
-    return <Layout {...props}>{element}</Layout>;
+exports.wrapPageElement = ({ element }) => {
+    const newElement = React.cloneElement(
+        element,  // I18nextProvider
+        element.props,
+        React.cloneElement(
+            element.props.children,  // I18nextContext.Provider
+            element.props.children.props,
+            React.createElement(
+                Layout,
+                undefined,
+                element.props.children.props.children,
+            ),
+        ),
+    );
+
+    return newElement;
 };

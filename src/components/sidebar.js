@@ -24,7 +24,7 @@ const menuVariants = {
     }
 }
 
-const menuTransition = {type: 'spring', duration: 1, stiffness: 33, delay: 0.1}
+const menuTransition = {type: 'spring', duration: 1, stiffness: 33, delay: 0.3}
 
 const MenuContainer = styled(motion.div)`
   min-width: 300px;

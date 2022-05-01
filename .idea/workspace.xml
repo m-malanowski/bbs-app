@@ -3,10 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-ssr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/languageSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/languageSwitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/scrollEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scrollEffect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebarOLD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebarLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebarTiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarTiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/drone2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/drone2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +110,12 @@
       <workItem from="1650881949984" duration="21107000" />
       <workItem from="1650957304279" duration="14985000" />
       <workItem from="1650987102697" duration="9212000" />
+      <workItem from="1651038783052" duration="3428000" />
+      <workItem from="1651045682192" duration="1034000" />
+      <workItem from="1651069365656" duration="2275000" />
+      <workItem from="1651180902295" duration="853000" />
+      <workItem from="1651330720598" duration="23000" />
+      <workItem from="1651395557036" duration="11609000" />
     </task>
     <servers />
   </component>

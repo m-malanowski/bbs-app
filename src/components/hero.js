@@ -77,7 +77,7 @@ const Hero = () => {
                         exit={{
                             // width: 0,
                             marginLeft: 0,
-                            transition: {delay: .2, ...exitTransition},
+                            transition: {delay: .4, ...exitTransition},
                         }}
             >
                 {/*<img src={img} alt="BBS Best building solutions" className="image"/>*/}

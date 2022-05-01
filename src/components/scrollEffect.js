@@ -15,7 +15,7 @@ const ImagesScrolling = (props) => {
                     scale: scaleAnim,
                     // y: yPosAnim1,
                 }}
-                src={props.pictureSrc} alt="domki letniskowe na działkę"
+                src={props.pictureSrc} alt={props.alt}
             />
         </>
     )

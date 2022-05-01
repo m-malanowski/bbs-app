@@ -9,7 +9,10 @@ import TilesServices from "../components/tilesServices";
 import TilesAbout from "../components/tilesAbout";
 // import sectionImage from '../images/bild3.jpg'
 import sectionImage from '../images/drone1.jpg'
-
+// import bildIndex from "../images/drone2.jpg";
+import bildAbout from "../images/bild4.jpg"
+import ImagesScrolling from "../components/scrollEffect";
+import bildIndex from "../images/drone2.jpg";
 
 const About = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -62,6 +65,10 @@ const About = ({data, location}) => {
             </section>
 
             <section className="bild bild--services">
+                <figure>
+                    {/*<img src={bildAbout} alt="BBS"/>*/}
+                    <ImagesScrolling scaleValue={1.3} pictureSrc={bildAbout} alt="BBS Polska"/>
+                </figure>
                 <div className="bild__tile bild__tile--services">
                     <h2 className="bild__title "><span>B</span>est <br/> <span>B</span>uilding <br/> <span>S</span>olutions</h2>
                     <div className="bild__line"></div>

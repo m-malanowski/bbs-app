@@ -10,12 +10,12 @@ const variants = {
     show: {
         transform: "translateY(0em)",
         opacity: 1,
-        transition: { delay: 0.7, duration: 1.2, ease: [0.68, -0.6, 0.32, 1.6] },
+        transition: { delay: 1.2, duration: 1.2, ease: [0.68, -0.6, 0.32, 1.6] },
     },
     hide: {
         transform: "translateY(1em)",
         opacity: 0,
-        transition: { delay: 0.1, duration: .1,  ease: [0.68, -0.6, 0.32, 1.6]},
+        transition: { delay: 0.14, duration: .1,  ease: [0.68, -0.6, 0.32, 1.6]},
     },
 }
 

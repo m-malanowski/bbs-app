@@ -10,7 +10,7 @@ import hero6 from "../images/hero18.jpg"
 import FakeLoader from "../components/fakeLoder";
 import {motion} from "framer-motion"
 import FadeInWhenVisible from "../components/fadeWhenVisible";
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {I18nextContext, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import LanguageSwitcher from "../components/languageSwitcher";
 import * as PropTypes from "prop-types";
@@ -18,6 +18,7 @@ import ImagesScrolling from "../components/scrollEffect";
 import TilesAbout from "../components/tilesAbout";
 // import teaserImg from "../images/boxer1.jpg"
 import teaserImg from "../images/hero12.jpg"
+import bildIndex from "../images/drone2.jpg"
 
 const variants = {
     initial: {
@@ -46,6 +47,11 @@ const Index = ({data, location}) => {
     // const siteTitle = data.site.siteMetadata?.title || `Title`
     const { t } = useTranslation();
     const {languages, originalPath} = useI18next();
+    const context = React.useContext(I18nextContext);
+
+    console.log(context, 'context')
+    console.log(languages,'languages')
+
 
     return (
         <>
@@ -149,7 +155,6 @@ const Index = ({data, location}) => {
                     <Tiles/>
                 </FadeInWhenVisible>
 
-
                 <section>
                     <div className="teaser">
                         {/*<div className="col-6 teaser__left">*/}
@@ -169,19 +174,19 @@ const Index = ({data, location}) => {
                                 </div>
                             </div>
 
-                            <div className="grid gap-lg padding-x-xl padding-top-xxxl">
+                            <div className="grid gap-lg padding-x-xl padding-top-xxxl margin-bottom-auto">
 
                                 <div className="col-6@md margin-y-lg">
-                                    <h4>Prefabrykacja konstrukcji</h4>
-                                    <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>
-                                </div>
-
-                                <div className="col-6@md margin-y-lg">
-                                    <h4>Montaż konstrukcji</h4>
+                                    <h4>Montaż konstrukcji stalowych</h4>
                                     <p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady montażowe z wieloletnim doświadczeniem.</p>
                                 </div>
 
                                 <div className="col-6@md margin-y-lg">
+                                    <Link className="link" rel="stylesheet" href=""> <h4>Prefabrykacja konstrukcji</h4> </Link>
+                                    <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>
+                                </div>
+
+                                <div className="col-6@md ">
                                     <h4>Dachy płaskie</h4>
                                     <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
                                 </div>
@@ -230,19 +235,17 @@ const Index = ({data, location}) => {
                     </div>
                 </section>
 
-
-                <motion.section className="bild "
-                                whileInView="visible"
-                                viewport={{once: true}}
-                                variants={variants}
-                                initial="initial"
-                                exit="exit"
-                >
+                <section className="bild">
+                    <figure>
+                        <ImagesScrolling scaleValue={1.3} pictureSrc={bildIndex} alt="BBS Polska"/>
+                        {/*<img src={bildIndex} alt="BBS"/>*/}
+                    </figure>
                     <div className="bild__tile bild__tile--services">
-                        <h2 className="bild__title ">20 lat <br/> doświadczenia</h2>
+
+                        <h2 className="bild__title ">20 lat <br/> doświa <br/>dczenia</h2>
                         <div className="bild__line"></div>
                     </div>
-                </motion.section>
+                </section>
 
                 {/*<section>*/}
                 {/*    <div className="teaser">*/}
@@ -345,6 +348,11 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
