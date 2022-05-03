@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/heroReversed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bild1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bild1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bild4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bild4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/conect2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/conect2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero24.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero25.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/montaz-konstrukcji-stalowych.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/montaz-konstrukcji-stalowych.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/using-typescript.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
-    </list>
+    <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +99,7 @@
       <workItem from="1651395557036" duration="15213000" />
       <workItem from="1651440821719" duration="805000" />
       <workItem from="1651496134518" duration="23916000" />
-      <workItem from="1651563728879" duration="18546000" />
+      <workItem from="1651563728879" duration="18895000" />
     </task>
     <servers />
   </component>
