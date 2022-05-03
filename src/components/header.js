@@ -38,9 +38,9 @@ const Header = ({toggleSideBar, isOpen}) => {
                         exit="exit"
 
             >
-                <Link to="/">
+                <a href="/" >
                     {language == 'pl' ? <img src={logoPolska} height={50} alt="BBS Polska" className="header__logo"/> : <img src={logo} height={45} alt="BBS" className="header__logo"/>}
-                </Link>
+                </a>
             </motion.div>
             <div className="header__right">
 

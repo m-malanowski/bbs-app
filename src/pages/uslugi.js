@@ -24,38 +24,52 @@ const Services = ({data, location}) => {
             <section className="container">
                 <div className="grid gap-xxxl margin-top-xl">
                     <div className="col-6@md">
-                        <h2 className="heading">Zacznij budowę z <span>BBS Polska</span></h2>
+
+                        <FadeInWhenVisible delay={0.4}>
+                            <h2 className="heading">Zacznij budowę z <span>BBS Polska</span></h2>
+                        </FadeInWhenVisible>
+
                     </div>
                     <div className="col-6@md">
-                        <h3 className="margin-bottom-md">Realizujemy projekty na zlecenie klientów i dla nich tworzymy
-                            spersonalizowane zabudowania. Projektowanie hal stalowych nie ma dla nas żadnych
-                            tajemnic.
-                        </h3>
+                        <FadeInWhenVisible delay={0.5}>
+                            <h3 className="margin-bottom-md">Realizujemy projekty na zlecenie klientów i dla nich tworzymy
+                                spersonalizowane zabudowania. Projektowanie hal stalowych nie ma dla nas żadnych
+                                tajemnic.
+                            </h3>
+                        </FadeInWhenVisible>
+
+
 
                         <div className="grid padding-xl ">
                             <div className="col-6@md margin-left-auto">
-                                <p>Wyróżnia nas bardzo szybka dostawa sprzętu na budowę, pełne wsparcie techniczne
-                                    klienta oraz proste warunki współpracy. Współpracujemy zarówno z dużymi firmami
-                                    deweloperskimi jak i klientami indywidualnymi.</p>
-                                <br/>
+                                <FadeInWhenVisible delay={0.5}>
+                                    <p>Wyróżnia nas bardzo szybka dostawa sprzętu na budowę, pełne wsparcie techniczne
+                                        klienta oraz proste warunki współpracy. Współpracujemy zarówno z dużymi firmami
+                                        deweloperskimi jak i klientami indywidualnymi.</p>
+                                </FadeInWhenVisible>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="grid gap-xxxl margin-bottom-xxl">
                     <div className="col-6@md">
-                        <h2 className="heading">Usługi konstrukcyjne, archiktoniczne, branżowe.</h2>
+                        <FadeInWhenVisible delay={0.4}>
+                            <h2 className="heading">Usługi konstrukcyjne, archiktoniczne, branżowe.</h2>
+                        </FadeInWhenVisible>
                     </div>
                     <div className="col-6@md">
                         <div className="grid padding-xl ">
                             <div className="col-6@md margin-left-auto">
-                                <p>W ramach działalności spółki, świadczymy usługi sprzętowe na terenie miasta Elbląg
-                                    oraz okolic. Do dyspozycji mamy żuraw samojezdny, podnośniki spalinowe samojezdne
-                                    przegubowe, nożycowe, ładowarkę obrotową. </p>
-                                <br/>
-                                <Link to="/wynajem-sprzetu-budowlanego" className="btn btn--dark margin-top-xl">Wynajem
-                                    sprzętu</Link>
+                                <FadeInWhenVisible delay={0.5}>
+                                    <p>W ramach działalności spółki, świadczymy usługi sprzętowe na terenie miasta Elbląg
+                                        oraz okolic. Do dyspozycji mamy żuraw samojezdny, podnośniki spalinowe samojezdne
+                                        przegubowe, nożycowe, ładowarkę obrotową. </p>
+                                </FadeInWhenVisible>
 
+                                <FadeInWhenVisible delay={0.5}>
+                                    <Link to="/wynajem-sprzetu-budowlanego" className="btn btn--dark margin-top-xl">Wynajem
+                                        sprzętu</Link>
+                                </FadeInWhenVisible>
                             </div>
                         </div>
                     </div>
