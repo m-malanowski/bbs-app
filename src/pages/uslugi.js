@@ -67,7 +67,8 @@ const Services = ({data, location}) => {
                                 </FadeInWhenVisible>
 
                                 <FadeInWhenVisible delay={0.5}>
-                                    <Link to="/wynajem-sprzetu-budowlanego" className="btn btn--dark margin-top-xl">Wynajem
+                                    <Link to="/wynajem-sprzetu-budowlanego" className="btn btn--dark margin-top-xl">
+                                        Wynajem
                                         sprzętu</Link>
                                 </FadeInWhenVisible>
                             </div>
