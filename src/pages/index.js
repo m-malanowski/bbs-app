@@ -42,7 +42,7 @@ const Index = ({data, location}) => {
     return (
         <>
             <Seo
-                title="BBS Polska | Montaż konstrukcji stalowych Elbląg"
+                title="Montaż konstrukcji stalowych Elbląg"
                 description="BBS POLSKA SP.Z O.O. oferuje usługi projektowe, wykonawcze, montażowe, przeglądy na terenie miasta Elbląg,  jak również na terenie całej Polski i krajów UE. Posiadamy wykwalifkowaną kadrę inżynierską, pracowników montażu oraz zaplecze sprzętowe umożliwiające realizację zleceń naszych klientów."
             />
 
@@ -186,25 +186,28 @@ const Index = ({data, location}) => {
                         </div>
                         <div className="col-6@md">
 
-                            <FadeInWhenVisible delay={.4}>
+                            <FadeInWhenVisible delay={0.4}>
                                 <h3>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w <span>Polsce</span> i w <span>UE</span>, możemy podjąć się realizacji obiektów spełniając oczekiwania naszych klientów.</h3>
                             </FadeInWhenVisible>
 
                             <div className="grid gap-md margin-y-xxxl">
                                 <div className="col-6@md">
-                                    <FadeInWhenVisible delay={0.2}>
+                                    <FadeInWhenVisible delay={0.5}>
                                         <p>
                                             Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych obiektów firmy <span>BBS POLSKA</span>, znajdują się liczne hale magazynowe, produkcyjne, jak również modernizacje obiektów istniejących.
                                         </p>
                                     </FadeInWhenVisible>
 
-                                    <Link to="/realizacje" href="" className="btn btn--dark margin-top-xxl ">Nasze
-                                        realizacje
-                                    </Link>
+                                    <FadeInWhenVisible delay={0.5}>
+                                        <Link to="/realizacje" href="" className="btn btn--dark margin-top-xxl ">Nasze
+                                            realizacje
+                                        </Link>
+                                    </FadeInWhenVisible>
+
 
                                 </div>
                                 <div className="col-6@md">
-                                    <FadeInWhenVisible delay={0.3}>
+                                    <FadeInWhenVisible delay={0.5}>
                                         <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
                                     </FadeInWhenVisible>
 

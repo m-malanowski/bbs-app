@@ -2,7 +2,6 @@ import * as React from "react"
 import {Link, graphql} from "gatsby"
 import Seo from "../components/seo"
 import {Helmet} from "react-helmet";
-import img from "../images/hero12.jpg";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ContactPage = ({data, location}) => {
@@ -19,7 +18,6 @@ const ContactPage = ({data, location}) => {
             <section className="container">
                 <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
                     <div className="col-6@md">
-                        {/*<h1>Dowiedz się więcej o halach namiotowych w konstrukcji stalowej</h1>*/}
                         <h1>Projekty i budowa hal stalowych to nasza codzienność</h1>
                     </div>
                 </div>
@@ -31,7 +29,6 @@ const ContactPage = ({data, location}) => {
                 <div className="projects-wrapper">
                     {data.allStrapiProject.edges.map(edge => (
                         <div>
-                            {/*<Image img={edge.node.Bild.url}></Image>*/}
                             <div>
                                 <figure className="hover-effect">
                                     {/*<img src={edge.node.Bild.url} alt="BBS Polska"/>*/}

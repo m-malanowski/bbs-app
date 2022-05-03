@@ -1,7 +1,7 @@
 import * as React from "react"
 import contactImage from "../images/conect2.jpg"
-import {Link} from "gatsby";
-import hero6 from "../images/bild2.jpg";
+// import {Link} from "gatsby";
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import FadeInWhenVisible from "./fadeWhenVisible";
 import ImagesScrolling from "./scrollEffect";
 
@@ -13,16 +13,18 @@ const Contact = () => {
                 <div className="col-6@md contact__left">
                     <div className="padding-xl">
 
-                        <FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.4}>
                             <h2 className="heading">Umów się na <br/> spotkanie</h2>
                         </FadeInWhenVisible>
 
-                        <FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.5}>
                             <p>Nasi doradcy chętnie pomogą.
                                 Zapraszamy do kontaktu <br/> celem omówienia realizacji Państwa Inwestycji  <br/> Jesteśmy dla Ciebie</p>
                         </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.6}>
+                            <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>
+                        </FadeInWhenVisible>
 
-                        <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>
                     </div>
                 </div>
                 <div className="col-6@md contact__right">

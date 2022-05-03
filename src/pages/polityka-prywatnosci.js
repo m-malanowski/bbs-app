@@ -3,7 +3,7 @@ import {graphql, Link} from "gatsby"
 import ReactMarkdown from "react-markdown"
 import {Helmet} from "react-helmet"
 import {motion} from "framer-motion"
-import img from "../images/bild1.jpg";
+import img from "../images/bild4.jpg";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
 
 const transition = {delay: .8, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]};

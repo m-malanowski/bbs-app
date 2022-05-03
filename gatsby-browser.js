@@ -39,7 +39,5 @@ exports.wrapPageElement = ({element}) => {
             ),
         ),
     );
-    console.log("element.props.children.props", element.props.children.props)
-
     return newElement;
 };

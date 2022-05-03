@@ -946,7 +946,7 @@ figure {
   overflow: hidden;
   margin: 0;
   width: 100%;
-  img {
+  img, .gatsby-image-wrapper {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -958,12 +958,12 @@ figure {
 }
 figure.hover-effect{
   &:hover{
-    img{
+    .gatsby-image-wrapper{
       transform: scale(1.1);
       transition: .6s transform var(--ease-out-back);
     }
   }
-  img{
+  .gatsby-image-wrapper{
     transform: scale(1);
     transition: .6s transform var(--ease-out-back);
   }
@@ -1459,4 +1459,8 @@ figure.hover-effect{
   position: -webkit-sticky;
   position: sticky;
   top: var(--space-xl);
+}
+.arrow-down{
+  animation: bounce .5s infinite alternate;
+  -webkit-animation: bounce .5s infinite alternate;
 }
