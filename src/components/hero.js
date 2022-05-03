@@ -2,10 +2,10 @@ import * as React from "react"
 // import img from "../images/heroIndex.jpg"
 import img from "../images/hero8.jpg"
 // import img from "../images/hero25.jpg"
-import {Link} from "gatsby";
+// import {Link} from "gatsby";
 import {motion} from "framer-motion";
 // import { useTranslation } from 'react-i18next';
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Trans, useTranslation, Link} from 'gatsby-plugin-react-i18next';
 import {variants} from "./variants"
 
     // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };

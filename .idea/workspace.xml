@@ -2,24 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/unUsedComponents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/montaz-konstrukcji-stalowych.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-ssr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/heroReversed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/languageSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/languageSwitcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scrollEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scrollEffect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sidebarLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sidebarTiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebarTiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/drone2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/drone2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tilesAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilesAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/GT America Extended Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Moderat-Extended-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Moderat-Extended-Regular.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/pl/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/pl/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +73,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/src/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/image-super-resolution&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
@@ -115,7 +130,10 @@
       <workItem from="1651069365656" duration="2275000" />
       <workItem from="1651180902295" duration="853000" />
       <workItem from="1651330720598" duration="23000" />
-      <workItem from="1651395557036" duration="11609000" />
+      <workItem from="1651395557036" duration="15213000" />
+      <workItem from="1651440821719" duration="805000" />
+      <workItem from="1651496134518" duration="23916000" />
+      <workItem from="1651563728879" duration="10831000" />
     </task>
     <servers />
   </component>

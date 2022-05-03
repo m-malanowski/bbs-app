@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby"
-import {useTranslation} from "gatsby-plugin-react-i18next";
+// import { Link } from "gatsby"
+import {useTranslation, Link} from "gatsby-plugin-react-i18next";
 
 const NavLink = styled(motion.li)`
   padding: var(--space-xs) 0;
@@ -53,7 +53,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/o-nas" className="link link--sidebar" onClick={toggleSideBar}>{t('index.hero.title')}</Link>
+                <Link to="/o-nas" className="link link--sidebar" onClick={toggleSideBar}>{t('sidebar.links.about')}</Link>
             </NavLink>
 
             <NavLink
@@ -70,7 +70,26 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/uslugi" className="link link--sidebar" onClick={toggleSideBar}>Usługi</Link>
+                <Link to="/uslugi" className="link link--sidebar" onClick={toggleSideBar}>{t('sidebar.links.services')}</Link>
+            </NavLink>
+
+
+
+            <NavLink
+                initial={false}
+                animate={isOpen ? "show" : "hide"}
+                variants={{
+                    show: {
+                        ...variants.show,
+                        transition: { delay: 0.8, duration: 1.2, ease },
+                    },
+                    hide: {
+                        ...variants.hide,
+                        transition: { delay: 0.11, duration: 0.1 },
+                    },
+                }}
+            >
+                <Link to="/blog" className="link link--sidebar" onClick={toggleSideBar}>Blog</Link>
             </NavLink>
 
             <NavLink
@@ -87,7 +106,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/realizacje" className="link link--sidebar" onClick={toggleSideBar}>Realizacje</Link>
+                <Link to="/realizacje" className="link link--sidebar" onClick={toggleSideBar}>{t('sidebar.links.projects')}</Link>
             </NavLink>
 
             <NavLink
@@ -104,7 +123,7 @@ export function NavMenu({ isOpen, toggleSideBar }) {
                     },
                 }}
             >
-                <Link to="/kontakt" className="link link--sidebar" onClick={toggleSideBar}>Kontakt</Link>
+                <Link to="/kontakt" className="link link--sidebar" onClick={toggleSideBar}>{t('sidebar.links.contact')}</Link>
             </NavLink>
 
         </ul>

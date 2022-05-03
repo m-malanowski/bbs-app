@@ -1,15 +1,3 @@
-// import React from "react";
-//
-// import "./src/index.scss"
-//
-// import Layout from "./src/components/layout";
-//
-// export const wrapPageElement = ({ element, props }) => {
-//     return <Layout {...props}>{element}</Layout>;
-// };
-
-// const styles = require('./src/index.scss');
-
 const React = require('react');
 const Layout = require('./src/components/layout').default;
 

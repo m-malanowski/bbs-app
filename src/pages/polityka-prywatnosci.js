@@ -2,11 +2,9 @@ import React from "react"
 import {graphql, Link} from "gatsby"
 import ReactMarkdown from "react-markdown"
 import {Helmet} from "react-helmet"
-import SEO from "../components/seo"
 import {motion} from "framer-motion"
-import img from "../images/hero4.jpg";
+import img from "../images/bild1.jpg";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
-import Contact from "../components/contact";
 
 const transition = {delay: .8, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]};
 const exitTransition = {duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9]}
@@ -73,40 +71,45 @@ const Privacy = ({data}) => {
             <section className="container">
                 <div className="grid gap-xxl@md margin-top-xl">
                     <div className="col-6@md">
-                        {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
-                        <FadeInWhenVisible>
-                            <h3>Polityka prywatności naszej strony</h3>
-                        </FadeInWhenVisible>
+                        {/*<FadeInWhenVisible className="sticky">*/}
+                            <h2  className="sticky">Polityka prywatności naszej strony</h2>
+                        {/*</FadeInWhenVisible>*/}
                     </div>
                     <div className="col-6@md">
 
                         <FadeInWhenVisible>
-                            <p>
-                                {/*{data.article.Content}*/}
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum dolorem ducimus ex harum, id maiores maxime nulla odit optio, quos rem repudiandae sit tenetur ut. Dolores pariatur repellat tenetur.
-                            </p>
+                            <ReactMarkdown children={data.strapiPrivatePolicy.Policy.data.Policy}></ReactMarkdown>
                         </FadeInWhenVisible>
 
-                        <Link to="/"  className="btn btn--dark margin-top-xxl"> Powrót do głównej</Link>
+                        <Link to="/" className="btn btn--dark margin-top-xxl"> Powrót do głównej</Link>
 
                     </div>
                 </div>
             </section>
-            {/*<Contact></Contact>*/}
 
         </motion.div>
     </>
 }
 
-// export const query = graphql`
-//   query GetSingleArticle($slug: String) {
-//     article: strapiArticle(Slug: { eq: $slug }) {
-//       id
-//       Content
-//       Title
-//     }
-//   }
-// `
+export const query = graphql`
+query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+       }
+      }
+      strapiPrivatePolicy {
+        Policy {
+          data {
+            Policy
+          }
+        }
+     }
+  }
+`
 
 export default Privacy
-// date(formatString: "D MMMM YYYY", locale: "pl")

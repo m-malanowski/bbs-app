@@ -8,5 +8,19 @@
     },
     "general": {
         "appointment": "Umów spotkanie"
+    },
+    "sidebar": {
+        "links": {
+            "about": "O nas",
+            "services": "Usługi",
+            "projects": "Realizacje",
+            "contact": "Kontakt"
+        },
+        "tiles": {
+            "rent": "Wynajmij sprzęt",
+            "schedule": "Umów spotkanie",
+            "call": "Zadzwoń do nas",
+            "mail": "Wyślij maila"
+        }
     }
 }

@@ -65,7 +65,7 @@ const ArticleSingle = ({data}) => {
                             }}
                 >
                     <figure>
-                        <img src={img} alt="BBS Best building solutions"/>
+                        <img src={data.article.Bild.url} alt="BBS Best building solutions"/>
                     </figure>
                 </motion.div>
             </div>
@@ -106,6 +106,9 @@ export const query = graphql`
       id
       Content
       Title
+      Bild{
+        url
+      }
     }
   }
 `

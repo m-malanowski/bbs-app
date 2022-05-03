@@ -31,9 +31,9 @@ const Hero = ({sectionImage, title, subTitle}) => {
             <div className="hero-reversed__right ">
                 {/*<div className="hero-reversed__vertical "></div>*/}
 
-                <h2 className="hero-reversed__tag heading margin-top-auto">
+                <h1 className="hero-reversed__tag heading margin-top-auto">
                     {title}
-                </h2>
+                </h1>
                 <p className="hero-reversed__subtag ">
                     {subTitle}
                 </p>

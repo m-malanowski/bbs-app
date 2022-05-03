@@ -3,9 +3,24 @@
         "hero": {
             "title": "Your investition with",
             "subtitle": "Our goal is to provide the highest quality services. We build with the customer and users in mind who will use the facilities we have made."
-        }
+        },
+        "whoWeAre": "Who we are?"
     },
     "general": {
         "appointment": "Make an appointment"
+    },
+    "sidebar": {
+        "links": {
+            "about": "About",
+            "services": "Services",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "tiles": {
+            "rent": "Rent equipment",
+            "schedule": "Make an appointment",
+            "call": "Call to us",
+            "mail": "Email us"
+        }
     }
 }

@@ -27,7 +27,9 @@ export default function LanguageSwitcher() {
                             key={language}
                             to={originalPath}
                             language={language}
-                            onClick={() => setMenuOpen(false)}
+                            onClick={() =>{
+                                setMenuOpen(false); showLanguages();
+                            }}
                         >
                             {language.toUpperCase()}
                         </Link>

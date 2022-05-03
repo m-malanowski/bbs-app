@@ -1,42 +1,18 @@
 import * as React from "react"
 import logoFooter from "../images/logo-footer.svg"
 import {Link} from "gatsby";
-// import ImagesScrolling from "./scrollEffect";
-// import teaserImg from "../images/hero12.jpg";
 import FadeInWhenVisible from "./fadeWhenVisible";
-// import { useStaticQuery, graphql } from "gatsby"
 import {I18nextContext, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
-
-
-
 const Footer = () => {
-    // const data = useStaticQuery(graphql`
-    //       query($language: String!) {
-    //         locales: allLocale(filter: {language: {eq: $language}}) {
-    //           edges {
-    //             node {
-    //               ns
-    //               data
-    //               language
-    //             }
-    //           }
-    //         }
-    //       }
-    //   `)
-
-    const context = React.useContext(I18nextContext);
-    console.log(context, 'Footer context')
-
     return(
         <div className="footer">
 
             <div className="grid">
                 <div className="col-6@md">
                     <FadeInWhenVisible delay={.4}>
-                        <img src={logoFooter} alt="BBS" className="footer__image"/>
+                        <Link to="/"><img src={logoFooter} alt="BBS" className="footer__image"/></Link>
                     </FadeInWhenVisible>
-                    {/*<ImagesScrolling scaleValue={} pictureSrc={logoFooter} alt="BBS Polska" className="footer__image"/>*/}
 
                 </div>
                 <div className="col-6@md">

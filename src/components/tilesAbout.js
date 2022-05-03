@@ -1,10 +1,6 @@
 import * as React from "react"
-import icon1 from "../images/icon1.svg"
-import icon2 from "../images/icon2.svg"
-import icon3 from "../images/icon3.svg"
 import Counter from "./counter";
 import FadeInWhenVisible from "./fadeWhenVisible";
-
 
 const Tiles = () => {
     return (
@@ -13,7 +9,6 @@ const Tiles = () => {
                 <div className="grid ">
                     <div className="col-6@md tiles tiles--top">
                         <div className="tile tile--single">
-                            {/*<img src={icon1} alt="BBS" className="tile__icon"/>*/}
                                 <span className="tile__number">20</span>
 
                             <FadeInWhenVisible delay={0.1}>

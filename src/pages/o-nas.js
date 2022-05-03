@@ -87,7 +87,16 @@ const About = ({data, location}) => {
 export default About
 
 export const pageQuery = graphql`
-  query {
+ query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     site {
       siteMetadata {
         title

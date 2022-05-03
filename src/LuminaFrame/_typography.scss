@@ -50,7 +50,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: var(--text-xxl, 2rem);
+  //font-size: var(--text-xxl, 2rem);
+  font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1900 - 320)));
 }
 
 h2 {
@@ -101,7 +102,10 @@ p span, h2 span, h3 span {
   color: var(--color-contrast);
 }
 
-
+hr{
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: none;
+}
 
 // --------------------------------
 
@@ -118,6 +122,14 @@ a {
   }
 }
 
+.link--arrow:hover{
+  transition: font-size .3s var(--ease-out-back);
+  //&::after{
+  //  font-size: .85em;
+  //  transition: font-size .3s var(--ease-out-back);
+  //}
+}
+
 .link {
   position: relative;
   transition: letter-spacing .3s var(--ease-out-back);
@@ -125,6 +137,7 @@ a {
   &:hover{
     letter-spacing: 1px;
     transition: letter-spacing .3s var(--ease-out-back);
+
   }
 
   &::before {
@@ -150,6 +163,22 @@ a {
   &--sidebar{
     &::before {
       height: 4px;
+    }
+  }
+  &--arrow{
+
+    &::after{
+      //content: "↗";
+      content: "→";
+      margin-left: var(--space-sm);
+      //position: absolute;
+      //right: -25px;
+      //top: -5px;
+      //font-size: 1em;
+
+      //color: var(--color-secondary);
+      //filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
+
     }
   }
 

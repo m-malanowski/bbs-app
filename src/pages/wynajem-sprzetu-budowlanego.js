@@ -5,6 +5,9 @@ import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
 import sectionImage from "../images/hero24.jpg"
 import hero6 from "../images/hero19.jpg";
+import TilesAbout from "../components/tilesAbout";
+import ImagesScrolling from "../components/scrollEffect";
+import bildIndex from "../images/drone2.jpg";
 
 const Services = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -52,7 +55,7 @@ const Services = ({data, location}) => {
                 <div className="teaser">
                     {/*<div className="col-6 teaser__left">*/}
                     <figure>
-                        <img src={hero6} alt="BBS" className=""/>
+                        <ImagesScrolling scaleValue={1.3} pictureSrc={hero6} alt="BBS Polska"/>
                     </figure>
                     {/*</div>*/}
 
@@ -91,7 +94,7 @@ const Services = ({data, location}) => {
                 </div>
             </section>
 
-
+            <TilesAbout/>
             <Contact></Contact>
 
         </>

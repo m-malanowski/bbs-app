@@ -1,77 +1,50 @@
 import * as React from "react"
 import {Link, graphql} from "gatsby"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
-import hero6 from "../images/hero7.jpg";
 import {Helmet} from "react-helmet";
-import Contact from "../components/contact";
-import {Image} from "../components/image";
 import img from "../images/hero12.jpg";
-import img2 from "../images/projects/montaz-hali-magazynowej-2000m2.jpg";
-import img3 from "../images/projects/budowa-salonu-samochodowego.jpg";
-import img4 from "../images/projects/wymiana-pasma-swietlnego-lukowego.jpg";
-import img5 from "../images/projects/wymiana-elewacji-hali-z-lat-70.jpg";
-import img6 from "../images/projects/wymiana-pokrycia-dachowego.jpg";
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
-
+    // const image = getImage(data.node.Bild)
     return (
         <>
-            {/*<Layout location={location} title={siteTitle}>*/}
-                <Seo title="Konakt"/>
-                <Helmet bodyAttributes={{
-                    id: "contact-page"
-                }} />
+            <Seo title="Nasze realizacje"/>
+            <Helmet bodyAttributes={{
+                id: "projects-page"
+            }}/>
 
-                <div className="contact-page">
-                    <section className="container">
-                        <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
-                            <div className="col-6@md">
-                                <h3>Projekty i budowa hal stalowych to nasza codzienność, a na naszą korzyść przemawia doświadczenie i opinie zadowolonych klientów. </h3>
 
-                                <div className="grid gap-xxxl margin-bottom-xxl">
-                                    <div className="col-6@md">
-                                        <p> Od ponad <span>20 lat</span> z powodzeniem realizujemy takie przedsięwzięcia jak: </p>
-                                    </div>
-                                    <div className="col-6@md">
-                                        <ul className="margin-top-md">
-                                            <li>- projektowanie hal przemysłowych i magazynowych,</li>
-                                            <li>– budowa obiektów przemysłowych, </li>
-                                            <li>- montaż hal stalowych. </li>
-                                        </ul>
-                                    </div>
+            <section className="container">
+                <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
+                    <div className="col-6@md">
+                        {/*<h1>Dowiedz się więcej o halach namiotowych w konstrukcji stalowej</h1>*/}
+                        <h1>Projekty i budowa hal stalowych to nasza codzienność</h1>
+                    </div>
+                </div>
+            </section>
 
-                                </div>
+            <hr/>
+
+            <section className="container">
+                <div className="projects-wrapper">
+                    {data.allStrapiProject.edges.map(edge => (
+                        <div>
+                            {/*<Image img={edge.node.Bild.url}></Image>*/}
+                            <div>
+                                <figure className="hover-effect">
+                                    {/*<img src={edge.node.Bild.url} alt="BBS Polska"/>*/}
+                                    <GatsbyImage image={edge.node.Bild.localFile.childImageSharp.gatsbyImageData} alt={edge.node.Title} />
+                                </figure>
+                                <h3 className="margin-top-sm "> {edge.node.Title}</h3>
+                                <p className="project__description">{edge.node.Description}</p>
                             </div>
                         </div>
-                    </section>
-
-                    <section className="container">
-
-                        <div className="filter margin-bottom-xl">
-                            <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Wszystkie</Link>
-                            <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Hale magazynowe</Link>
-                            <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Hale produkcyjne</Link>
-                            <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Projekty indywidualne</Link>
-                            <Link to="/kontakt" className="btn btn--xs margin-top-xl margin-top-auto">Nadzór inwestycji</Link>
-                        </div>
-
-                        <div className="projects-wrapper">
-                            <Image img={img}></Image>
-                            <Image img={img2}></Image>
-                            <Image img={img3}></Image>
-                            <Image img={img4}></Image>
-                            <Image img={img5}></Image>
-                            <Image img={img6}></Image>
-                        </div>
-                    </section>
-
+                    ))}
                 </div>
-            {/*<Contact></Contact>*/}
+            </section>
 
-            {/*</Layout>*/}
         </>
     )
 }
@@ -79,9 +52,33 @@ const ContactPage = ({data, location}) => {
 export default ContactPage
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+     allStrapiProject {
+        edges {
+          node {
+            Title
+            Description
+            Bild {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+            }
+          }
+        }
+      }
+      site {
+       siteMetadata {
         title
       }
     }

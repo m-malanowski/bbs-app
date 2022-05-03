@@ -64,7 +64,7 @@ module.exports = {
         apiURL: 'https://bbs-polska.herokuapp.com',
         accessToken: '4a506e96901df34df3d9e77645a6937c009b27a0a0ac32d3b3b65aa59131f16bfb77479c66dc035aa24a6a193a8c17b082b488788c4b70e110b93d7151e1a8592bfec7221c01ffaaf3094293ba9468b5b834ebd5fe733017c8e9493c9e7848e0b16d770aa6dcd5aba0b4d76929a0d1875fa9a144665b9eabf4dbc4914a28aee2',
         // collectionTypes: ['article', 'project'],
-        collectionTypes: ['article'],
+        collectionTypes: ['article', 'project'],
         // contentTypes: ['articles', 'projects'],
         singleTypes: ['private-policy'],
       }
