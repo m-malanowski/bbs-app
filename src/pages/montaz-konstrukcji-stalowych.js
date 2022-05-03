@@ -3,7 +3,7 @@ import {Link, graphql} from "gatsby"
 import Seo from "../components/seo"
 import HeroReversed from "../components/heroReversed";
 import Contact from "../components/contact";
-import sectionImage from "../images/halaTeaser.jpg"
+import sectionImage from "../images/hero16.jpg"
 import hero6 from "../images/hero12.jpg";
 import ImagesScrolling from "../components/scrollEffect";
 import TilesAbout from "../components/tilesAbout";

@@ -1,5 +1,6 @@
 import * as React from "react"
-import {Link, graphql} from "gatsby"
+import {graphql} from "gatsby"
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import Seo from "../components/seo"
 import {Helmet} from "react-helmet";
 

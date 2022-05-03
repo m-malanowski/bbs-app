@@ -1,19 +1,8 @@
 import  React, {useEffect} from "react"
-// import { Link } from "gatsby"
 import {motion} from "framer-motion";
 import styled from "styled-components";
-// import icon1 from "../images/icon4.svg"
-// import icon2 from "../images/phone.svg"
-// import icon3 from "../images/calendar.svg"
-// import icon4 from "../images/mail.svg"
 import SidebarLinks from "./sidebarLinks";
 import SidebarTiles from "./sidebarTiles";
-
-// const variants = {
-//     open: { opacity: 1, x: 0 },
-//     closed: { opacity: 0, x: "-20px" },
-// }
-// const transition = {delay: .6, duration: .6, ease: "easeInOut" };
 
 const menuVariants = {
     open: {
@@ -39,7 +28,6 @@ const MenuContainer = styled(motion.div)`
   top: 0;
   right: 0;
   transform: translateX(4em);
-  //transform: translateX(4em);
   transform-origin: top left;
   user-select: none;
 `;

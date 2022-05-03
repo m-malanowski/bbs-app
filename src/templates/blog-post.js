@@ -1,11 +1,12 @@
 import React from "react"
-import {graphql, Link} from "gatsby"
+import {graphql} from "gatsby"
 import {Helmet} from "react-helmet"
 import SEO from "../components/seo"
 import {motion} from "framer-motion"
 import img from "../images/hero25.jpg";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 
 const transition = {delay: .8, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]};
 const exitTransition = {duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9]}

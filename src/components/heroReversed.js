@@ -1,5 +1,5 @@
 import * as React from "react"
-import img from "../images/hero16.jpg"
+// import img from "../images/hero16.jpg"
 import down from "../images/down.svg"
 import {motion} from "framer-motion";
 import {variants} from "./variants";

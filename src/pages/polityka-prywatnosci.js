@@ -1,5 +1,6 @@
 import React from "react"
-import {graphql, Link} from "gatsby"
+import {graphql} from "gatsby"
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import ReactMarkdown from "react-markdown"
 import {Helmet} from "react-helmet"
 import {motion} from "framer-motion"

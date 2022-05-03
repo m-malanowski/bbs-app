@@ -2,61 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/imageOLD.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/blog/hello-world/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/blog/hello-world/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/heroReversed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/heroReversed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bbs 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bbsSignet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bild2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bild3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/boxer1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/boxer2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/conect.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/drone3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/favicon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/gatsby-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/heroIndex.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/profile-pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/budowa-salonu-samochodowego.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/elektrocieplownia-wiata-magazynowa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/montaz-hali-magazynowej-2000m2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/wymiana-elewacji-hali-z-lat-70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/wymiana-pasma-swietlnego-lukowego.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/wymiana-pokrycia-dachowego.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bild1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bild1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bild4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bild4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/conect2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/conect2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hero16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hero24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hero25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero25.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/montaz-konstrukcji-stalowych.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/montaz-konstrukcji-stalowych.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wynajem-sprzetu-budowlanego.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/using-typescript.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +117,7 @@
       <workItem from="1651395557036" duration="15213000" />
       <workItem from="1651440821719" duration="805000" />
       <workItem from="1651496134518" duration="23916000" />
-      <workItem from="1651563728879" duration="17975000" />
+      <workItem from="1651563728879" duration="18546000" />
     </task>
     <servers />
   </component>
