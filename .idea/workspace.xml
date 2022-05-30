@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/3.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-    </list>
+    <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +106,7 @@
       <workItem from="1651788358298" duration="833000" />
       <workItem from="1652471372413" duration="56000" />
       <workItem from="1652719847440" duration="62000" />
-      <workItem from="1653927155303" duration="6413000" />
+      <workItem from="1653927155303" duration="6747000" />
     </task>
     <servers />
   </component>
