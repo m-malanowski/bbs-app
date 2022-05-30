@@ -6,7 +6,7 @@ module.exports = {
       summary: `Lumina Studio`,
     },
     description: `BBS Polska App`,
-    siteUrl: `https://www.bbs-polska.com/`,
+    siteUrl: `https://bbs-polska.com/`,
     social: {
       twitter: `bbspolska`,
     },
@@ -75,7 +75,7 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: [`pl`, `en`],
         defaultLanguage: `pl`,
-        siteUrl: `http://localhost:8000/`,
+        siteUrl: `https://bbs-polska.com/`,
         // generateDefaultLanguagePage: true,
         i18nextOptions: {
           fallbackLng: 'pl',
@@ -101,9 +101,11 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `G-NDPNFSLVVY`,
+        trackingIds: [
+          "G-NDPNFSLVVY",
+        ]
       },
     },
     // {
