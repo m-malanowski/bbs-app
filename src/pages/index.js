@@ -13,6 +13,11 @@ import ImagesScrolling from "../components/scrollEffect";
 import TilesAbout from "../components/tilesAbout";
 import teaserImg from "../images/hero12.jpg"
 import bildIndex from "../images/drone2.jpg"
+import icon1 from "../images/icon1.svg"
+import icon2 from "../images/icon2.svg"
+import icon3 from "../images/icon3.svg"
+import icon4 from "../images/icon4.svg"
+
 
 const variants = {
     initial: {
@@ -72,18 +77,14 @@ const Index = ({data, location}) => {
                         <div className="col-6@md">
 
                             <FadeInWhenVisible delay={.4}>
-                                <h3>BBS Polska - Best Building Solutions jest firmą wykonawczą z Elbląga. Firma ma jasno
-                                    sprecyzowany cel: dostarczać <span> wysokiej jakości </span> kompleksową obsługę
-                                    inwestycji budowlanych.</h3>
+                                <h3><span>BBS Polska</span> – rodzinna firma wykonawcza z Elbląga, z kilkudziesięcioletnim doświadczeniem, specjalizująca się głównie w budownictwie przemysłowym t.j. hale produkcyjne, magazynowe, logistyczne ale również realizująca parki handlowe i mniejsze obiekty użyteczności publicznej.   </h3>
                             </FadeInWhenVisible>
 
                             <div className="grid gap-md margin-y-xxxl">
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={0.3}>
                                         <p>
-                                            Usługi świadczone przez firmę <span>BBS </span> Polska związane są przede wszystkim z przygotwywaniem
-                                            projektów oraz wznoszeniem obiektów budowlanych. Specjalizujemy się w
-                                            obiektach przemysłowych.
+                                            Zachęcamy do kontaktu z nami już w momencie planu inwestycyjnego, samego pomysłu, idei! Wykorzystajmy naszą bogatą wiedzę już na etapie zakupu odpowiedniej działki pod inwestycję, a następnie w trakcie projektowania obiektu, doboru optymalnych rozwiązań i materiałów.
                                         </p>
                                     </FadeInWhenVisible>
 
@@ -98,19 +99,18 @@ const Index = ({data, location}) => {
                                     </FadeInWhenVisible>
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <div className="grid gap-xxxl@md margin-bottom-xxl">
                         <div className="col-6@md">
                             <FadeInWhenVisible delay={0.3}>
-                                <h2 className="heading">Dlaczego my?</h2>
+                                <h2 className="heading">Nasze główne atuty:</h2>
                             </FadeInWhenVisible>
                         </div>
                         <div className="col-6@md">
                             <FadeInWhenVisible delay={0.6}>
-                                <h3>Dbając o wysoki standard świadczonych usług utrzymujemy i stale doskonalimy ich jakość. <br/> Nasze główne atuty to: </h3>
+                                <h3>Dbałość o doskonałe relacje z inwestorem, wysoka jakość prac, estetyka obiektu, jego niepowtarzalność i fachowa wiedza, którą się dzielimy – to nas wyróżnia na rynku!</h3>
                             </FadeInWhenVisible>
                         </div>
                     </div>
@@ -133,41 +133,68 @@ const Index = ({data, location}) => {
                             <h2 className="heading padding-x-xl padding-top-xl">
                                 Oferowane uslugi
                             </h2>
-                            <div className="grid padding-x-xl">
-                                <div className="col-8">
-                                    <FadeInWhenVisible delay={.1}>
-                                        <p className="paragraph-larger">Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. </p>
-                                    </FadeInWhenVisible>
-                                </div>
-                            </div>
+                            {/*<div className="grid padding-x-xl">*/}
+                            {/*    <div className="col-8">*/}
+                            {/*        <FadeInWhenVisible delay={.1}>*/}
+                            {/*            <p className="paragraph-larger">Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. </p>*/}
+                            {/*        </FadeInWhenVisible>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
 
-                            <div className="grid gap-lg padding-x-xl padding-top-xxxl margin-bottom-auto">
-
-                                <div className="col-6@md margin-y-lg">
+                            <div className="grid gap-lg padding-x-xl padding-top-xxl margin-bottom-auto">
+                                <div className="col-6@md ">
                                     <FadeInWhenVisible delay={.1}>
+                                        {/*<h4>Usługi projektowe</h4>*/}
                                         <h4><Link to="/montaz-konstrukcji-stalowych" className="link link--arrow">Montaż konstrukcji stalowych</Link></h4>
-                                        <p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady montażowe z wieloletnim doświadczeniem.</p>
-                                    </FadeInWhenVisible>
-                                </div>
-
-                                <div className="col-6@md margin-y-lg">
-                                    <FadeInWhenVisible delay={.1}>
-                                        <h4>Prefabrykacja konstrukcji</h4>
-                                        <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>
+                                        <p>Zapewniamy kompleksowy montaż konstrukcji stalowych i żelbetowych prefabrykowanych. Dysponujemy własnymi brygadami montażowymi z wieloletnim doświadczeniem.</p>
+                                        {/*<p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>*/}
                                     </FadeInWhenVisible>
                                 </div>
 
                                 <div className="col-6@md ">
                                     <FadeInWhenVisible delay={.1}>
-                                        <h4>Dachy płaskie</h4>
-                                        <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
+                                        {/*<h4><Link to="/montaz-konstrukcji-stalowych" className="link link--arrow">Montaż konstrukcji stalowych</Link></h4>*/}
+                                        <h4>Generalne wykonawstwo obiektów przemysłowych</h4>
+                                        <p>Realizacja obiektów w formie Generalnego Wykonawstwa to priorytetowy obszar funkcjonowania i rozwoju firmy.</p>
+                                        {/*<p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady montażowe z wieloletnim doświadczeniem.</p>*/}
+                                    </FadeInWhenVisible>
+                                </div>
+
+                                <div className="col-6@md margin-y-xl">
+                                    <FadeInWhenVisible delay={.1}>
+                                        {/*<h4>Prefabrykacja konstrukcji</h4>*/}
+                                        <h4>Projektowanie</h4>
+                                        <p>
+                                            Optymalnie dobrane schematy statyczne, obliczenia w przestrzennym układzie prętowym – to klucz do sukcesu w projektowaniu.
+                                        </p>
+                                        {/*<p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją techniczną.</p>*/}
+                                    </FadeInWhenVisible>
+                                </div>
+
+                                <div className="col-6@md margin-y-xl">
+                                    <FadeInWhenVisible delay={.1}>
+                                        {/*<h4>Dachy płaskie</h4>*/}
+                                        <h4>Produkcja konstrukcji stalowych</h4>
+                                        <p>Oferujemy produkcję konstrukcji stalowych różnego typu – kratownice, blachownice, elementy belkowe</p>
+                                        {/*<p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>*/}
                                     </FadeInWhenVisible>
                                 </div>
 
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={.1}>
-                                        <h4>Usługi projektowe</h4>
-                                        <p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>
+                                        {/*<h4>Usługi projektowe</h4>*/}
+                                        <h4>Obudowy z płyt warstwowych , blach i kasetonów </h4>
+                                        <p>Obudowa ścian z płyt warstwowych , układ poziomy czy pionowy , a może systemy elewacyjne z kasetonów ? – specjalizujemy się w wykonawstwie elewacji </p>
+                                        {/*<p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>*/}
+                                    </FadeInWhenVisible>
+                                </div>
+
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible delay={.1}>
+                                        {/*<h4>Usługi projektowe</h4>*/}
+                                        <h4>Dachy płaskie</h4>
+                                        <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
+                                        {/*<p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego, rozwiązań indywidualnych.</p>*/}
                                     </FadeInWhenVisible>
                                 </div>
 
@@ -181,21 +208,49 @@ const Index = ({data, location}) => {
                     <div className="grid gap-xxxl@md margin-top-xl">
                         <div className="col-6@md">
                             <FadeInWhenVisible delay={.1}>
-                                <h2 className="heading">Zapewniamy techniczne i terminowe podejście do każdej realizacji.</h2>
+                                <h2 className="heading">Jak pracujemy?</h2>
                             </FadeInWhenVisible>
                         </div>
                         <div className="col-6@md">
 
                             <FadeInWhenVisible delay={0.4}>
-                                <h3>Dzięki posiadanemu doświadczeniu, zdobytemu przez naszych pracowników w <span>Polsce</span> i w <span>UE</span>, możemy podjąć się realizacji obiektów spełniając oczekiwania naszych klientów.</h3>
+                                <h3>Zachęcamy do kontaktu z nami już w momencie planu inwestycyjnego, samego pomysłu, idei!</h3>
                             </FadeInWhenVisible>
 
-                            <div className="grid gap-md margin-y-xxxl">
+                            <div className="grid gap-md margin-y-xl">
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={0.5}>
-                                        <p>
-                                            Świadzczymy usługi z zakresu budownictwa przemysłowego. Głównym profilem działalności naszej spółki, jest montaż obiektów przemsyłowych opartych o rozwiązania z zakresu konstrukcji stalowych. W portfolio zakończonych obiektów firmy <span>BBS POLSKA</span>, znajdują się liczne hale magazynowe, produkcyjne, jak również modernizacje obiektów istniejących.
-                                        </p>
+                                        <p>Wykorzystajmy naszą bogatą wiedzę już na etapie zakupu odpowiedniej działki pod inwestycję, a następnie w trakcie projektowania obiektu, doboru optymalnych rozwiązań i materiałów. Faza projektowania jest kluczowa aby budowa przebiegała sprawnie i najważniejsze - w określonych ramach budżetowych. </p>
+                                        <p>Zwracamy szczególną uwagę na bezpieczeństwo pracy naszych pracowników, firma wdraża i korzysta z dofinansowania ZUS na realizację projektu <span>„Poprawa bezpieczeństwa pracy na stanowisku montażysta hal w przedsiębiosrdtwie BBS Polska Spółka Z O.O.„</span></p>
+                                    </FadeInWhenVisible>
+                                </div>
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible delay={0.5}>
+                                        <p>Współpracujemy z cenionymi na rynku biurami architektonicznymi i konstruktorami. Kolejny etap to budowa – prace ziemne, fundamentowanie, konstrukcja nośna prefabrykowana bądź stalowa, obudowa dachu i ścian, instalacje – wszystkie fazy budowy pod ścisłym nadzorem wykwalifikowanych inżynierów i kierownika budowy, aż do finału, czyli momentu oczekiwanego odbioru i przekazania na ręce Inwestora pozwolenia na użytkowanie. </p>
+                                    </FadeInWhenVisible>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="container">
+                    <div className="grid gap-xxxl@md margin-top-xl">
+                        <div className="col-6@md">
+                            <FadeInWhenVisible delay={.1}>
+                                <h2 className="heading">Doświadczenie</h2>
+                            </FadeInWhenVisible>
+                        </div>
+                        <div className="col-6@md">
+
+                            <FadeInWhenVisible delay={0.4}>
+                                <h3>Wszyscy pracownicy to ludzie z bogatym doświadczeniem, zaangażowani w pracę, związani z firmą od lat.</h3>
+                            </FadeInWhenVisible>
+
+                            <div className="grid gap-md margin-y-xl">
+                                <div className="col-6@md">
+                                    <FadeInWhenVisible delay={0.5}>
+                                        <p>W firmie mamy wydzielone odrębne brygady montażowe, które pracują na kilku obiektach w jednym czasie. Wszyscy pracownicy to ludzie z bogatym doświadczeniem, zaangażowani w pracę, związani z firmą od lat. Dysponujemy własnym sprzętem montażowym, co nas wyróżnia na rynku.</p>
                                     </FadeInWhenVisible>
 
                                     <FadeInWhenVisible delay={0.5}>
@@ -208,11 +263,9 @@ const Index = ({data, location}) => {
                                 </div>
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={0.5}>
-                                        <p>Satysfakcją dla naszej firmy jest zakończenie inwestycji w terminie, przy zachowaniu zasad bezpieczeństwa oraz zakładanego budżetu finansowego.</p>
+                                        <p>Wszystko, co niezbędne do montażu pochodzi z naszych zasobów -  żuraw 30T Liebherr, ładowarka obrotowa Dieci, podnośniki nożycowe i przegubowe, szeroki wachlarz elektronarzędzi różnego typu, rozpoznawalne jednostki transportowe. Jesteśmy niezależni i samowystarczalni.  </p>
                                     </FadeInWhenVisible>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

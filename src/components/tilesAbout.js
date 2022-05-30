@@ -24,7 +24,7 @@ const Tiles = () => {
                     <div className="col-6@md">
                         <div className="grid  padding-xl">
                             <FadeInWhenVisible delay={0.1}>
-                                <h3>Ponad <span>20 lat</span> rzetelnej oraz sumiennej pracy sprawiło, że stajemy się uznaną marką w branży. Od kilku lat notujemy okres  dynamicznego rozwoju, zatrudniamy już ponad <span>X</span> pracowników</h3>
+                                <h3>Ponad <span>20</span> lat rzetelnej oraz sumiennej pracy sprawiło, że z roku na rok budujemy swoją pozycję i stajemy się uznaną marką w branży. Od kilku lat notujemy okres dynamicznego rozwoju, Inwestorzy wracają do nas po latach co jest najlepszą wizytówką firmy i motywacją do jeszcze cięższej pracy</h3>
                             </FadeInWhenVisible>
                             <br/>
                             <FadeInWhenVisible delay={0.4}>
@@ -60,8 +60,7 @@ const Tiles = () => {
                 </div>
 
                 <div className="tile">
-
-                        <span className="tile__number">427</span>
+                    <span className="tile__number">427</span>
                     <FadeInWhenVisible delay={0.7}>
                         <h5 className="tile__heading">Zadowolonych klientów</h5></FadeInWhenVisible>
                     <FadeInWhenVisible delay={1.0}>
@@ -71,12 +70,12 @@ const Tiles = () => {
                 </div>
 
                 <div className="tile">
-                        <Counter from={0} to={6}></Counter>
+                    <span className="tile__number">100 – 45 K</span>
                     <FadeInWhenVisible delay={0.8}>
-                        <h5 className="tile__heading">Kraje, w których realizowaliśmy projekty</h5>
+                        <h5 className="tile__heading">Metrów kwadratowych</h5>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={1.1}>
-                        <p>Posiadamy rozbudowane zaplecze logistyczne</p>
+                        <p>Powierzchnia obiektu nie ma dla nas znaczenia, podejmujemy się każdej realizacji, dzisiaj 100 m2 jutro kilka tysięcy...</p>
                     </FadeInWhenVisible>
 
                 </div>

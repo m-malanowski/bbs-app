@@ -11,7 +11,7 @@ const ContactPage = ({data, location}) => {
     return (
         <>
             <Seo title="Nasze realizacje"/>
-            <Helmet bodyAttributes={{
+            <Helmet title="Projekty i budowa Hal Stalowych" bodyAttributes={{
                 id: "projects-page"
             }}/>
 

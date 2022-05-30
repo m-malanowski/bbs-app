@@ -88,39 +88,49 @@ const Services = ({data, location}) => {
                             Oferowane uslugi
                         </h2>
 
-                        <div className="grid gap-lg padding-x-xl padding-bottom-xl">
-                            <div className="col-6@md margin-y-md">
-                                <h4>Usługi projektowe</h4>
-                                <p>Świadczymy usługi na wykonanie projektu budowlanego, wykonawczego, branżowego,
-                                    rozwiązań indywidualnych.</p>
-                            </div>
-                            <div className="col-6@md margin-y-md">
-                                <h4>Prefabrykacja konstrukcji</h4>
-                                <p>Oferujemy dostawę konstrukcji stalowej obiektu, zgodnie z wydaną dokumentacją
-                                    techniczną.</p>
+                        <div className="grid gap-lg padding-x-xl padding-top-xxl margin-bottom-auto">
+                            <div className="col-6@md ">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4><Link to="/montaz-konstrukcji-stalowych" className="link link--arrow">Montaż konstrukcji stalowych</Link></h4>
+                                    <p>Zapewniamy kompleksowy montaż konstrukcji stalowych i żelbetowych prefabrykowanych. Dysponujemy własnymi brygadami montażowymi z wieloletnim doświadczeniem.</p>
+                                </FadeInWhenVisible>
                             </div>
 
-                            <div className="col-6@md margin-y-md">
-                                <h4>Montaż konstrukcji</h4>
-                                <p>Zapewniamy kompleksowy montaż konstrukcji stalowych. Posiadamy własne brygady
-                                    montażowe z wieloletnim doświadczeniem.</p>
-                            </div>
-                            <div className="col-6@md margin-y-md">
-                                <h4>Nadzór Inwestycyjne</h4>
-                                <p>Świadczymy usługi indywidualne związane z nadzorem technicznym oraz kontrolą budżetu
-                                    budowanych obiektów. </p>
+                            <div className="col-6@md ">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>Generalne wykonawstwo obiektów przemysłowych</h4>
+                                    <p>Realizacja obiektów w formie Generalnego Wykonawstwa to priorytetowy obszar funkcjonowania i rozwoju firmy.</p>
+                                </FadeInWhenVisible>
                             </div>
 
-                            <div className="col-6@md margin-y-md">
-                                <h4>Dachy płaskie</h4>
-                                <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran
-                                    PVC.Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii
-                                    membran PVC.</p>
+                            <div className="col-6@md margin-y-xl">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>Projektowanie</h4>
+                                    <p>
+                                        Optymalnie dobrane schematy statyczne, obliczenia w przestrzennym układzie prętowym – to klucz do sukcesu w projektowaniu.
+                                    </p>
+                                </FadeInWhenVisible>
                             </div>
-                            <div className="col-6@md margin-y-md">
-                                <h4>Przeglądy okresowe</h4>
-                                <p>Wykonujemy przeglądy okresowe obiektów budowlanych - zgodnie z wymaganiami i
-                                    obowiązującymi przepisami.</p>
+
+                            <div className="col-6@md margin-y-xl">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>Produkcja konstrukcji stalowych</h4>
+                                    <p>Oferujemy produkcję konstrukcji stalowych różnego typu – kratownice, blachownice, elementy belkowe</p>
+                                </FadeInWhenVisible>
+                            </div>
+
+                            <div className="col-6@md">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>Obudowy z płyt warstwowych, blach i kasetonów </h4>
+                                    <p>Obudowa ścian z płyt warstwowych, układ poziomy czy pionowy, a może systemy elewacyjne z kasetonów ? – specjalizujemy się w wykonawstwie elewacji </p>
+                                </FadeInWhenVisible>
+                            </div>
+
+                            <div className="col-6@md">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>Dachy płaskie</h4>
+                                    <p>Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.</p>
+                                </FadeInWhenVisible>
                             </div>
                         </div>
 

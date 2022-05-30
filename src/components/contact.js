@@ -18,8 +18,10 @@ const Contact = () => {
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible delay={.5}>
-                            <p>Nasi doradcy chętnie pomogą.
-                                Zapraszamy do kontaktu <br/> celem omówienia realizacji Państwa Inwestycji  <br/> Jesteśmy dla Ciebie</p>
+                            <p>
+                                Zapraszamy do kontaktu i umówienia spotkania celem omówienia <br/> realizacji Państwa Inwestycji
+                                Jesteśmy do dyspozycji!
+                            </p>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.6}>
                             <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>

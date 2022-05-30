@@ -1,12 +1,12 @@
 import React from "react"
-import {Link} from "gatsby";
+// import {Link} from "gatsby";
 // import FormStyles from "./Form.module.scss"
 
 
 const Form = () => {
     return (
         <div className="contact-form" >
-            <form name="contact" action="https://formspree.io/f/mbjwplgd"  method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" action="https://formspree.io/f/mgedpbwb"  method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-contact" value="contact" />
                 <div>

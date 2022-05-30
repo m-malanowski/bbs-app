@@ -1,6 +1,6 @@
 import * as React from "react"
 // import img from "../images/hero16.jpg"
-import down from "../images/down.svg"
+import down from "../images/arrow-down-2.svg"
 import {motion} from "framer-motion";
 import {variants} from "./variants";
 
@@ -54,7 +54,7 @@ const Hero = ({sectionImage, title, subTitle}) => {
                 >
                     {subTitle}
                 </motion.p>
-                <motion.img className="margin-top-auto arrow-down" src={down} alt="BBS" width="60"
+                <motion.img className="margin-top-auto arrow-down" src={down} alt="BBS" width="20"
                             variants={variants}
                             animate={{
                                 y: 0,

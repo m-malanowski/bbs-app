@@ -48,8 +48,7 @@
   //--font-primary-medium: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
   //--font-primary-bold: 'gta bold', sans-serif;
-  --radius-btn: 50px;
-
+  --radius-btn: 8px;
   --reveal-fx-timing-function: var(--ease-out);
   --reveal-fx-duratio: .6s;
 }
@@ -82,8 +81,8 @@ body {
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
-  &--article{
-
+  &--subtag{
+    font-weight: 600;
   }
 
 
@@ -190,6 +189,7 @@ body {
 
   &__subtag {
     max-width: 65%;
+    font-weight: 600;
     @include breakpoint(sm, "not all") {
       max-width: 100%;
     }
@@ -1186,7 +1186,13 @@ figure.hover-effect{
     color: var(--color-white);
   }
 }
-#blog-page, #projects-page{
+
+#error-page{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+#blog-page, #projects-page, #error-page{
   .header{
     &__left{
       a img{
