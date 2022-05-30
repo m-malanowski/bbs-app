@@ -5,7 +5,6 @@ import img from "../images/hero8.jpg"
 // import {Link} from "gatsby";
 import {motion} from "framer-motion";
 // import video from "../images/3.mp4"
-
 // import { useTranslation } from 'react-i18next';
 import {Trans, useTranslation, Link} from 'gatsby-plugin-react-i18next';
 import {variants} from "./variants"

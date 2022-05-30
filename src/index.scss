@@ -81,10 +81,6 @@ body {
   @include breakpoint(sm, "not all") {
     grid-template-columns: 1fr;
   }
-  &--subtag{
-    font-weight: 600;
-  }
-
 
   &__left {
     display: flex;
@@ -101,6 +97,7 @@ body {
   }
 
   &__subtag {
+    font-weight: 600;
     max-width: 65%;
     @include breakpoint(sm, "not all") {
       max-width: 100%;
