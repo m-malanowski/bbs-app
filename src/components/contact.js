@@ -1,12 +1,15 @@
 import * as React from "react"
 import contactImage from "../images/conect2.jpg"
 // import {Link} from "gatsby";
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+// import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import FadeInWhenVisible from "./fadeWhenVisible";
 import ImagesScrolling from "./scrollEffect";
+import {Trans, useTranslation, Link} from 'gatsby-plugin-react-i18next';
 
 
 const Contact = () => {
+    const { t, i18n } = useTranslation();
+
     return(
         <section className="contact">
             <div className="grid">
@@ -14,28 +17,22 @@ const Contact = () => {
                     <div className="padding-xl">
 
                         <FadeInWhenVisible delay={.4}>
-                            <h2 className="heading">Umów się na <br/> spotkanie</h2>
+                            <h2 className="heading">{t('footer.contact.head')}</h2>
                         </FadeInWhenVisible>
 
                         <FadeInWhenVisible delay={.5}>
-                            <p>
-                                Zapraszamy do kontaktu i umówienia spotkania celem omówienia <br/> realizacji Państwa Inwestycji
-                                Jesteśmy do dyspozycji!
-                            </p>
+                            <p>{t('footer.contact.body')}</p>
                         </FadeInWhenVisible>
+
                         <FadeInWhenVisible delay={.6}>
-                            <Link to="/kontakt"  className="btn btn--dark margin-top-xl">Umów spotkanie</Link>
+                            <Link to="/kontakt"  className="btn btn--dark margin-top-xl">{t('footer.contact.cta')}</Link>
                         </FadeInWhenVisible>
 
                     </div>
                 </div>
                 <div className="col-6@md contact__right">
-                    {/*<img src={contactImage} alt="BBS" className="image"/>*/}
-
                     <figure>
-                        {/*<img src={contactImage} alt="BBS" className="image"/>*/}
                         <ImagesScrolling scaleValue={1.3} pictureSrc={contactImage} alt="BBS Polska"/>
-
                     </figure>
                 </div>
             </div>

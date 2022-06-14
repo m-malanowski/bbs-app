@@ -32,7 +32,7 @@ const Hero = () => {
                      initial="initial"
                      exit="exit"
                 >
-                    {t('index.hero.title')} <br/> <span>BBS</span> Polska
+                    {t('index.hero.title')}<br/><span>BBS</span> Polska
                 </motion.h2>
 
                 <motion.p className="hero__subtag"

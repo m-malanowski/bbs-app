@@ -58,6 +58,8 @@ body {
   background-color: var(--color-white);
   font-family: var(--font-primary);
 
+  white-space: break-spaces;
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -1470,4 +1472,8 @@ figure.hover-effect{
 .arrow-down{
   animation: bounce .5s infinite alternate;
   -webkit-animation: bounce .5s infinite alternate;
+}
+
+.color-primary{
+  color: var(--color-secondary);
 }

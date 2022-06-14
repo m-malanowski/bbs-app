@@ -1,9 +1,12 @@
 import React from "react"
+import {useTranslation} from "gatsby-plugin-react-i18next";
 // import {Link} from "gatsby";
 // import FormStyles from "./Form.module.scss"
 
 
 const Form = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="contact-form" >
             <form name="contact" action="https://formspree.io/f/mgedpbwb"  method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
@@ -16,7 +19,7 @@ const Form = () => {
                         autoComplete="off"
                         required/>
                     <label htmlFor="name">
-                        <span>Imię i Nazwisko</span>
+                        <span>{ t('form.name') }</span>
                     </label>
                 </div>
 
@@ -31,17 +34,6 @@ const Form = () => {
                     </label>
                 </div>
 
-                {/*<div>*/}
-                {/*    <input*/}
-                {/*        type="text"*/}
-                {/*        name="telefon"*/}
-                {/*        autoComplete="off"*/}
-                {/*        required />*/}
-                {/*    <label htmlFor="phone">*/}
-                {/*        <span>Telefon</span>*/}
-                {/*    </label>*/}
-                {/*</div>*/}
-
                 <div>
                     <input
                         type="text"
@@ -49,10 +41,10 @@ const Form = () => {
                         autoComplete="off"
                         required />
                     <label htmlFor="phone">
-                        <span>Telefon</span>
+                        <span>{ t('form.phone') }</span>
                     </label>
                 </div>
-                <small>Używając tego formularza zgadzam się na przetwarzanie przekazywanych danych <br/> w celu przygotowania i prezentacji oferty oraz akceptuję politykę prywatności.</small>
+                <small>{ t('form.agreements') }</small>
 
                 <div className="message-div">
                         <textarea
@@ -62,16 +54,11 @@ const Form = () => {
                             required
                             rows="10" />
                     <label htmlFor="message">
-                        <span>Wiadomość</span>
+                        <span>{ t('form.message') }</span>
                     </label>
                 </div>
-
-
-                {/*<button type="submit">Wyślij zapytanie</button>*/}
-                <button type="submit"  className="btn">Wyślij wiadomość</button>
-
+                <button type="submit"  className="btn">{ t('form.send') }</button>
             </form>
-
         </div>
     )
 }

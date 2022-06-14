@@ -1,10 +1,74 @@
 {
     "index":{
         "hero": {
-            "title": "Your investition with",
-            "subtitle": "Our goal is to provide the highest quality services. We build with the customer and users in mind who will use the facilities we have made."
+            "title": "Your Investment with",
+            "subtitle": "Our goal is to provide the highest quality, fully professional construction services related to the construction of industrial facilities, starting from the concept, design, implementation and maintenance of the building. Our clients set goals, and we achieve them through professional advice, knowledge, high competences and commitment of employees at every stage of the investment process."
         },
-        "whoWeAre": "Who we are?"
+        "whoWeAre": "Who we are?",
+        "whoWeAreDesc": "BBS Polska - a family contractor from Elbląg, with several decades of experience, specializing mainly in industrial construction, i.e. production halls, warehouses and logistic halls, but also constructing retail parks and smaller public utility facilities.",
+        "whoWeAreDescShorterOne": "We encourage you to contact us at the moment of the investment plan, the idea itself, the idea! Let's use our extensive knowledge at the stage of purchasing a suitable plot for investment, and then during the design of the facility, selection of optimal solutions and materials.",
+        "whoWeAreDescShorterTwo": "We implement projects commissioned by clients and create personalized buildings for them. Designing steel halls has no secrets for us.",
+        "advantages": "Our main strengths",
+        "advantagesDesc": "Caring for excellent relations with the investor, high quality of work, aesthetics of the facility, its uniqueness and professional knowledge that we share - this is what distinguishes us on the market!",
+        "punctuality": "Punctuality",
+        "punctualityDesc": "We agree the work schedule with the client and monitor it on an ongoing basis.",
+        "credibility": "Credibility",
+        "credibilityDesc": "Continuous dialogue with the client and meeting the requirements of each investor are the elements that distinguish us on the market.",
+        "precision": "Precision",
+        "precisionDesc": "Precision in steel construction is essential.",
+        "services": "Services",
+        "steelStructures": "Assembly of steel structures",
+        "steelStructuresDesc": "We provide comprehensive assembly of steel and prefabricated reinforced concrete structures. We have our own assembly teams with many years of experience.",
+        "industrialFacilities": "General contracting of industrial facilities",
+        "industrialFacilitiesDesc": "The implementation of facilities in the form of General Contractor is a priority area of \u200B\u200Boperation and development of the company.",
+        "engineer": "Engineer",
+        "engineerDesc": "Optimally selected static diagrams, calculations in a spatial bar system - this is the key to success in design.",
+        "steelStructuresProduction": "Production of steel structures",
+        "steelStructuresProductionDesc": "We offer the production of steel structures of various types - trusses, plate girders, beam elements",
+        "sandwichPanels": "Cladding of sandwich panels, metal sheets and coffers",
+        "sandwichPanelsDesc": "Cladding walls made of composite panels, horizontal or vertical arrangement, or maybe elevation systems made of coffers? - we specialize in elevation execution",
+        "flatRoofs": "Flat roofs",
+        "flatRoofsDesc": "We have years of experience installing flat roofs with PVC membrane technology.",
+        "howWeWork": "How we work",
+        "contactEncourage": "We encourage you to contact us as early as your investment plan, your very idea, your concept!",
+        "howWeWorkDescOne": "Use our extensive knowledge at the stage of purchasing a suitable plot for the investment, and then during the design of the object, choosing the optimal solutions and materials. The design phase is crucial for the construction to proceed smoothly and most importantly - within the specified budget. \n\nWe pay special attention to the occupational safety of our employees, the company implements and benefits from Social Security funding for the project \"Improvement of occupational safety at the position of hall assembly worker in the company BBS Polska Spółka z O.O.\".",
+        "howWeWorkDescTwo": "We cooperate with respected on the market architectural offices and constructors. The next stage is construction - earthworks, foundations, prefabricated or steel load-bearing structure, roof and wall cladding, installations - all phases of construction under the close supervision of qualified engineers and construction manager, until the finale, that is the moment of the expected acceptance and handing over the occupancy permit to the Investor.",
+        "experience": "Experience",
+        "ourEmployees": "All employees are highly experienced, committed to their work, and have been with the company for years.",
+        "experienceOne": "In the company we have separate assembly brigades, which work on several objects at the same time. All employees are people with extensive experience, committed to their work, associated with the company for years. We have our own installation equipment, which distinguishes us in the market.",
+        "experienceTwo": "Everything necessary for installation comes from our resources - 30T Liebherr crane, Dieci rotary loader, scissor and articulated lifts, a wide range of power tools of various types, recognizable transport units. We are independent and self-sufficient.",
+        "projects": "Our projects",
+        "yearsOfExperience": "Best\nBuilding\nSolutions"
+    },
+    "about": {
+        "hero": {
+            "startProject": "Start your project with\n",
+            "startProjectDesc": "We build with the customer and the users in mind who will benefit from the facilities we construct. Experience, base of our own construction equipment and competent installation brigades allow us to offer competitive prices for execution of works."
+        },
+        "customerNeeds": "Tailor-made steel halls",
+        "customerNeedsDescOne": "At BBS Poland we design, manufacture and assemble multi-purpose steel halls for a wide range of purposes and industries. Our concept for steel halls is widely recognized as an efficient and durable construction of high quality with the ability to adapt to different needs and requirements.",
+        "customerNeedsDescTwo": "Design and construction of steel halls Ambitious ideas and reliable implementation",
+        "motto": "Our motto",
+        "mottoDesc": "BBS Polska was established as a natural consequence of many years of activity on the Polish and European market.",
+        "mottoDescOne": "As a manufacturer of steel structures with 20 years of experience in the implementation of investments, we have combined a modern vision of a customer-oriented company with the traditional shape of a production company. Functioning in this model allows us to offer a much more individual service, tailored primarily to the needs of investors. This makes us a reliable partner in construction investments.",
+        "mottoDescTwo": "ur realizations range from small objects meeting the needs of small and medium entrepreneurs to large warehouses and production plants. Thanks to our own factory and employed specialists we are able to realize even the most ambitious projects."
+    },
+    "projects": {
+        "projectsDesc": "Design and construction of steel halls is our daily life"
+    },
+    "contact": {
+        "contactDesc": "Are you planning an investment: construction, modernization or trying to implement - use the services of our company. Feel free to contact us or leave your contact details.",
+        "investorsCosting": "Investor's Costing",
+        "investorsCostingDesc": "We encourage you to use the service of valuation of your investment in the form of investor's cost estimate.",
+        "office": "Our office",
+        "directions": "Driving directions"
+    },
+    "form": {
+        "name": "Name and last name",
+        "phone": "Phone number",
+        "agreements": "Using this form I agree to the processing of the provided data for the purpose of preparing and presenting an offer and I accept the privacy policy.",
+        "message": "Message",
+        "send": "Send message"
     },
     "general": {
         "appointment": "Make an appointment"
@@ -21,6 +85,26 @@
             "schedule": "Make an appointment",
             "call": "Call to us",
             "mail": "Email us"
+        }
+    },
+    "footer": {
+        "experience": {
+            "desc": "Over 20 years of reliable and conscientious work has made us build our position and become a recognized brand in the industry from year to year. For several years we have been recording a period of dynamic development, Investors come back to us after many years, which is the best showcase of the company and motivation to work even harder\n\nBBS Polska in numbers:",
+            "experienceHeader": "Years of experience",
+            "experienceBody": "During this time, we managed to get to know the market inside out and we can confidently call ourselves experts",
+            "projectsHeader": "Completed projects",
+            "projectsBody": "Thanks to our commitment and cooperation, we achieve exceptional results.",
+            "fittersHeader": "Fitters",
+            "fittersBody": "We currently employ over 30 highly qualified workers.",
+            "customersHeader": "Satisfied customers",
+            "customersBody": "References received from our customers confirm the high quality of our services.",
+            "metersHeader": "Square meters",
+            "metersBody": "The area of the facility does not matter to us, we undertake any implementation, today 100 m2, tomorrow several thousand..."
+        },
+        "contact": {
+            "head": "Make an\nappointment",
+            "body": "Please contact us and arrange a meeting to discuss\nimplementation of your investment. We are at your disposal!",
+            "cta": "Make an appointment"
         }
     }
 }

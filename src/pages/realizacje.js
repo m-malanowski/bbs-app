@@ -1,6 +1,6 @@
 import * as React from "react"
 import {graphql} from "gatsby"
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+import {Link, useI18next, useTranslation} from 'gatsby-plugin-react-i18next';
 import Seo from "../components/seo"
 import {Helmet} from "react-helmet";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -8,6 +8,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
     // const image = getImage(data.node.Bild)
+    const { t } = useTranslation();
     return (
         <>
             <Seo title="Nasze realizacje"/>
@@ -19,7 +20,7 @@ const ContactPage = ({data, location}) => {
             <section className="container">
                 <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
                     <div className="col-6@md">
-                        <h1>Projekty i budowa hal stalowych to nasza codzienność</h1>
+                        <h1>{ t('projects.projectsDesc') }</h1>
                     </div>
                 </div>
             </section>

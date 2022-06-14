@@ -4,7 +4,71 @@
             "title": "Twoja Inwestycja z",
             "subtitle": "Naszym celem jest dostarczanie najwyższej jakości, w pełni profesjonalnych usług budowlanych związanych ze wznoszeniem obiektów przemysłowych, począwszy od koncepcji, projektowania, realizacji i utrzymania budynku. To nasi klienci wyznaczają cele, a my je osiągamy poprzez fachowe doradztwo, wiedzę, wysokie kompetencje i zaangażowanie pracowników na każdym etapie procesu inwestycyjnego. "
         },
-        "whoWeAre": "Kim jesteśmy?"
+        "whoWeAre": "Kim jesteśmy?",
+        "whoWeAreDesc": "BBS Polska – rodzinna firma wykonawcza z Elbląga, z kilkudziesięcioletnim doświadczeniem, specjalizująca się głównie w budownictwie przemysłowym t.j. hale produkcyjne, magazynowe, logistyczne ale również realizująca parki handlowe i mniejsze obiekty użyteczności publicznej.",
+        "whoWeAreDescShorterOne": "Zachęcamy do kontaktu z nami już w momencie planu inwestycyjnego, samego pomysłu, idei! Wykorzystajmy naszą bogatą wiedzę już na etapie zakupu odpowiedniej działki pod inwestycję, a następnie w trakcie projektowania obiektu, doboru optymalnych rozwiązań i materiałów.",
+        "whoWeAreDescShorterTwo": "Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane zabudowania. Projektowanie hal stalowych nie ma dla nas żadnych tajemnic.",
+        "advantages": "Nasze główne atuty",
+        "advantagesDesc": "Dbałość o doskonałe relacje z inwestorem, wysoka jakość prac, estetyka obiektu, jego niepowtarzalność i fachowa wiedza, którą się dzielimy – to nas wyróżnia na rynku!",
+        "punctuality": "Terminowość",
+        "punctualityDesc": "Harmonogram prac uzgadniamy z klientem i na bieżąco go monitorujemy.",
+        "credibility": "Wiarygodność",
+        "credibilityDesc": "Ciągły dialog z klientem oraz wychodzenie naprzeciw wymaganiom każdego inwestora to elementy, które wyróżniają nas na rynku.  prac uzgadniamy z klientem i na bieżąco go monitorujemy.",
+        "precision": "Precyzja",
+        "precisionDesc": "Precyzja w konstrukcji stalowej to podstawa.",
+        "services": "Oferowane usługi",
+        "steelStructures": "Montaż konstrukcji stalowych",
+        "steelStructuresDesc": "Zapewniamy kompleksowy montaż konstrukcji stalowych i żelbetowych prefabrykowanych. Dysponujemy własnymi brygadami montażowymi z wieloletnim doświadczeniem.",
+        "industrialFacilities": "Generalne wykonawstwo obiektów przemysłowych",
+        "industrialFacilitiesDesc": "Realizacja obiektów w formie Generalnego Wykonawstwa to priorytetowy obszar funkcjonowania i rozwoju firmy.",
+        "engineer": "Projektowanie",
+        "engineerDesc": "Optymalnie dobrane schematy statyczne, obliczenia w przestrzennym układzie prętowym – to klucz do sukcesu w projektowaniu.",
+        "steelStructuresProduction": "Produkcja konstrukcji stalowych",
+        "steelStructuresProductionDesc": "Oferujemy produkcję konstrukcji stalowych różnego typu – kratownice, blachownice, elementy belkowe",
+        "sandwichPanels": "Obudowy z płyt warstwowych , blach i kasetonów",
+        "sandwichPanelsDesc": "Obudowa ścian z płyt warstwowych , układ poziomy czy pionowy, a może systemy elewacyjne z kasetonów ? – specjalizujemy się w wykonawstwie elewacji",
+        "flatRoofs": "Dachy płaskie",
+        "flatRoofsDesc": "Posiadamy wieloletnie doświadczenie w montażu dachów płaskich z technologii membran PVC.",
+        "howWeWork": "Jak pracujemy?",
+        "contactEncourage": "Zachęcamy do kontaktu z nami już w momencie planu inwestycyjnego, samego pomysłu, idei!",
+        "howWeWorkDescOne": "Wykorzystajmy naszą bogatą wiedzę już na etapie zakupu odpowiedniej działki pod inwestycję, a następnie w trakcie projektowania obiektu, doboru optymalnych rozwiązań i materiałów. Faza projektowania jest kluczowa aby budowa przebiegała sprawnie i najważniejsze - w określonych ramach budżetowych. \n\nZwracamy szczególną uwagę na bezpieczeństwo pracy naszych pracowników, firma wdraża i korzysta z dofinansowania ZUS na realizację projektu „Poprawa bezpieczeństwa pracy na stanowisku montażysta hal w przedsiębiosrdtwie BBS Polska Spółka Z O.O.„",
+        "howWeWorkDescTwo": "Współpracujemy z cenionymi na rynku biurami architektonicznymi i konstruktorami. Kolejny etap to budowa – prace ziemne, fundamentowanie, konstrukcja nośna prefabrykowana bądź stalowa, obudowa dachu i ścian, instalacje – wszystkie fazy budowy pod ścisłym nadzorem wykwalifikowanych inżynierów i kierownika budowy, aż do finału, czyli momentu oczekiwanego odbioru i przekazania na ręce Inwestora pozwolenia na użytkowanie. ",
+        "experience": "Doświadczenie",
+        "ourEmployees": "Wszyscy pracownicy to ludzie z bogatym doświadczeniem, zaangażowani w pracę, związani z firmą od lat.",
+        "experienceOne": "W firmie mamy wydzielone odrębne brygady montażowe, które pracują na kilku obiektach w jednym czasie. Wszyscy pracownicy to ludzie z bogatym doświadczeniem, zaangażowani w pracę, związani z firmą od lat. Dysponujemy własnym sprzętem montażowym, co nas wyróżnia na rynku.",
+        "experienceTwo": "Wszystko, co niezbędne do montażu pochodzi z naszych zasobów -  żuraw 30T Liebherr, ładowarka obrotowa Dieci, podnośniki nożycowe i przegubowe, szeroki wachlarz elektronarzędzi różnego typu, rozpoznawalne jednostki transportowe. Jesteśmy niezależni i samowystarczalni.",
+        "projects": "Nasze realizacje",
+        "yearsOfExperience": "Best\nBuilding\nSolutions"
+    },
+    "about": {
+        "hero": {
+            "startProject": "Zacznij budowę z\n",
+            "startProjectDesc": "Budujemy z myślą o kliencie oraz użytkownikach, którzy będą korzystać z wykonanych przez nas obiektów. Doświadczenie, baza własnego sprzętu budowlanego oraz kompetentne brygady montażowe pozwalają nam zaoferować konkurencyjne ceny na wykonanie prac."
+        },
+        "customerNeeds": "Hale stalowe na miarę potrzeb Klienta",
+        "customerNeedsDescOne": "W BBS Polska projektujemy, produkujemy i montujemy wielofunkcyjne hale stalowe dla szerokiego zakresu celów i branż. Nasza koncepcja dla hal stalowych jest powszechnie uznawana za sprawną i trwałą konstrukcję o wysokiej jakości z możliwością dostosowania do różnych potrzeb i wymagań.",
+        "customerNeedsDescTwo": "Projekty i budowa Hal Stalowych Ambitne pomysły i rzetelna realizacja",
+        "motto": "Nasza dewiza",
+        "mottoDesc": "Firma BBS Polska powstała jako naturalna konsekwencja wieloletniej działalności na polskim i europejskim rynku.",
+        "mottoDescOne": "Jako producent konstrukcji stalowych z 20 letnim doświadczeniem w realizacji inwestycji, połączyliśmy nowoczesną wizję firmy skierowanej na klienta, z tradycyjnym kształtem przedsiębiorstwa produkcyjnego. Funkcjonowanie w takim modelu umożliwia nam oferowanie usług dużo bardziej indywidualnych, dopasowanych w pierwszej kolejności do potrzeb inwestorów. To sprawia, że jesteśmy godnym zaufania partnerem w inwestycjach budowlanych.",
+        "mottoDescTwo": "Nasze realizacje to zarówno niewielkie obiekty spełniające potrzeby małych i średnich przedsiębiorców, jak i duże magazyny i zakłady produkcyjne. Dzięki własnej wytwórni i zatrudnionym specjalistom jesteśmy w stanie realizować nawet najbardziej ambitne projekty."
+    },
+    "projects": {
+        "projectsDesc": "Projekty i budowa hal stalowych to nasza codzienność"
+    },
+    "contact": {
+        "contactDesc": "Planujesz inwestycję: budowę, modernizację lub przymierzasz się do realizacji - skorzystaj z usług naszej firmy. Zapraszamy do kontaktu lub pozostawienie danych kontaktowych.",
+        "investorsCosting": "Kosztorys Inwestorski",
+        "investorsCostingDesc": "Zachęcamy do skorzystania z usługi wyceny Twojej inwestycji w postaci kosztorysu inwestorskiego.",
+        "office": "Nasze biuro",
+        "directions": "Wskazówki dojazdu"
+    },
+    "form": {
+        "name": "Imię i nazwisko",
+        "phone": "telefon",
+        "agreements": "Używając tego formularza zgadzam się na przetwarzanie przekazywanych danych w celu przygotowania i prezentacji oferty oraz akceptuję politykę prywatności.",
+        "message": "Wiadomość",
+        "send": "Wyślij wiadomość"
     },
     "general": {
         "appointment": "Umów spotkanie"
@@ -21,6 +85,26 @@
             "schedule": "Umów spotkanie",
             "call": "Zadzwoń do nas",
             "mail": "Wyślij maila"
+        }
+    },
+    "footer": {
+        "experience": {
+            "desc": "Ponad 20 lat rzetelnej oraz sumiennej pracy sprawiło, że z roku na rok budujemy swoją pozycję i stajemy się uznaną marką w branży. Od kilku lat notujemy okres dynamicznego rozwoju, Inwestorzy wracają do nas po latach co jest najlepszą wizytówką firmy i motywacją do jeszcze cięższej pracy\n\nBBS Polska w liczbach:",
+            "experienceHeader": "Lat doświadczenia",
+            "experienceBody": "W tym czasie zdążyliśmy poznać rynek od podszewki i śmiało możemy nazwać się ekspertami",
+            "projectsHeader": "Zakończonych projektów",
+            "projectsBody": "Dzięki swojemu zaangażowaniu i współpracy, osiągamy wyjątkowe rezultaty.",
+            "fittersHeader": "Wykwalifikowanych monterów",
+            "fittersBody": "Zatrudniające obecnie ponad 30 wysoko wykwalifikowanych pracowników.",
+            "customersHeader": "Zadowolonych klientów",
+            "customersBody": "Referencje, otrzymane od naszych klientów potwierdzają wysoką jakość świadczonych przez nas usług.",
+            "metersHeader": "Metrów kwadratowych",
+            "metersBody": "Powierzchnia obiektu nie ma dla nas znaczenia, podejmujemy się każdej realizacji, dzisiaj 100 m2 jutro kilka tysięcy..."
+        },
+        "contact": {
+            "head": "Umów się na\nspotkanie",
+            "body": "Zapraszamy do kontaktu i umówienia spotkania celem omówienia\nrealizacji Państwa Inwestycji Jesteśmy do dyspozycji!",
+            "cta": "Umów spotkanie"
         }
     }
 }

@@ -4,9 +4,11 @@ import Seo from "../components/seo"
 import {Helmet} from "react-helmet";
 import Form from "../components/form";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
+import {useTranslation} from "gatsby-plugin-react-i18next";
 
 const ContactPage = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
+    const { t } = useTranslation();
 
     return (
         <>
@@ -20,18 +22,17 @@ const ContactPage = ({data, location}) => {
                     <div className="grid gap-xxxl margin-y-xxxl">
                         <div className="col-6@md">
                             <FadeInWhenVisible delay={0.2}>
-                                <h3>Planujesz inwestycję: budowę, modernizację lub przymierzasz się do realizacji - skorzystaj z usług naszej firmy. Zapraszamy do kontaktu lub pozostawienie danych kontaktowych.</h3>
+                                <h3>{ t('contact.contactDesc') }</h3>
                             </FadeInWhenVisible>
                             <div className="grid gap-xxxl margin-bottom-xxl margin-top-xxl">
                                 <div className="col-6@md">
 
                                     <FadeInWhenVisible delay={0.4}>
-                                        <h4>Kosztorys Inwestorski</h4>
+                                        <h4 className="color-primary">{ t('contact.investorsCosting') }</h4>
                                     </FadeInWhenVisible>
 
                                     <FadeInWhenVisible delay={0.7}>
-                                        <p>Zachęcamy do skorzystania z usługi wyceny Twojej inwestycji w postaci <span>kosztorysu inwestorskiego.</span>
-                                        </p>
+                                        <p>{ t('contact.investorsCostingDesc') }</p>
                                     </FadeInWhenVisible>
                                     <br/>
                                     <br/>
@@ -51,7 +52,7 @@ const ContactPage = ({data, location}) => {
                                 </div>
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={0.8}>
-                                        <h4>Nasze biuro</h4>
+                                        <h4 className="color-primary">{ t('contact.office') }</h4>
                                     </FadeInWhenVisible>
 
                                     <ul>
@@ -72,8 +73,7 @@ const ContactPage = ({data, location}) => {
                                         <br/>
                                         <FadeInWhenVisible delay={1.2}>
                                             <li><a className="link" target="_blank" rel="noopener noreferrer"
-                                                   href="https://www.google.com/maps?saddr=My+Location&daddr=BBS+POLSKA+SP.+Z+O.O.">Wskazówki
-                                                dojazdu</a></li>
+                                                   href="https://www.google.com/maps?saddr=My+Location&daddr=BBS+POLSKA+SP.+Z+O.O.">{ t('contact.directions') }</a></li>
                                         </FadeInWhenVisible>
                                     </ul>
                                 </div>
