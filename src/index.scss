@@ -100,7 +100,7 @@ body {
 
   &__subtag {
     font-weight: 600;
-    max-width: 65%;
+    max-width: 80%;
     @include breakpoint(sm, "not all") {
       max-width: 100%;
     }
@@ -559,7 +559,8 @@ body {
   }
 
   &__logo{
-    filter: brightness(0) invert(1);
+    filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
+    //filter: brightness(0) invert(1);
   }
 
   &__language {

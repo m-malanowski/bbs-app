@@ -132,11 +132,13 @@ a {
 
 .link {
   position: relative;
-  transition: letter-spacing .3s var(--ease-out-back);
+  //transition: letter-spacing .3s var(--ease-out-back);
+  transition: all .3s var(--ease-out-back);
 
   &:hover{
     letter-spacing: 1px;
-    transition: letter-spacing .3s var(--ease-out-back);
+    //transition: letter-spacing .3s var(--ease-out-back);
+    transition: all .3s var(--ease-out-back);
 
   }
 
@@ -168,20 +170,10 @@ a {
   &--arrow{
 
     &::after{
-      //content: "↗";
-      content: "→";
+      content: "⟶";
       margin-left: var(--space-sm);
-      //position: absolute;
-      //right: -25px;
-      //top: -5px;
-      //font-size: 1em;
-
-      //color: var(--color-secondary);
-      //filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
-
     }
   }
-
 }
 
 

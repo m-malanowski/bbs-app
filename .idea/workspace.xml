@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/companiesSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/companiesSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/LuminaFrame/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tilesAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilesAbout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +115,7 @@
       <workItem from="1654288099507" duration="22000" />
       <workItem from="1655141654877" duration="4463000" />
       <workItem from="1655228600948" duration="7428000" />
-      <workItem from="1655290446219" duration="10094000" />
+      <workItem from="1655290446219" duration="12022000" />
     </task>
     <servers />
   </component>

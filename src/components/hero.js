@@ -42,7 +42,7 @@ const Hero = () => {
                 </motion.p>
 
                 <motion.div
-                    className="margin-top-xl"
+                    className="margin-top-md"
                     variants={variants}
                     animate={{
                         y: 0,
@@ -52,9 +52,10 @@ const Hero = () => {
                     initial="initial"
                     exit="exit"
                 >
-                    <Link to="/kontakt" className="hero__btn btn margin-top-xl">
-                        {t('general.appointment')}
-                    </Link>
+                    <Link to="/kontakt" className="link link--arrow  margin-top-xl">{ t('general.appointment') }</Link>
+                    {/*<Link to="/kontakt" className="hero__btn btn margin-top-xl">*/}
+                    {/*    {t('general.appointment')}*/}
+                    {/*</Link>*/}
                 </motion.div>
 
             </div>
