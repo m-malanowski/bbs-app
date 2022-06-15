@@ -12,13 +12,13 @@ const Tiles = () => {
                 <div className="grid ">
                     <div className="col-6@md tiles tiles--top">
                         <div className="tile tile--single">
-                                <span className="tile__number">20</span>
 
                             <FadeInWhenVisible delay={0.1}>
+                                <span className="tile__number">20</span>
                                 <h5 className="tile__heading">{t('footer.experience.experienceHeader')}</h5>
                             </FadeInWhenVisible>
 
-                            <FadeInWhenVisible delay={0.4}>
+                            <FadeInWhenVisible delay={0.2}>
                                 <p className="tile__description">{t('footer.experience.experienceBody')}</p>
                             </FadeInWhenVisible>
                         </div>
@@ -26,7 +26,7 @@ const Tiles = () => {
                     </div>
                     <div className="col-6@md">
                         <div className="grid  padding-xl">
-                            <FadeInWhenVisible delay={0.1}>
+                            <FadeInWhenVisible delay={0.3}>
                                 <h3>{t('footer.experience.desc')}</h3>
                             </FadeInWhenVisible>
                         </div>
@@ -35,47 +35,43 @@ const Tiles = () => {
             </div>
             <div className="tiles tiles--services">
                 <div className="tile">
-                        <span className="tile__number">284</span>
                     <FadeInWhenVisible delay={0.5}>
+                        <span className="tile__number">284</span>
                         <h5 className="tile__heading">{t('footer.experience.projectsHeader')}</h5>
                     </FadeInWhenVisible>
 
-                    <FadeInWhenVisible delay={0.8}>
+                    <FadeInWhenVisible delay={0.6}>
                         <p className="tile__description">{t('footer.experience.projectsBody')}</p>
                     </FadeInWhenVisible>
 
                 </div>
                 <div className="tile">
-
+                    <FadeInWhenVisible delay={0.5}>
                         <span className="tile__number">30</span>
-                    <FadeInWhenVisible delay={0.6}>
                         <h5 className="tile__heading">{t('footer.experience.fittersHeader')}</h5>
                     </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={0.9}>
+                    <FadeInWhenVisible delay={0.6}>
                         <p className="tile__description">{t('footer.experience.fittersBody')}</p>
                     </FadeInWhenVisible>
-
                 </div>
 
                 <div className="tile">
-                    <span className="tile__number">427</span>
-                    <FadeInWhenVisible delay={0.7}>
+                    <FadeInWhenVisible delay={0.5}>
+                        <span className="tile__number">427</span>
                         <h5 className="tile__heading">{t('footer.experience.customersHeader')}</h5></FadeInWhenVisible>
-                    <FadeInWhenVisible delay={1.0}>
+                    <FadeInWhenVisible delay={0.6}>
                         <p>{t('footer.experience.customersBody')}</p>
                     </FadeInWhenVisible>
-
                 </div>
 
                 <div className="tile">
-                    <span className="tile__number">100 – 45 K</span>
-                    <FadeInWhenVisible delay={0.8}>
+                    <FadeInWhenVisible delay={0.5}>
+                        <span className="tile__number">100 – 45 K</span>
                         <h5 className="tile__heading">{t('footer.experience.metersHeader')}</h5>
                     </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={1.1}>
+                    <FadeInWhenVisible delay={0.6}>
                         <p>{t('footer.experience.metersBody')}</p>
                     </FadeInWhenVisible>
-
                 </div>
             </div>
         </section>

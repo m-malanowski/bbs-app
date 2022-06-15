@@ -16,15 +16,15 @@ const Contact = () => {
                 <div className="col-6@md contact__left">
                     <div className="padding-xl">
 
-                        <FadeInWhenVisible delay={.4}>
+                        <FadeInWhenVisible delay={.6}>
                             <h2 className="heading">{t('footer.contact.head')}</h2>
                         </FadeInWhenVisible>
 
-                        <FadeInWhenVisible delay={.5}>
+                        <FadeInWhenVisible delay={.7}>
                             <p>{t('footer.contact.body')}</p>
                         </FadeInWhenVisible>
 
-                        <FadeInWhenVisible delay={.6}>
+                        <FadeInWhenVisible delay={.8}>
                             <Link to="/kontakt"  className="btn btn--dark margin-top-xl">{t('footer.contact.cta')}</Link>
                         </FadeInWhenVisible>
 

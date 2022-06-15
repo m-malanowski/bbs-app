@@ -64,7 +64,9 @@ const About = ({data, location}) => {
 
                             </div>
                             <div className="col-6@md">
-                                <p>{ t('about.mottoDescTwo') }</p>
+                                <FadeInWhenVisible delay={0.7}>
+                                    <p>{ t('about.mottoDescTwo') }</p>
+                                </FadeInWhenVisible>
 
                             </div>
                         </div>

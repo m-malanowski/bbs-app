@@ -1477,3 +1477,30 @@ figure.hover-effect{
 .color-primary{
   color: var(--color-secondary);
 }
+
+.image-slider{
+  //display: flex;
+  //gap: var(--space-md);
+  //flex-direction: row;
+  margin:  var(--space-xxl) 0 var(--space-xl) 0;
+  //align-items: center;
+  //justify-content: center;
+  //overflow: hidden;
+  //width: 100%;
+  img{
+    filter: invert(0) grayscale(100%);
+    margin: 0 var(--space-lg);
+  }
+}
+.marquee-container{
+  align-items: center;
+  justify-content: center;
+}
+.overlay::before, .overlay::after {
+  --gradient-color: rgba(250,250,250, 1), rgba(250,250,250, 0);
+  --gradient-width: 100px;
+
+  background: linear-gradient(to right, var(--gradient-color));
+  width: var(--gradient-width);
+  z-index: 2;
+}

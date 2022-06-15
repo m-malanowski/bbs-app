@@ -13,6 +13,7 @@ import ImagesScrolling from "../components/scrollEffect";
 import TilesAbout from "../components/tilesAbout";
 import teaserImg from "../images/hero12.jpg"
 import bildIndex from "../images/drone2.jpg"
+import CompaniesSlider from "../components/companiesSlider";
 // import icon1 from "../images/icon1.svg"
 // import icon2 from "../images/icon2.svg"
 // import icon3 from "../images/icon3.svg"
@@ -131,7 +132,9 @@ const Index = ({data, location}) => {
                             <div className="grid gap-lg padding-x-xl padding-top-xxl margin-bottom-auto">
                                 <div className="col-6@md ">
                                     <FadeInWhenVisible delay={.1}>
-                                        <h4><Link to="/montaz-konstrukcji-stalowych" className="link link--arrow">{ t('index.steelStructures') }</Link></h4>
+                                        <h4>
+                                            <Link to="/montaz-konstrukcji-stalowych" className="link link--arrow">{ t('index.steelStructures') }</Link>
+                                        </h4>
                                         <p>{ t('index.steelStructuresDesc') }</p>
                                     </FadeInWhenVisible>
                                 </div>
@@ -200,6 +203,9 @@ const Index = ({data, location}) => {
                                     </FadeInWhenVisible>
                                 </div>
                             </div>
+
+                            {/*<CompaniesSlider></CompaniesSlider>*/}
+
                         </div>
                     </div>
                 </section>
@@ -210,6 +216,7 @@ const Index = ({data, location}) => {
                             <FadeInWhenVisible delay={.1}>
                                 <h2 className="heading">{ t('index.experience') }</h2>
                             </FadeInWhenVisible>
+
                         </div>
                         <div className="col-6@md">
 
@@ -227,7 +234,6 @@ const Index = ({data, location}) => {
                                         <Link to="/realizacje" href="" className="btn btn--dark margin-top-xxl ">{ t('index.projects') }</Link>
                                     </FadeInWhenVisible>
 
-
                                 </div>
                                 <div className="col-6@md">
                                     <FadeInWhenVisible delay={0.5}>
@@ -238,6 +244,8 @@ const Index = ({data, location}) => {
                         </div>
                     </div>
                 </section>
+
+                <CompaniesSlider></CompaniesSlider>
 
                 <section className="bild">
                     <figure>
