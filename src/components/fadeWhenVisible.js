@@ -6,7 +6,7 @@ function FadeInWhenVisible({children, delay}) {
 
     const variants = {
         initial: {
-            y: 50,
+            y: 20,
             opacity: 0
         },
         visible: {
@@ -19,8 +19,9 @@ function FadeInWhenVisible({children, delay}) {
             }
         },
         exit: {
-            y: 50,
-            opacity: 0
+            y: 5,
+            opacity: 0,
+            delay: 1
         }
     }
     return (

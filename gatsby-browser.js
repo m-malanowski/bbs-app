@@ -1,6 +1,6 @@
 const React = require('react');
 const Layout = require('./src/components/layout').default;
-const transitionDelay = 1600
+const transitionDelay = 1500
 
 exports.shouldUpdateScroll = ({
                                   routerProps: {location},
@@ -9,11 +9,13 @@ exports.shouldUpdateScroll = ({
     if (location.action === "PUSH") {
         window.setTimeout(() => window.scrollTo(0, 0), transitionDelay)
     } else {
-        const savedPosition = getSavedScrollPosition(location)
-        window.setTimeout(
-            () => window.scrollTo(...(savedPosition || [0, 0])),
-            transitionDelay
-        )
+        window.setTimeout(() => window.scrollTo(0, 0), transitionDelay)
+
+        // const savedPosition = getSavedScrollPosition(location)
+        // window.setTimeout(
+        //     () => window.scrollTo(...(savedPosition || [0, 0])),
+        //     transitionDelay
+        // )
     }
     return false
 }

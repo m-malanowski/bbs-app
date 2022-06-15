@@ -46,7 +46,7 @@ const Layout = ({location, title, children, key}) => {
                         // transition={transition}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        exit={{ opacity: 0, transition: {delay: 1.2, ...transition}, }}
+                        exit={{ opacity: 0, transition: {delay: 1, ...transition}, }}
                     >
                         {children}
                     </motion.main>

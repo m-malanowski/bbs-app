@@ -39,15 +39,7 @@ const CompaniesSlider = () => {
         { src: img16, alt: 'Zamel' },
     ];
     return(
-        // <div className="image-slider">
-        //
-        //     {images.map(function(imageProps) {
-        //         return (
-        //            <img  key={ imageProps.src } width={120} src={ imageProps.src } alt={ imageProps.alt } />
-        //         );
-        //     })}
-        // </div>
-        <Marquee className="image-slider">
+        <Marquee pauseOnHover={true} reverse={true} className="image-slider">
             {images.map(function(imageProps) {
                 return (
                     <img key={ imageProps.src } height={60} src={ imageProps.src } alt={ imageProps.alt } />

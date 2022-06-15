@@ -1,18 +1,11 @@
 import * as React from "react"
-// import img from "../images/heroIndex.jpg"
 import img from "../images/hero8.jpg"
-// import img from "../images/hero25.jpg"
-// import {Link} from "gatsby";
 import {motion} from "framer-motion";
-// import video from "../images/3.mp4"
-// import { useTranslation } from 'react-i18next';
 import {Trans, useTranslation, Link} from 'gatsby-plugin-react-i18next';
 import {variants} from "./variants"
 
-    // const transition = { duration: 3, yoyo: Infinity, ease: "easeInOut" };
 const transition = { duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }
 const exitTransition = { duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9] }
-const textTransition = { delay: 3.8, duration: .6, ease: [0.87, 0, 0.13, 1] }
 
 const Hero = () => {
     const { t, i18n } = useTranslation();
@@ -67,36 +60,27 @@ const Hero = () => {
             </div>
             <motion.div className="hero__right"
                         initial={{
-                            // width: 0,
                             marginLeft: 0
                         }}
                         animate={{
-                            // width: "100%",
                             marginLeft: '50%',
-                            // transition: {delay: 4.2,  duration: 1.2, ease: [0.87, 0, 0.13, 1] },
                             transition: {delay: 6.2,  duration: 1.2, ease: [0.87, 0, 0.13, 1] },
                         }}
                         exit={{
-                            // width: 0,
                             marginLeft: 0,
                             transition: {delay: .4, ...exitTransition},
                         }}
             >
-                {/*<img src={img} alt="BBS Best building solutions" className="image"/>*/}
-
                 <motion.figure
                     variants={variants}
                     animate={{
                         y: 0,
                         scale: 1.0,
-                        // opacity: 1,
                         transition: {delay: 3.2, duration: 3, ease: [0.6, 0.01, -0.05, 0.9]},
-                        // transition: {delay: 7.2, duration: 3, ease: [0.6, 0.01, -0.05, 0.9]},
                     }}
                     initial={{
                         scale: 1.4,
                     }}
-                    // exit="exit"
                 >
                     <img src={img} alt="BBS Best building solutions" />
                     {/*<video width="100%" height="auto" muted autoPlay loop>*/}

@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/companiesSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/acoustic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/amb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/amw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/avante.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/broker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/elkop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/elstar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/eurotter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/falkon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/kram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/metalzbyt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/ndi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/pieco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/proxmus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/przembud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/wojcik.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logos/zamel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/companiesSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/companiesSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fadeWhenVisible.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tilesAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilesAbout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/src/images&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/mateusz/Pulpit/gatsby-starter-blog/src/images",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/mateusz/Pulpit/gatsby-starter-blog/node_modules/prettier",
+    "ts.external.directory.path": "/snap/webstorm/261/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
@@ -138,7 +119,7 @@
       <workItem from="1654288099507" duration="22000" />
       <workItem from="1655141654877" duration="4463000" />
       <workItem from="1655228600948" duration="7428000" />
-      <workItem from="1655290446219" duration="8869000" />
+      <workItem from="1655290446219" duration="10094000" />
     </task>
     <servers />
   </component>

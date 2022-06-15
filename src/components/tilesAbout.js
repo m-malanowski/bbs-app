@@ -35,41 +35,41 @@ const Tiles = () => {
             </div>
             <div className="tiles tiles--services">
                 <div className="tile">
-                    <FadeInWhenVisible delay={0.5}>
+                    <FadeInWhenVisible delay={0.2}>
                         <span className="tile__number">284</span>
                         <h5 className="tile__heading">{t('footer.experience.projectsHeader')}</h5>
                     </FadeInWhenVisible>
 
-                    <FadeInWhenVisible delay={0.6}>
+                    <FadeInWhenVisible delay={0.3}>
                         <p className="tile__description">{t('footer.experience.projectsBody')}</p>
                     </FadeInWhenVisible>
 
                 </div>
                 <div className="tile">
-                    <FadeInWhenVisible delay={0.5}>
+                    <FadeInWhenVisible delay={0.2}>
                         <span className="tile__number">30</span>
                         <h5 className="tile__heading">{t('footer.experience.fittersHeader')}</h5>
                     </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={0.6}>
+                    <FadeInWhenVisible delay={0.3}>
                         <p className="tile__description">{t('footer.experience.fittersBody')}</p>
                     </FadeInWhenVisible>
                 </div>
 
                 <div className="tile">
-                    <FadeInWhenVisible delay={0.5}>
+                    <FadeInWhenVisible delay={0.2}>
                         <span className="tile__number">427</span>
                         <h5 className="tile__heading">{t('footer.experience.customersHeader')}</h5></FadeInWhenVisible>
-                    <FadeInWhenVisible delay={0.6}>
+                    <FadeInWhenVisible delay={0.3}>
                         <p>{t('footer.experience.customersBody')}</p>
                     </FadeInWhenVisible>
                 </div>
 
                 <div className="tile">
-                    <FadeInWhenVisible delay={0.5}>
+                    <FadeInWhenVisible delay={0.2}>
                         <span className="tile__number">100 – 45 K</span>
                         <h5 className="tile__heading">{t('footer.experience.metersHeader')}</h5>
                     </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={0.6}>
+                    <FadeInWhenVisible delay={0.3}>
                         <p>{t('footer.experience.metersBody')}</p>
                     </FadeInWhenVisible>
                 </div>
