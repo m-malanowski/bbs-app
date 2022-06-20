@@ -39,7 +39,8 @@ const Header = ({toggleSideBar, isOpen}) => {
 
             >
                 <a href="/" >
-                    {language == 'pl' ? <img src={logoPolska} height={50} alt="BBS Polska" className="header__logo"/> : <img src={logo} height={45} alt="BBS" className="header__logo"/>}
+                    {/*{language == 'pl' ? <img src={logoPolska} height={50} alt="BBS Polska" className="header__logo"/> : <img src={logo} height={45} alt="BBS" className="header__logo"/>}*/}
+                    <img src={logoPolska} height={50} alt="BBS Polska" className="header__logo"/>
                 </a>
             </motion.div>
             <div className="header__right">

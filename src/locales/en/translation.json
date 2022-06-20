@@ -53,6 +53,43 @@
         "mottoDescOne": "As a manufacturer of steel structures with 20 years of experience in the implementation of investments, we have combined a modern vision of a customer-oriented company with the traditional shape of a production company. Functioning in this model allows us to offer a much more individual service, tailored primarily to the needs of investors. This makes us a reliable partner in construction investments.",
         "mottoDescTwo": "Our realizations range from small objects meeting the needs of small and medium entrepreneurs to large warehouses and production plants. Thanks to our own factory and employed specialists we are able to realize even the most ambitious projects."
     },
+    "services": {
+        "hero": {
+            "assembly": "Assembly of steel structures",
+            "assemblyDesc": "Our offer covers a wide range - from preparing an investment concept, through hall designs, to their general execution. We comprehensively perform for you all kinds of production halls, sports halls, car showrooms, commercial buildings, warehouses, sheds, hangars, offices or logistics centers."
+        },
+        "startProject": "Start project with BBS Polska",
+        "startProjectDesc": "We carry out projects on behalf of clients and create personalized buildings for them. Designing steel halls has no secrets for us",
+        "startProjectDescShort": "We are distinguished by very fast delivery of equipment to the construction site, full technical customer support and simple terms of cooperation. We cooperate both with large development companies and individual clients.",
+        "servicesMix": "Design, contruction, architectural and industrial services.",
+        "servicesMixDesc": "As part of our business we provide equipment services in Elbląg and the surrounding area. We have a mobile crane, articulated boom lifts, scissor lifts and a swing loader at our disposal.",
+        "rentEquipment": "Equipment rental"
+    },
+    "rental": {
+        "hero": {
+            "wantRent": "Do you need construction equipment?",
+            "wantRentDesc": "You don't have to buy the construction equipment you need right away! Rent it in BBS Poland. We have our own construction equipment. We encourage you to familiarize yourself with our offer."
+        },
+        "rental": "Rental of construction equipment",
+        "rentalDesc": "We have an extensive machine park equipped with devices and heavy equipment necessary for professional performance of all construction and building works:",
+        "rentalDescOne": "BBS POLSKA has its own construction equipment. We encourage you to take a look at our offer. The rented equipment has all necessary documents allowing it to operate, including current technical inspections and tests of the Office of Technical Inspection.",
+        "rentalDescTwo": "We provide rental of construction equipment with an operator. Each of the operators has current occupational health and safety tests, medical examinations and proper eligibility to checking the costruction work. Equipment rental prices are negotiable.",
+        "machinePark": {
+            "heading": "Our Machine Park",
+            "mobileCrane": "Mobile crane services",
+            "mobileCraneDesc": "We provide services with a Liebherr 35 tonne mobile crane. The crane is equipped with an additional bracket, which increases the range of work to 45 metres. The off-road machine with two torsion axles provides access in difficult off-road conditions. Side reach of the machine is up to 40 meters and the load capacity up to 500 kilograms.",
+            "swingLoader": "Mobile swing loader services",
+            "swingLoaderDesc": "Swing loader by DIECI with additional overhang provides equipment working range up to 25 metres. The lifting capacity of the machine is up to 4.5 tons. Mobile, off-road machine with the possibility of rotation around its own axis. This type of machine is ideal for construction sites where a mobile crane cannot get in. The swing loader function is the ideal alternative to a crane.",
+            "scissorLift": "Scissor lift - internal combustion or electric",
+            "scissorLiftDesc": "Fleet of equipment of BBS POLSKA company has in its resources functional GENIE 5539RT internal combustion scissor lift. The machine is characterized by the ability to work at a working height of 20 metres above ground level. Functional balcony provides a range of work at a height of up to 7 metres! For customers looking for an electric scissor lift, we have a JLG machine with a working height of 12 metres.The electric lift is an ideal solution for working inside buildings.",
+            "articulatedBoomLift": "Combustion-engine driven articulated boom lifts",
+            "articulatedBoomLiftDesc": "We have HAULOTTE, GENIE lifts with working reach of up to 18 metres. Working load of the transport basket is up to 235 kilograms. The work basket can be rotated up to 270 degrees."
+        }
+    },
+    "blog": {
+        "blogDesc": "Learn more about marquees with steel construction",
+        "readMore": "Read more"
+    },
     "projects": {
         "projectsDesc": "Design and construction of steel halls is our daily life"
     },
@@ -105,6 +142,16 @@
             "head": "Make an\nappointment",
             "body": "Please contact us and arrange a meeting to discuss\nimplementation of your investment. We are at your disposal!",
             "cta": "Make an appointment"
+        },
+        "copy": {
+            "rights": "all rights reserved",
+            "privacy": "Privacy Policy"
+        },
+        "pages": {
+            "about": "About",
+            "services": "Services",
+            "projects": "Projects",
+            "contact": "Contact"
         }
     }
 }

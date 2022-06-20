@@ -14,11 +14,6 @@ import TilesAbout from "../components/tilesAbout";
 import teaserImg from "../images/hero12.jpg"
 import bildIndex from "../images/drone2.jpg"
 import CompaniesSlider from "../components/companiesSlider";
-// import icon1 from "../images/icon1.svg"
-// import icon2 from "../images/icon2.svg"
-// import icon3 from "../images/icon3.svg"
-// import icon4 from "../images/icon4.svg"
-
 
 const variants = {
     initial: {
@@ -43,7 +38,7 @@ const variants = {
 
 
 const Index = ({data, location}) => {
-    // const siteTitle = data.site.siteMetadata?.title || `Title`
+    const siteTitle = data.site.siteMetadata?.title || `Title`
     const { t } = useTranslation();
     return (
         <>
@@ -53,6 +48,7 @@ const Index = ({data, location}) => {
             />
 
             <FakeLoader></FakeLoader>
+
             <motion.div
                 style={{overflow: "hidden"}}
                 initial={{opacity: 0}}
@@ -70,7 +66,6 @@ const Index = ({data, location}) => {
                 <section className="container">
                     <div className="grid gap-xxxl@md margin-top-xl">
                         <div className="col-6@md">
-                            {/*<h2 className="heading">Our not-so-secret plan: power the global <span>transition</span></h2>*/}
                             <FadeInWhenVisible delay={.4}>
                                 <h2 className="heading">{ t('index.whoWeAre') }</h2>
                             </FadeInWhenVisible>
@@ -111,8 +106,6 @@ const Index = ({data, location}) => {
                     </div>
 
                 </section>
-
-
 
                 <FadeInWhenVisible delay={0.4}>
                     <Tiles/>

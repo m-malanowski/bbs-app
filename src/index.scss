@@ -559,8 +559,8 @@ body {
   }
 
   &__logo{
-    filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
-    //filter: brightness(0) invert(1);
+    //filter: invert(66%) sepia(67%) saturate(2346%) hue-rotate(335deg) brightness(101%) contrast(101%);
+    filter: brightness(0) invert(1);
   }
 
   &__language {

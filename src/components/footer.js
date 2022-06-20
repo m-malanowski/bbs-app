@@ -1,10 +1,12 @@
 import * as React from "react"
 import logoFooter from "../images/logo-footer.svg"
 // import {Link} from "gatsby";
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+import {Link, useI18next, useTranslation} from 'gatsby-plugin-react-i18next';
 import FadeInWhenVisible from "./fadeWhenVisible";
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return(
         <div className="footer">
 
@@ -21,10 +23,10 @@ const Footer = () => {
                             <FadeInWhenVisible delay={.6}>
                                 <ul>
                                     <li>Sitemap</li>
-                                    <li><Link to="/o-nas" className="link">O nas</Link></li>
-                                    <li><Link to="/uslugi" className="link">Usługi</Link></li>
-                                    <li><Link to="/realizacje" className="link">Realizacje</Link></li>
-                                    <li><Link to="/kontakt" className="link">Kontakt</Link></li>
+                                    <li><Link to="/o-nas" className="link">{ t('footer.pages.about') }</Link></li>
+                                    <li><Link to="/uslugi" className="link">{ t('footer.pages.services') }</Link></li>
+                                    <li><Link to="/realizacje" className="link">{ t('footer.pages.projects') }</Link></li>
+                                    <li><Link to="/kontakt" className="link">{ t('footer.pages.contact') }</Link></li>
                                     <li><Link to="/aktualnosci" className="link">Blog</Link></li>
                                 </ul>
                             </FadeInWhenVisible>
@@ -52,7 +54,7 @@ const Footer = () => {
                     </div>
                     <br/><br/>
                     <FadeInWhenVisible delay={.4}>
-                        <small>© {new Date().getFullYear()}, wszelkie prawa zastrzeżone, <a href="/polityka-prywatnosci" className="link">Polityka prywatności</a> by: <a
+                        <small>© {new Date().getFullYear()}, { t('footer.copy.rights') }, <a href="/polityka-prywatnosci" className="link">{ t('footer.copy.privacy') }</a> by: <a
                             className="link"  href="https://lumina.studio" target="_blank" rel="noopener noreferrer" >lumina.studio</a></small>
                     </FadeInWhenVisible>
                 </div>

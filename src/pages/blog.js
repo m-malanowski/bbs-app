@@ -1,6 +1,6 @@
 import * as React from "react"
 import {graphql} from "gatsby"
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+import {Link, useI18next, useTranslation} from 'gatsby-plugin-react-i18next';
 import Seo from "../components/seo"
 import {Helmet} from "react-helmet";
 
@@ -8,6 +8,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Articles = ({data, location}) => {
     // const siteTitle = data.site.siteMetadata?.title || `Title`
+    const { t } = useTranslation();
 
     return (
         <>
@@ -20,9 +21,7 @@ const Articles = ({data, location}) => {
                 <section className="container">
                     <div className="grid gap-xxxl margin-top-xxxl margin-bottom-0">
                         <div className="col-6@md">
-                            <h1>Dowiedz się więcej o halach namiotowych w konstrukcji stalowej</h1>
-                            {/*<h1>News & views <br/>*/}
-                            {/*    We write too</h1>*/}
+                            <h1>{ t('blog.blogDesc') }</h1>
                         </div>
                     </div>
                 </section>
@@ -42,8 +41,7 @@ const Articles = ({data, location}) => {
                                     <h4 className="article__date">3 March</h4>
                                     <h2 className="margin-top-sm article__article"><Link
                                         to={edge.node.Slug}>{edge.node.Title}</Link></h2>
-                                    <Link to={edge.node.Slug} className="btn btn--xs btn--dark  margin-top-xl">Czytaj
-                                        więcej</Link>
+                                    <Link to={edge.node.Slug} className="btn btn--xs btn--dark  margin-top-xl">{ t('blog.readMore') }</Link>
                                 </div>
                             </article>
                         ))}

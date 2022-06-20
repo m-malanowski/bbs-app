@@ -13,7 +13,7 @@
         "punctuality": "Terminowość",
         "punctualityDesc": "Harmonogram prac uzgadniamy z klientem i na bieżąco go monitorujemy.",
         "credibility": "Wiarygodność",
-        "credibilityDesc": "Ciągły dialog z klientem oraz wychodzenie naprzeciw wymaganiom każdego inwestora to elementy, które wyróżniają nas na rynku.  prac uzgadniamy z klientem i na bieżąco go monitorujemy.",
+        "credibilityDesc": "Ciągły dialog z klientem oraz wychodzenie naprzeciw wymaganiom każdego inwestora to elementy, które wyróżniają nas na rynku.",
         "precision": "Precyzja",
         "precisionDesc": "Precyzja w konstrukcji stalowej to podstawa.",
         "services": "Oferowane usługi",
@@ -52,6 +52,43 @@
         "mottoDesc": "Firma BBS Polska powstała jako naturalna konsekwencja wieloletniej działalności na polskim i europejskim rynku.",
         "mottoDescOne": "Jako producent konstrukcji stalowych z 20 letnim doświadczeniem w realizacji inwestycji, połączyliśmy nowoczesną wizję firmy skierowanej na klienta, z tradycyjnym kształtem przedsiębiorstwa produkcyjnego. Funkcjonowanie w takim modelu umożliwia nam oferowanie usług dużo bardziej indywidualnych, dopasowanych w pierwszej kolejności do potrzeb inwestorów. To sprawia, że jesteśmy godnym zaufania partnerem w inwestycjach budowlanych.",
         "mottoDescTwo": "Nasze realizacje to zarówno niewielkie obiekty spełniające potrzeby małych i średnich przedsiębiorców, jak i duże magazyny i zakłady produkcyjne. Dzięki własnej wytwórni i zatrudnionym specjalistom jesteśmy w stanie realizować nawet najbardziej ambitne projekty."
+    },
+    "services": {
+        "hero": {
+            "assembly": "Hale i konstrukcje stalowe",
+            "assemblyDesc": "Nasza oferta obejmuje szeroki zakres - od przygotowania koncepcji inwestycji, przez projekty hal po ich generalne wykonawstwo. Kompleksowo wykonamy dla Państwa wszelkiego rodzaju hale produkcyjne, hale sportowe, salony samochodowe, obiekty handlowe, magazyny, wiaty, hangary, biura czy centra logistyczne."
+        },
+        "startProject": "Zacznij budowę z BBS Polska",
+        "startProjectDesc": "Realizujemy projekty na zlecenie klientów i dla nich tworzymy spersonalizowane zabudowania. Projektowanie hal stalowych nie ma dla nas żadnych tajemnic",
+        "startProjectDescShort": "Wyróżnia nas bardzo szybka dostawa sprzętu na budowę, pełne wsparcie techniczne klienta oraz proste warunki współpracy. Współpracujemy zarówno z dużymi firmami deweloperskimi jak i klientami indywidualnymi.",
+        "servicesMix": "Usługi konstrukcyjne, archiktoniczne, branżowe.",
+        "servicesMixDesc": "W ramach działalności spółki, świadczymy usługi sprzętowe na terenie miasta Elbląg oraz okolic. Do dyspozycji mamy żuraw samojezdny, podnośniki spalinowe samojezdne przegubowe, nożycowe, ładowarkę obrotową. ",
+        "rentEquipment": "Wynajem sprzętu"
+    },
+    "rental": {
+        "hero": {
+            "wantRent": "Potrzebujesz sprzętu budowlanego?",
+            "wantRentDesc": "Nie musisz od razu kupować potrzebnego Ci sprzętu budowlanego! Wynajmij go w BBS Polska Dysponujemy własnym sprzętem budowlanym. Zachęcamy do zapoznania się z naszą ofertą."
+        },
+        "rental": "Wynajem sprzętu budowlanego",
+        "rentalDesc": "Dysponujemy rozbudowanym parkiem maszynowym wyposażonym w urządzenia oraz sprzęt ciężki niezbędny do profesjonalnego wykonywania wszelkich prac budowlanych i konstrukcyjnych:",
+        "rentalDescOne": "Zachęcamy do zapoznania się z naszą ofertą. Wynajmowany sprzęt, posiada wszsytkie niezbędne dokumenty dopuszczenia do eksploatacji, w tym aktualny przeglądy techniczne oraz aktualne badania UDT.",
+        "rentalDescTwo": "Zapewniamy wynajem sprzętów budowlanych wraz z operatorem. Każdy z operatorów posiada aktualne badania BHiP, badania lekarskie oraz uprawnienia do prawodzenia prac. Ceny wynajmu sprzętu podlegają negocjacji.",
+        "machinePark": {
+            "heading": "Nasz Park maszynowy",
+            "mobileCrane": "Usługi żurawiem samojezdnym",
+            "mobileCraneDesc": "Świadczymy usługi żurawiem samojezdnym marki Liebherr 35 ton. Żuraw na wyposażaniu posiada dodatkowy wspornik, zwiększający zasięg prac do 45m. Maszyna terenowa o dwóch osiach skrętnych, zapewnia dojazd w trudnych warunkach terenowych.",
+            "swingLoader": "Usługi ładowarka obrotową samojezdną",
+            "swingLoaderDesc": "Ładowarka obrotowa marki DIECI z dodatkowym wysięgnikiem, zapewnia zakres pracy sprzętu do 25m. Udźwig maszyny do 4,5 tony. Maszyna terenowa, samojezdna z możliwością obrotu wokół własnej osi.",
+            "scissorLift": "Podnośnik nożycowy, spalinowy lub elektryczny",
+            "scissorLiftDesc": "Posiadamy podnośnik nożycowy spalinowe GENIE 5539RT. Maszyna charakteryzuje się możliwością pracy na wysokości roboczej 20m ponad poziom terenu. Funkcjonalny balkon, zapewnia zasięg pracy na wysokości do 7m! Dla klientów poszukujących podnośnika nożycowego elektrycznego, posiadamy maszynę firmę JLG o wysięgu pracy 12m.",
+            "articulatedBoomLift": "Podnośniki przegubowe spalinowe",
+            "articulatedBoomLiftDesc": "Posiadamy podnośniki marki HAULOTTE, GENIE o wysięgu roboczym do 18m. Udźwig roboczy kosza transportowego, do 235KG. Możliwość obrotu kosza roboczego do 270 stopni."
+        }
+    },
+    "blog": {
+        "blogDesc": "Dowiedz się więcej o halach namiotowych w konstrukcji stalowej",
+        "readMore": "Czytaj więcej"
     },
     "projects": {
         "projectsDesc": "Projekty i budowa hal stalowych to nasza codzienność"
@@ -105,6 +142,16 @@
             "head": "Umów się na\nspotkanie",
             "body": "Zapraszamy do kontaktu i umówienia spotkania celem omówienia\nrealizacji Państwa Inwestycji Jesteśmy do dyspozycji!",
             "cta": "Umów spotkanie"
+        },
+        "copy": {
+            "rights": "wszelkie prawa zastrzeżone",
+            "privacy": "Polityka prywatności"
+        },
+        "pages": {
+            "about": "O nas",
+            "services": "Usługi",
+            "projects": "Projekty",
+            "contact": "Kontakt"
         }
     }
 }

@@ -1,11 +1,10 @@
 import * as React from "react"
-import contactImage from "../images/conect2.jpg"
+import contactImage from "../images/hero18.jpg"
 // import {Link} from "gatsby";
 // import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 import FadeInWhenVisible from "./fadeWhenVisible";
 import ImagesScrolling from "./scrollEffect";
 import {Trans, useTranslation, Link} from 'gatsby-plugin-react-i18next';
-
 
 const Contact = () => {
     const { t, i18n } = useTranslation();
