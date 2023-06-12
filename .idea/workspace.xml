@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aafa556-43a7-4cb9-8f87-61650adaa516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/aluminium1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/aluminium2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/produkcja-i-montaz-stolarki-aluminiowej.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/pl/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/pl/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +132,7 @@
       <workItem from="1686584927611" duration="24000" />
       <workItem from="1686586092087" duration="3369000" />
       <workItem from="1686589738303" duration="5937000" />
-      <workItem from="1686599787325" duration="2157000" />
+      <workItem from="1686599787325" duration="2799000" />
     </task>
     <servers />
   </component>

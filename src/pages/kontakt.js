@@ -41,7 +41,7 @@ const ContactPage = ({data, location}) => {
                                             <li>BBS POLSKA SP. Z O.O.</li>
                                         </FadeInWhenVisible>
                                         <FadeInWhenVisible delay={0.9}>
-                                            <li>82-300 Elbląg, ul. Królewiecka 215</li>
+                                            <li>82-300 Elbląg, ul. Grunwaldzka 2/B12</li>
                                         </FadeInWhenVisible>
                                         <FadeInWhenVisible delay={1.0}>
                                             <li>NIP 578 312 14 31</li>
@@ -57,7 +57,7 @@ const ContactPage = ({data, location}) => {
 
                                     <ul>
                                         <FadeInWhenVisible delay={0.8}>
-                                            <li>ul. Królewiecka 215</li>
+                                            <li>ul. Grunwaldzka 2/B12</li>
                                         </FadeInWhenVisible>
                                         <FadeInWhenVisible delay={0.9}>
                                             <li>82-300, Elbląg</li>
