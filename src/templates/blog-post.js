@@ -7,6 +7,7 @@ import img from "../images/hero25.jpg";
 import FadeInWhenVisible from "../components/fadeWhenVisible";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+// import ReactMarkdown from "react-markdown"
 
 const transition = {delay: .8, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]};
 const exitTransition = {duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9]}
@@ -79,13 +80,10 @@ const ArticleSingle = ({data}) => {
                         </FadeInWhenVisible>
                     </div>
                     <div className="col-6@md">
-
                     <FadeInWhenVisible delay={0.4}>
-                        <p>
-                            {data.article.Content}
-                        </p>
+                        {/*<ReactMarkdown children={data.article.Content}></ReactMarkdown>*/}
+                        <p>{data.article.Content}</p>
                     </FadeInWhenVisible>
-
                     <Link to="/blog"  className="btn btn--dark margin-top-xxl"> Powrót do artykułów</Link>
 
                     </div>

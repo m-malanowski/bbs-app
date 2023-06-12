@@ -87,8 +87,17 @@ const Services = ({data, location}) => {
                                     <p>{ t('index.steelStructuresDesc') }</p>
                                 </FadeInWhenVisible>
                             </div>
-
                             <div className="col-6@md ">
+                                <FadeInWhenVisible delay={.1}>
+                                    <h4>
+                                        <Link to="/produkcja-i-montaz-stolarki-aluminiowej" className="link link--arrow">{ t('index.aluminiumStructures') }</Link>
+                                    </h4>
+                                    <p>{ t('index.aluminiumStructuresDesc') }</p>
+                                </FadeInWhenVisible>
+                            </div>
+
+
+                            <div className="col-6@md margin-y-xl">
                                 <FadeInWhenVisible delay={.1}>
                                     <h4>{ t('index.industrialFacilities') }</h4>
                                     <p>{ t('index.industrialFacilitiesDesc') }</p>
@@ -102,7 +111,7 @@ const Services = ({data, location}) => {
                                 </FadeInWhenVisible>
                             </div>
 
-                            <div className="col-6@md margin-y-xl">
+                            <div className="col-6@md ">
                                 <FadeInWhenVisible delay={.1}>
                                     <h4>{ t('index.steelStructuresProduction') }</h4>
                                     <p>{ t('index.steelStructuresProductionDesc') }</p>
@@ -116,12 +125,12 @@ const Services = ({data, location}) => {
                                 </FadeInWhenVisible>
                             </div>
 
-                            <div className="col-6@md">
-                                <FadeInWhenVisible delay={.1}>
-                                    <h4>{ t('index.flatRoofs') }</h4>
-                                    <p>{ t('index.flatRoofsDesc') }</p>
-                                </FadeInWhenVisible>
-                            </div>
+                            {/*<div className="col-6@md">*/}
+                            {/*    <FadeInWhenVisible delay={.1}>*/}
+                            {/*        <h4>{ t('index.flatRoofs') }</h4>*/}
+                            {/*        <p>{ t('index.flatRoofsDesc') }</p>*/}
+                            {/*    </FadeInWhenVisible>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

@@ -61,11 +61,10 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         // apiURL: 'http://localhost:1337',
+        // accessToken: '68f69958dd6d4a891c4835a62100ebec0c2fb5420e1e39d33e42e40d6a210b5e150fd3f9b8a55362300197acde2681172ab1e39e68c8d7be02d7e6522a67ed1fa94a812885e74adce9949aef7687a0a15e5dc06f431cf7a2a4e3a44a59441a491c131f15075bde47acbd81d2b75d09a30bd6181840ece4444ee452a31e828848',
         apiURL: 'https://bbs-polska.herokuapp.com',
-        accessToken: '4a506e96901df34df3d9e77645a6937c009b27a0a0ac32d3b3b65aa59131f16bfb77479c66dc035aa24a6a193a8c17b082b488788c4b70e110b93d7151e1a8592bfec7221c01ffaaf3094293ba9468b5b834ebd5fe733017c8e9493c9e7848e0b16d770aa6dcd5aba0b4d76929a0d1875fa9a144665b9eabf4dbc4914a28aee2',
-        // collectionTypes: ['article', 'project'],
+        accessToken: '8d1290ef0a924a82605133d7eaaa524d7209ccd5e18d505a681d1a4339856ac544fec3459f002ff5b25b344ff33e94922f8c361e039e5854af82a4b5ba7d723ba987340c7a21916a0b2f1e2b20a38c476138c3a1ca8f727e31c9f1039f5d098984ea3b44015508cad4a5dc51bdfe6e14b7bdcbf58a03733a6ebb9b7898cf29fc',
         collectionTypes: ['article', 'project'],
-        // contentTypes: ['articles', 'projects'],
         singleTypes: ['private-policy'],
       }
     },

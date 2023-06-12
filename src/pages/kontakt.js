@@ -12,7 +12,7 @@ const ContactPage = ({data, location}) => {
 
     return (
         <>
-            <Seo title="Konakt"/>
+            <Seo title="Kontakt"/>
             <Helmet bodyAttributes={{
                 id: "contact-page"
             }}/>
